@@ -114,18 +114,19 @@ def main() -> int:
     fuentes.append({"id": "nasa", "nombre": "NASA POWER — climatología mensual de lluvia",
                     "centro": "NASA Langley (EE. UU.)", "ok": clim is not None})
 
-    # ---- Estacional CFSv2
+    # ---- Estacional (desactivado si no hay modelo norteamericano disponible)
     estacional = None
-    try:
-        usado, fechas, miembros = F.fetch_seasonal([C.SEASONAL_MODEL["id"], *C.SEASONAL_MODEL["alt_ids"]], *CENTRO)
-        estacional = A.perspectiva_estacional(fechas, miembros, clim, ahora)
-        print(f"[ok] estacional con {usado}: {miembros.shape[0]} miembros")
-        print(f"[ok] CFSv2: {estacional}")
-    except Exception as e:
-        print(f"[--] CFSv2: {e}")
-    fuentes.append({"id": "cfsv2", "nombre": C.SEASONAL_MODEL["nombre"], "centro": C.SEASONAL_MODEL["centro"],
-                    "ok": estacional is not None,
-                    "detalle": None if estacional else "no disponible en esta corrida"})
+    if C.SEASONAL_MODEL:
+        try:
+            usado, fechas, miembros = F.fetch_seasonal([C.SEASONAL_MODEL["id"], *C.SEASONAL_MODEL.get("alt_ids", [])],
+                                                       *CENTRO)
+            estacional = A.perspectiva_estacional(fechas, miembros, clim, ahora)
+            print(f"[ok] estacional con {usado}: {miembros.shape[0]} miembros")
+        except Exception as e:
+            print(f"[--] estacional: {e}")
+        fuentes.append({"id": "estacional", "nombre": C.SEASONAL_MODEL["nombre"], "centro": C.SEASONAL_MODEL["centro"],
+                        "ok": estacional is not None,
+                        "detalle": None if estacional else "no disponible en esta corrida"})
 
     # ---- análisis
     res = A.analizar(base_times, det, ens, ahora, enso)
@@ -138,7 +139,7 @@ def main() -> int:
         "miembros_total": miembros_total,
         "modelos_ok": [f["nombre"] for f in fuentes if f["ok"]],
         "titular": titular(res, enso),
-        "fuentes_texto": "Modelos: " + ", ".join(f["nombre"] for f in fuentes if f["ok"] and f["id"] not in ("cpc", "nasa", "cfsv2"))
+        "fuentes_texto": "Modelos: " + ", ".join(f["nombre"] for f in fuentes if f["ok"] and f["id"] not in ("cpc", "nasa", "estacional"))
                          + " (vía Open-Meteo) · El Niño: NOAA CPC · Normales: NASA POWER",
     }
     os.makedirs(os.path.join(SALIDA, "latest"), exist_ok=True)

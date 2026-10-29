@@ -27,12 +27,10 @@ El historial de corridas (solo JSON) queda en `output/historial/`.
 | Fuente | Centro | Uso |
 |---|---|---|
 | GFS 0,25° | NOAA/NCEP (EE. UU.) | Modelo determinista, intensidad horaria |
-| GraphCast-GFS | NOAA/NCEP (EE. UU.) | Modelo de IA inicializado con GFS |
-| AIGFS | NOAA/NCEP (EE. UU.) | Modelo de IA (si está disponible) |
+| AIGFS | NOAA/NCEP (EE. UU.) | Modelo de IA de NOAA |
 | GEM Global | ECCC (Canadá) | Modelo determinista, intensidad |
 | GEFS, 31 miembros | NOAA/NCEP (EE. UU.) | Media del ensamble y probabilidades |
 | GEPS, 21 miembros | ECCC (Canadá) | Media del ensamble y probabilidades |
-| CFSv2 | NOAA/NCEP (EE. UU.) | Perspectiva de los próximos 3 meses |
 | Índices Niño semanales, ONI, discusión ENSO | NOAA CPC (EE. UU.) | Seguimiento de El Niño |
 | POWER | NASA (EE. UU.) | Normales mensuales de lluvia |
 

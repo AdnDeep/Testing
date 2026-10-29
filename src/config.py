@@ -46,8 +46,8 @@ HOTSPOTS = [
     {"nombre": "Flor de Bastión", "zona": "norte", "lon": -79.975, "lat": -2.100, "sus": 3},
     {"nombre": "Bastión Popular", "zona": "norte", "lon": -79.943, "lat": -2.097, "sus": 3},
     {"nombre": "Monte Sinaí", "zona": "norte", "lon": -80.002, "lat": -2.122, "sus": 3},
-    {"nombre": "Los Vergeles / Orquídeas", "zona": "norte", "lon": -79.927, "lat": -2.105, "sus": 3},
-    {"nombre": "Mucho Lote", "zona": "norte", "lon": -79.903, "lat": -2.086, "sus": 2},
+    {"nombre": "Los Vergeles / Orquídeas", "zona": "norte", "lon": -79.909, "lat": -2.096, "sus": 3},
+    {"nombre": "Mucho Lote", "zona": "norte", "lon": -79.899, "lat": -2.079, "sus": 2},
     {"nombre": "Samanes / Guayacanes", "zona": "norte", "lon": -79.899, "lat": -2.114, "sus": 2},
     {"nombre": "Sauces", "zona": "norte", "lon": -79.890, "lat": -2.126, "sus": 2},
     {"nombre": "Alborada", "zona": "norte", "lon": -79.902, "lat": -2.137, "sus": 2},
@@ -79,7 +79,6 @@ HOTSPOTS = [
 # peso: contribución al promedio ponderado.
 DET_MODELS = [
     {"id": "gfs_seamless", "nombre": "NOAA GFS 0,25°", "centro": "NOAA/NCEP (EE. UU.)", "peso": 1.0, "intensidad": True},
-    {"id": "gfs_graphcast025", "alt_ids": ["ncep_gfs_graphcast025"], "nombre": "NOAA GraphCast-GFS (IA)", "centro": "NOAA/NCEP (EE. UU.)", "peso": 1.0, "intensidad": False},
     {"id": "ncep_aigfs025", "nombre": "NOAA AIGFS (IA)", "centro": "NOAA/NCEP (EE. UU.)", "peso": 1.0, "intensidad": False},
     {"id": "gem_global", "nombre": "ECCC GEM Global", "centro": "Environment and Climate Change Canada", "peso": 1.0, "intensidad": True},
 ]
@@ -91,7 +90,9 @@ ENS_MODELS = [
     {"id": "gem_global", "alt_ids": [], "nombre": "ECCC GEPS (ensamble)", "centro": "Environment and Climate Change Canada", "peso": 1.5},
 ]
 
-SEASONAL_MODEL = {"id": "cfsv2", "alt_ids": ["ncep_cfsv2", "cfsv2_seamless"], "nombre": "NOAA CFSv2 (estacional)", "centro": "NOAA/NCEP (EE. UU.)"}
+# Open-Meteo ya no ofrece NOAA CFSv2 en su API estacional (solo modelos europeos), así que la
+# perspectiva estacional queda desactivada. Para reactivarla, poner aquí un modelo disponible.
+SEASONAL_MODEL = None
 
 FORECAST_DAYS = 8      # hoy + 7 días
 PAST_DAYS = 3          # para lluvia antecedente (suelo saturado)

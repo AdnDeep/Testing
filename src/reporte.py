@@ -331,10 +331,11 @@ p { margin: 0; max-width: 68ch; }
 .note { color: var(--muted); font-size: 0.88rem; }
 .table-wrap { overflow-x: auto; min-width: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
 table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
-th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; vertical-align: middle; }
+th, td { padding: 8px 9px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; vertical-align: middle; }
 thead th { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
   font-size: 0.78rem; color: var(--muted); background: var(--bg); }
-tbody th { font-weight: 500; }
+tbody th { font-weight: 500; position: sticky; left: 0; background: var(--surface); z-index: 1; }
+thead th:first-child { position: sticky; left: 0; z-index: 2; }
 tbody tr:last-child th, tbody tr:last-child td { border-bottom: none; }
 td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; }
 td.strong { font-weight: 500; }
@@ -343,7 +344,8 @@ small { color: var(--muted); font-weight: 400; }
   letter-spacing: 0.01em; border: 1px solid transparent; }
 .r0 { color: var(--muted); border-color: var(--line); }
 .r1, .r2 { color: var(--rain); background: var(--rain-soft); }
-.r3, .r4 { color: var(--surface); background: var(--rain); }
+.r3 { color: var(--rain); background: var(--rain-soft); border-color: var(--rain); }
+.r4 { color: var(--surface); background: var(--rain); }
 .r5 { color: var(--surface); background: var(--rain); box-shadow: 0 0 0 2px var(--rain-soft); }
 .f0 { color: var(--muted); border-color: var(--line); }
 .f1 { color: var(--flood); background: var(--flood-soft); }
