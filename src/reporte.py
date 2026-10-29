@@ -535,6 +535,9 @@ def _limpiar(o):
 
 
 def construir_json(res, meta, enso, estacional, fuentes, clim) -> str:
-    return json.dumps(_limpiar({"meta": meta, "zonas": res["zonas"], "puntos": res["puntos"], "enso": enso,
+    return json.dumps(_limpiar({"meta": meta, "hoy": res.get("hoy"), "mareas": res.get("mareas"),
+                                "marea_umbrales": res.get("marea_umbrales"),
+                                "marea_sobreelevacion_enso_m": res.get("marea_sobreelevacion_enso_m"),
+                                "zonas": res["zonas"], "puntos": res["puntos"], "enso": enso,
                                 "estacional": estacional, "fuentes": fuentes, "climatologia_nasa_mm_dia": clim,
                                 "pesos": res["pesos"]}), ensure_ascii=False, indent=1)

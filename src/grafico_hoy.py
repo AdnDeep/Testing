@@ -54,10 +54,14 @@ def dibujar(res: dict, meta: dict, ruta_png: str):
         ax_m.plot([k / 6 for k in range(len(finos))], nivel_fino, color=TIDE, lw=2, solid_capstyle="round", zorder=3)
         lo, hi = float(nivel_fino.min()), float(nivel_fino.max())
         ax_m.set_ylim(max(0, lo - 0.9), max(hi + 1.0, MR.NIVEL_BLOQUEO + 0.8))
+        sobre = res.get("marea_sobreelevacion_enso_m") or 0.0
         for nivel, txt in ((MR.NIVEL_LENTO, "desagüe lento"), (MR.NIVEL_BLOQUEO, "desagüe bloqueado")):
-            ax_m.axhline(nivel, color=MUTED, lw=0.8, zorder=2)
-            ax_m.text(len(horas) - 0.4, nivel, f" {nivel:.1f} m: {txt}", fontsize=8, color=MUTED, va="center",
-                      ha="left", clip_on=False)
+            ax_m.axhline(nivel - sobre, color=MUTED, lw=0.8, zorder=2)
+            ax_m.text(len(horas) - 0.4, nivel - sobre, f" {nivel - sobre:.1f} m: {txt}", fontsize=8, color=MUTED,
+                      va="center", ha="left", clip_on=False)
+        if sobre:
+            ax_m.set_title(f"Marea astronómica, Guayaquil-Río (INOCAR) · umbrales bajados {sobre:.2f} m por El Niño",
+                           fontsize=10.5, color=INK, loc="left", pad=6, fontweight="bold")
         for e in res["mareas"]:
             if e["fecha"] != hoy["fecha"]:
                 continue
@@ -71,8 +75,9 @@ def dibujar(res: dict, meta: dict, ruta_png: str):
                           va="bottom" if arriba else "top", fontsize=8.5, color=INK, fontweight="bold",
                           bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.85), zorder=8)
     ax_m.set_ylabel("Marea (m)", fontsize=9.5, color=INK)
-    ax_m.set_title("Marea astronómica, Guayaquil-Río (INOCAR)", fontsize=10.5, color=INK, loc="left", pad=6,
-                   fontweight="bold")
+    if not ax_m.get_title(loc="left"):
+        ax_m.set_title("Marea astronómica, Guayaquil-Río (INOCAR)", fontsize=10.5, color=INK, loc="left", pad=6,
+                       fontweight="bold")
 
     # ---------------- lluvia por zona
     ymax = 2.0
