@@ -1,7 +1,7 @@
 {
  "meta": {
-  "emitido_iso": "2026-10-29T08:28-05:00",
-  "emitido_texto": "29/10/2026 08:28",
+  "emitido_iso": "2026-10-29T08:30-05:00",
+  "emitido_texto": "29/10/2026 08:30",
   "ventana_texto": "De hoy, jueves 29 de octubre, al sábado 31 de octubre",
   "miembros_total": 52,
   "modelos_ok": [
@@ -17,6 +17,996 @@
   "titular": "Lluvia prevista hasta el sábado 31 de octubre: Norte 84 mm, Centro 82 mm, Sur 77 mm. Riesgo de anegamiento muy alto en Norte, Centro y Sur. Pleamares de hoy: 09:05 (4.23 m) y 21:45 (4.27 m). El Niño costero: Niño 1+2 en +5.2 °C (cálida extraordinaria).",
   "fuentes_texto": "Modelos: NOAA GFS 0,25°, NOAA AIGFS (IA), ECCC GEM Global, NOAA GEFS (ensamble) — 31 miembros, ECCC GEPS (ensamble) — 21 miembros (vía Open-Meteo) · El Niño: NOAA CPC · Normales: NASA POWER · Marea: INOCAR"
  },
+ "hoy": {
+  "fecha": "2026-10-29",
+  "etiqueta": "jueves 29 de octubre",
+  "ahora": "08:00",
+  "horas": [
+   {
+    "hora": "00:00",
+    "pasada": true,
+    "actual": false,
+    "marea_m": 2.72,
+    "marea_estado": "baja",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 1.8,
+      "prob": 0.85,
+      "intensidad_mmh": 1.8,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Pascuales",
+       "Flor de Bastión",
+       "Bastión Popular",
+       "Monte Sinaí",
+       "Los Vergeles / Orquídeas"
+      ]
+     },
+     "centro": {
+      "lluvia_mm": 2.2,
+      "prob": 0.83,
+      "intensidad_mmh": 3.4,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Suburbio Oeste (calle 29)",
+       "Batallón del Suburbio",
+       "Cristo del Consuelo"
+      ]
+     },
+     "sur": {
+      "lluvia_mm": 2.2,
+      "prob": 0.83,
+      "intensidad_mmh": 3.6,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Isla Trinitaria",
+       "Fertisa",
+       "Guasmo Norte",
+       "Guasmo Central",
+       "Guasmo Sur",
+       "Unión de Bananeros"
+      ]
+     }
+    }
+   },
+   {
+    "hora": "01:00",
+    "pasada": true,
+    "actual": false,
+    "marea_m": 2.28,
+    "marea_estado": "baja",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 1.7,
+      "prob": 0.87,
+      "intensidad_mmh": 1.7,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Flor de Bastión",
+       "Bastión Popular",
+       "Monte Sinaí",
+       "Los Vergeles / Orquídeas"
+      ]
+     },
+     "centro": {
+      "lluvia_mm": 2.3,
+      "prob": 0.87,
+      "intensidad_mmh": 3.8,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Suburbio Oeste (calle 29)",
+       "Batallón del Suburbio",
+       "Cristo del Consuelo"
+      ]
+     },
+     "sur": {
+      "lluvia_mm": 2.2,
+      "prob": 0.85,
+      "intensidad_mmh": 3.8,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Isla Trinitaria",
+       "Fertisa",
+       "Guasmo Norte",
+       "Guasmo Central",
+       "Guasmo Sur",
+       "Unión de Bananeros"
+      ]
+     }
+    }
+   },
+   {
+    "hora": "02:00",
+    "pasada": true,
+    "actual": false,
+    "marea_m": 1.87,
+    "marea_estado": "baja",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 2.1,
+      "prob": 0.88,
+      "intensidad_mmh": 0.9,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Pascuales",
+       "Flor de Bastión",
+       "Bastión Popular",
+       "Monte Sinaí",
+       "Los Vergeles / Orquídeas"
+      ]
+     },
+     "centro": {
+      "lluvia_mm": 2.2,
+      "prob": 0.88,
+      "intensidad_mmh": 2.7,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Suburbio Oeste (calle 29)",
+       "Batallón del Suburbio",
+       "Cristo del Consuelo"
+      ]
+     },
+     "sur": {
+      "lluvia_mm": 2.0,
+      "prob": 0.81,
+      "intensidad_mmh": 2.6,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Isla Trinitaria",
+       "Fertisa",
+       "Guasmo Norte",
+       "Guasmo Central",
+       "Guasmo Sur",
+       "Unión de Bananeros"
+      ]
+     }
+    }
+   },
+   {
+    "hora": "03:00",
+    "pasada": true,
+    "actual": false,
+    "marea_m": 1.25,
+    "marea_estado": "baja",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 2.3,
+      "prob": 0.83,
+      "intensidad_mmh": 1.6,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Pascuales",
+       "Flor de Bastión",
+       "Bastión Popular",
+       "Monte Sinaí",
+       "Los Vergeles / Orquídeas"
+      ]
+     },
+     "centro": {
+      "lluvia_mm": 2.1,
+      "prob": 0.83,
+      "intensidad_mmh": 1.9,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Suburbio Oeste (calle 29)",
+       "Batallón del Suburbio",
+       "Cristo del Consuelo"
+      ]
+     },
+     "sur": {
+      "lluvia_mm": 1.9,
+      "prob": 0.79,
+      "intensidad_mmh": 2.1,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Isla Trinitaria",
+       "Fertisa",
+       "Guasmo Norte",
+       "Guasmo Central",
+       "Guasmo Sur",
+       "Unión de Bananeros"
+      ]
+     }
+    }
+   },
+   {
+    "hora": "04:00",
+    "pasada": true,
+    "actual": false,
+    "marea_m": 0.82,
+    "marea_estado": "bajamar",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 2.2,
+      "prob": 0.83,
+      "intensidad_mmh": 1.1,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Pascuales",
+       "Flor de Bastión",
+       "Bastión Popular",
+       "Monte Sinaí",
+       "Los Vergeles / Orquídeas"
+      ]
+     },
+     "centro": {
+      "lluvia_mm": 1.7,
+      "prob": 0.83,
+      "intensidad_mmh": 1.0,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Suburbio Oeste (calle 29)",
+       "Batallón del Suburbio",
+       "Cristo del Consuelo"
+      ]
+     },
+     "sur": {
+      "lluvia_mm": 1.7,
+      "prob": 0.79,
+      "intensidad_mmh": 1.5,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Isla Trinitaria",
+       "Fertisa",
+       "Guasmo Norte",
+       "Guasmo Central",
+       "Unión de Bananeros"
+      ]
+     }
+    }
+   },
+   {
+    "hora": "05:00",
+    "pasada": true,
+    "actual": false,
+    "marea_m": 1.3,
+    "marea_estado": "sube",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 2.3,
+      "prob": 0.81,
+      "intensidad_mmh": 1.2,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Pascuales",
+       "Flor de Bastión",
+       "Bastión Popular",
+       "Monte Sinaí",
+       "Los Vergeles / Orquídeas"
+      ]
+     },
+     "centro": {
+      "lluvia_mm": 1.7,
+      "prob": 0.81,
+      "intensidad_mmh": 1.2,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Suburbio Oeste (calle 29)",
+       "Batallón del Suburbio",
+       "Cristo del Consuelo"
+      ]
+     },
+     "sur": {
+      "lluvia_mm": 1.7,
+      "prob": 0.79,
+      "intensidad_mmh": 1.3,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Isla Trinitaria",
+       "Fertisa",
+       "Guasmo Norte",
+       "Guasmo Central"
+      ]
+     }
+    }
+   },
+   {
+    "hora": "06:00",
+    "pasada": true,
+    "actual": false,
+    "marea_m": 2.52,
+    "marea_estado": "sube",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 2.1,
+      "prob": 0.75,
+      "intensidad_mmh": 0.3,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Pascuales",
+       "Flor de Bastión",
+       "Bastión Popular",
+       "Monte Sinaí",
+       "Los Vergeles / Orquídeas"
+      ]
+     },
+     "centro": {
+      "lluvia_mm": 1.4,
+      "prob": 0.73,
+      "intensidad_mmh": 0.3,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 1.4,
+      "prob": 0.75,
+      "intensidad_mmh": 0.5,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Isla Trinitaria"
+      ]
+     }
+    }
+   },
+   {
+    "hora": "07:00",
+    "pasada": true,
+    "actual": false,
+    "marea_m": 3.56,
+    "marea_estado": "sube",
+    "marea_clase": 1,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 2.0,
+      "prob": 0.73,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Pascuales",
+       "Flor de Bastión",
+       "Bastión Popular",
+       "Monte Sinaí",
+       "Los Vergeles / Orquídeas"
+      ]
+     },
+     "centro": {
+      "lluvia_mm": 1.4,
+      "prob": 0.69,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 1.2,
+      "prob": 0.73,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "08:00",
+    "pasada": false,
+    "actual": true,
+    "marea_m": 4.05,
+    "marea_estado": "sube",
+    "marea_clase": 1,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 1.0,
+      "prob": 0.75,
+      "intensidad_mmh": 0.5,
+      "riesgo": "Moderado",
+      "sectores": [
+       "Pascuales",
+       "Flor de Bastión",
+       "Bastión Popular",
+       "Monte Sinaí",
+       "Los Vergeles / Orquídeas"
+      ]
+     },
+     "centro": {
+      "lluvia_mm": 0.7,
+      "prob": 0.73,
+      "intensidad_mmh": 0.2,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.7,
+      "prob": 0.73,
+      "intensidad_mmh": 0.0,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "09:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 4.23,
+    "marea_estado": "pleamar",
+    "marea_clase": 2,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 1.1,
+      "prob": 0.73,
+      "intensidad_mmh": 0.8,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.9,
+      "prob": 0.71,
+      "intensidad_mmh": 0.8,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.7,
+      "prob": 0.63,
+      "intensidad_mmh": 0.0,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "10:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 4.01,
+    "marea_estado": "baja",
+    "marea_clase": 1,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 1.2,
+      "prob": 0.73,
+      "intensidad_mmh": 1.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 1.0,
+      "prob": 0.69,
+      "intensidad_mmh": 1.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.7,
+      "prob": 0.63,
+      "intensidad_mmh": 0.2,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "11:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 3.32,
+    "marea_estado": "baja",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 0.6,
+      "prob": 0.67,
+      "intensidad_mmh": 1.2,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.6,
+      "prob": 0.62,
+      "intensidad_mmh": 1.2,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.3,
+      "prob": 0.6,
+      "intensidad_mmh": 0.5,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "12:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 2.56,
+    "marea_estado": "baja",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 0.3,
+      "prob": 0.44,
+      "intensidad_mmh": 0.3,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.3,
+      "prob": 0.44,
+      "intensidad_mmh": 0.2,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.2,
+      "prob": 0.44,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "13:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 2.1,
+    "marea_estado": "baja",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 0.2,
+      "prob": 0.58,
+      "intensidad_mmh": 0.0,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.2,
+      "prob": 0.5,
+      "intensidad_mmh": 0.0,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.2,
+      "prob": 0.52,
+      "intensidad_mmh": 0.0,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "14:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 1.8,
+    "marea_estado": "baja",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 0.5,
+      "prob": 0.56,
+      "intensidad_mmh": 0.0,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.6,
+      "prob": 0.56,
+      "intensidad_mmh": 0.0,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.5,
+      "prob": 0.54,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "15:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 1.33,
+    "marea_estado": "baja",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 0.6,
+      "prob": 0.46,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.6,
+      "prob": 0.46,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.5,
+      "prob": 0.44,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "16:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 0.75,
+    "marea_estado": "bajamar",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 0.6,
+      "prob": 0.56,
+      "intensidad_mmh": 0.2,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.6,
+      "prob": 0.6,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.5,
+      "prob": 0.6,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "17:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 0.8,
+    "marea_estado": "sube",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 1.0,
+      "prob": 0.56,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 1.0,
+      "prob": 0.58,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.9,
+      "prob": 0.6,
+      "intensidad_mmh": 0.1,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "18:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 1.82,
+    "marea_estado": "sube",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 1.3,
+      "prob": 0.56,
+      "intensidad_mmh": 1.0,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 1.1,
+      "prob": 0.58,
+      "intensidad_mmh": 0.6,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 1.0,
+      "prob": 0.62,
+      "intensidad_mmh": 0.6,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "19:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 3.06,
+    "marea_estado": "sube",
+    "marea_clase": 0,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 1.4,
+      "prob": 0.58,
+      "intensidad_mmh": 1.6,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 1.2,
+      "prob": 0.62,
+      "intensidad_mmh": 0.9,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 1.1,
+      "prob": 0.65,
+      "intensidad_mmh": 0.9,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "20:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 3.79,
+    "marea_estado": "sube",
+    "marea_clase": 1,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 0.9,
+      "prob": 0.58,
+      "intensidad_mmh": 1.4,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.7,
+      "prob": 0.62,
+      "intensidad_mmh": 0.8,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.7,
+      "prob": 0.63,
+      "intensidad_mmh": 0.8,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "21:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 4.15,
+    "marea_estado": "sube",
+    "marea_clase": 2,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 0.9,
+      "prob": 0.52,
+      "intensidad_mmh": 1.5,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.7,
+      "prob": 0.56,
+      "intensidad_mmh": 0.8,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.7,
+      "prob": 0.58,
+      "intensidad_mmh": 1.0,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "22:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 4.25,
+    "marea_estado": "pleamar",
+    "marea_clase": 2,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 0.7,
+      "prob": 0.62,
+      "intensidad_mmh": 0.6,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.6,
+      "prob": 0.67,
+      "intensidad_mmh": 0.3,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.7,
+      "prob": 0.67,
+      "intensidad_mmh": 0.6,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   },
+   {
+    "hora": "23:00",
+    "pasada": false,
+    "actual": false,
+    "marea_m": 3.86,
+    "marea_estado": "baja",
+    "marea_clase": 1,
+    "zonas": {
+     "norte": {
+      "lluvia_mm": 0.6,
+      "prob": 0.71,
+      "intensidad_mmh": 0.5,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "centro": {
+      "lluvia_mm": 0.5,
+      "prob": 0.69,
+      "intensidad_mmh": 0.5,
+      "riesgo": "Bajo",
+      "sectores": []
+     },
+     "sur": {
+      "lluvia_mm": 0.5,
+      "prob": 0.67,
+      "intensidad_mmh": 0.5,
+      "riesgo": "Bajo",
+      "sectores": []
+     }
+    }
+   }
+  ],
+  "resumen": {
+   "norte": "Quedan 13.0 mm para el resto del día (total del día 29.5 mm). Lo más fuerte: entre 17:00 y 20:00, con 3.7 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 08:00 (moderado).",
+   "centro": "Quedan 11.4 mm para el resto del día (total del día 26.6 mm). Lo más fuerte: entre 17:00 y 20:00, con 3.4 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.",
+   "sur": "Quedan 10.0 mm para el resto del día (total del día 24.3 mm). Lo más fuerte: entre 17:00 y 20:00, con 3.0 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe."
+  }
+ },
+ "mareas": [
+  {
+   "tipo": "bajamar",
+   "fecha": "2026-10-29",
+   "etiqueta": "jueves 29 de octubre",
+   "hora": "04:05",
+   "altura": 0.82,
+   "clase": "",
+   "pasada": true
+  },
+  {
+   "tipo": "pleamar",
+   "fecha": "2026-10-29",
+   "etiqueta": "jueves 29 de octubre",
+   "hora": "09:05",
+   "altura": 4.23,
+   "clase": "normal",
+   "pasada": false
+  },
+  {
+   "tipo": "bajamar",
+   "fecha": "2026-10-29",
+   "etiqueta": "jueves 29 de octubre",
+   "hora": "16:30",
+   "altura": 0.65,
+   "clase": "",
+   "pasada": false
+  },
+  {
+   "tipo": "pleamar",
+   "fecha": "2026-10-29",
+   "etiqueta": "jueves 29 de octubre",
+   "hora": "21:45",
+   "altura": 4.27,
+   "clase": "normal",
+   "pasada": false
+  },
+  {
+   "tipo": "bajamar",
+   "fecha": "2026-10-30",
+   "etiqueta": "viernes 30 de octubre",
+   "hora": "04:50",
+   "altura": 0.91,
+   "clase": "",
+   "pasada": false
+  },
+  {
+   "tipo": "pleamar",
+   "fecha": "2026-10-30",
+   "etiqueta": "viernes 30 de octubre",
+   "hora": "09:50",
+   "altura": 4.04,
+   "clase": "normal",
+   "pasada": false
+  },
+  {
+   "tipo": "bajamar",
+   "fecha": "2026-10-30",
+   "etiqueta": "viernes 30 de octubre",
+   "hora": "17:15",
+   "altura": 0.75,
+   "clase": "",
+   "pasada": false
+  },
+  {
+   "tipo": "pleamar",
+   "fecha": "2026-10-30",
+   "etiqueta": "viernes 30 de octubre",
+   "hora": "22:35",
+   "altura": 4.14,
+   "clase": "normal",
+   "pasada": false
+  },
+  {
+   "tipo": "bajamar",
+   "fecha": "2026-10-31",
+   "etiqueta": "sábado 31 de octubre",
+   "hora": "05:40",
+   "altura": 0.99,
+   "clase": "",
+   "pasada": false
+  },
+  {
+   "tipo": "pleamar",
+   "fecha": "2026-10-31",
+   "etiqueta": "sábado 31 de octubre",
+   "hora": "10:45",
+   "altura": 3.86,
+   "clase": "normal",
+   "pasada": false
+  },
+  {
+   "tipo": "bajamar",
+   "fecha": "2026-10-31",
+   "etiqueta": "sábado 31 de octubre",
+   "hora": "18:00",
+   "altura": 0.84,
+   "clase": "",
+   "pasada": false
+  },
+  {
+   "tipo": "pleamar",
+   "fecha": "2026-10-31",
+   "etiqueta": "sábado 31 de octubre",
+   "hora": "23:30",
+   "altura": 4.03,
+   "clase": "normal",
+   "pasada": false
+  }
+ ],
+ "marea_umbrales": {
+  "lento": 3.6,
+  "bloqueo": 4.3,
+  "desborde": 4.8
+ },
+ "marea_sobreelevacion_enso_m": 0.2,
  "zonas": {
   "norte": {
    "nombre": "Norte",
