@@ -38,40 +38,42 @@ ZONES = {
 }
 
 # Puntos críticos de anegamiento de calles (ubicación aproximada).
-# susceptibilidad: 1 = baja, 2 = media, 3 = alta (zonas bajas, drenaje
-# limitado, influencia del estero o de la marea).
+# sus (susceptibilidad): 1 = baja, 2 = media, 3 = alta (zonas bajas, drenaje limitado).
+# marea (influencia de la marea en el desagüe): 0 = poca (sectores altos o de cerro),
+# 1 = media (desagua al río Daule o al Estero Salado por canales largos),
+# 2 = alta (orillas del Guayas y del Estero Salado: en pleamar el agua no sale).
 HOTSPOTS = [
     # --- Norte ---
-    {"nombre": "Pascuales", "zona": "norte", "lon": -79.960, "lat": -2.072, "sus": 3},
-    {"nombre": "Flor de Bastión", "zona": "norte", "lon": -79.975, "lat": -2.100, "sus": 3},
-    {"nombre": "Bastión Popular", "zona": "norte", "lon": -79.943, "lat": -2.097, "sus": 3},
-    {"nombre": "Monte Sinaí", "zona": "norte", "lon": -80.002, "lat": -2.122, "sus": 3},
-    {"nombre": "Los Vergeles / Orquídeas", "zona": "norte", "lon": -79.909, "lat": -2.096, "sus": 3},
-    {"nombre": "Mucho Lote", "zona": "norte", "lon": -79.899, "lat": -2.079, "sus": 2},
-    {"nombre": "Samanes / Guayacanes", "zona": "norte", "lon": -79.899, "lat": -2.114, "sus": 2},
-    {"nombre": "Sauces", "zona": "norte", "lon": -79.890, "lat": -2.126, "sus": 2},
-    {"nombre": "Alborada", "zona": "norte", "lon": -79.902, "lat": -2.137, "sus": 2},
-    {"nombre": "Mapasingue", "zona": "norte", "lon": -79.925, "lat": -2.155, "sus": 2},
-    {"nombre": "Prosperina", "zona": "norte", "lon": -79.950, "lat": -2.148, "sus": 2},
-    {"nombre": "Urdesa / Kennedy", "zona": "norte", "lon": -79.900, "lat": -2.163, "sus": 1},
+    {"nombre": "Pascuales", "zona": "norte", "lon": -79.960, "lat": -2.072, "sus": 3, "marea": 1},
+    {"nombre": "Flor de Bastión", "zona": "norte", "lon": -79.975, "lat": -2.100, "sus": 3, "marea": 0},
+    {"nombre": "Bastión Popular", "zona": "norte", "lon": -79.943, "lat": -2.097, "sus": 3, "marea": 0},
+    {"nombre": "Monte Sinaí", "zona": "norte", "lon": -80.002, "lat": -2.122, "sus": 3, "marea": 0},
+    {"nombre": "Los Vergeles / Orquídeas", "zona": "norte", "lon": -79.909, "lat": -2.096, "sus": 3, "marea": 1},
+    {"nombre": "Mucho Lote", "zona": "norte", "lon": -79.899, "lat": -2.079, "sus": 2, "marea": 1},
+    {"nombre": "Samanes / Guayacanes", "zona": "norte", "lon": -79.899, "lat": -2.114, "sus": 2, "marea": 1},
+    {"nombre": "Sauces", "zona": "norte", "lon": -79.890, "lat": -2.126, "sus": 2, "marea": 1},
+    {"nombre": "Alborada", "zona": "norte", "lon": -79.902, "lat": -2.137, "sus": 2, "marea": 1},
+    {"nombre": "Mapasingue", "zona": "norte", "lon": -79.925, "lat": -2.155, "sus": 2, "marea": 0},
+    {"nombre": "Prosperina", "zona": "norte", "lon": -79.950, "lat": -2.148, "sus": 2, "marea": 0},
+    {"nombre": "Urdesa / Kennedy", "zona": "norte", "lon": -79.900, "lat": -2.163, "sus": 1, "marea": 1},
     # --- Centro ---
-    {"nombre": "Av. Quito y Av. Machala", "zona": "centro", "lon": -79.892, "lat": -2.201, "sus": 2},
-    {"nombre": "Barrio Garay", "zona": "centro", "lon": -79.901, "lat": -2.198, "sus": 2},
-    {"nombre": "Suburbio Oeste (calle 29)", "zona": "centro", "lon": -79.913, "lat": -2.201, "sus": 3},
-    {"nombre": "Batallón del Suburbio", "zona": "centro", "lon": -79.922, "lat": -2.206, "sus": 3},
-    {"nombre": "Cristo del Consuelo", "zona": "centro", "lon": -79.916, "lat": -2.211, "sus": 3},
-    {"nombre": "Malecón / calle Panamá", "zona": "centro", "lon": -79.879, "lat": -2.190, "sus": 1},
+    {"nombre": "Av. Quito y Av. Machala", "zona": "centro", "lon": -79.892, "lat": -2.201, "sus": 2, "marea": 1},
+    {"nombre": "Barrio Garay", "zona": "centro", "lon": -79.901, "lat": -2.198, "sus": 2, "marea": 1},
+    {"nombre": "Suburbio Oeste (calle 29)", "zona": "centro", "lon": -79.913, "lat": -2.201, "sus": 3, "marea": 2},
+    {"nombre": "Batallón del Suburbio", "zona": "centro", "lon": -79.922, "lat": -2.206, "sus": 3, "marea": 2},
+    {"nombre": "Cristo del Consuelo", "zona": "centro", "lon": -79.916, "lat": -2.211, "sus": 3, "marea": 2},
+    {"nombre": "Malecón / calle Panamá", "zona": "centro", "lon": -79.879, "lat": -2.190, "sus": 1, "marea": 2},
     # --- Sur ---
-    {"nombre": "Barrio Centenario", "zona": "sur", "lon": -79.887, "lat": -2.217, "sus": 2},
-    {"nombre": "La Pradera", "zona": "sur", "lon": -79.890, "lat": -2.232, "sus": 2},
-    {"nombre": "Los Esteros", "zona": "sur", "lon": -79.898, "lat": -2.228, "sus": 2},
-    {"nombre": "Isla Trinitaria", "zona": "sur", "lon": -79.922, "lat": -2.238, "sus": 3},
-    {"nombre": "La Floresta", "zona": "sur", "lon": -79.884, "lat": -2.245, "sus": 2},
-    {"nombre": "Fertisa", "zona": "sur", "lon": -79.902, "lat": -2.259, "sus": 3},
-    {"nombre": "Guasmo Norte", "zona": "sur", "lon": -79.881, "lat": -2.252, "sus": 3},
-    {"nombre": "Guasmo Central", "zona": "sur", "lon": -79.878, "lat": -2.266, "sus": 3},
-    {"nombre": "Guasmo Sur", "zona": "sur", "lon": -79.876, "lat": -2.281, "sus": 3},
-    {"nombre": "Unión de Bananeros", "zona": "sur", "lon": -79.890, "lat": -2.286, "sus": 3},
+    {"nombre": "Barrio Centenario", "zona": "sur", "lon": -79.887, "lat": -2.217, "sus": 2, "marea": 1},
+    {"nombre": "La Pradera", "zona": "sur", "lon": -79.890, "lat": -2.232, "sus": 2, "marea": 1},
+    {"nombre": "Los Esteros", "zona": "sur", "lon": -79.898, "lat": -2.228, "sus": 2, "marea": 2},
+    {"nombre": "Isla Trinitaria", "zona": "sur", "lon": -79.922, "lat": -2.238, "sus": 3, "marea": 2},
+    {"nombre": "La Floresta", "zona": "sur", "lon": -79.884, "lat": -2.245, "sus": 2, "marea": 2},
+    {"nombre": "Fertisa", "zona": "sur", "lon": -79.902, "lat": -2.259, "sus": 3, "marea": 2},
+    {"nombre": "Guasmo Norte", "zona": "sur", "lon": -79.881, "lat": -2.252, "sus": 3, "marea": 2},
+    {"nombre": "Guasmo Central", "zona": "sur", "lon": -79.878, "lat": -2.266, "sus": 3, "marea": 2},
+    {"nombre": "Guasmo Sur", "zona": "sur", "lon": -79.876, "lat": -2.281, "sus": 3, "marea": 2},
+    {"nombre": "Unión de Bananeros", "zona": "sur", "lon": -79.890, "lat": -2.286, "sus": 3, "marea": 2},
 ]
 
 # Modelos deterministas (API de pronóstico de Open-Meteo). Todos son de

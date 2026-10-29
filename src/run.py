@@ -10,7 +10,9 @@ from zoneinfo import ZoneInfo
 from . import analisis as A
 from . import config as C
 from . import fetch as F
+from . import grafico_hoy as G
 from . import mapa as M
+from . import marea as MR
 from . import reporte as R
 
 SALIDA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "output")
@@ -128,8 +130,20 @@ def main() -> int:
                         "ok": estacional is not None,
                         "detalle": None if estacional else "no disponible en esta corrida"})
 
+    # ---- Marea (INOCAR, constantes armónicas de Guayaquil-Río)
+    marea = None
+    try:
+        hoy0 = ahora.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=None)
+        marea = MR.predecir(base_times, hoy0, C.FORECAST_DAYS)
+        prox = [e for e in marea["extremos"] if e["tipo"] == "pleamar"][:4]
+        print("[ok] Marea INOCAR: " + ", ".join(f"{e['hora']:%d/%m %H:%M} {e['altura']:.2f} m" for e in prox))
+    except Exception as e:
+        print(f"[--] Marea: {e}")
+    fuentes.append({"id": "marea", "nombre": "INOCAR — marea astronómica de Guayaquil (río Guayas)",
+                    "centro": "Instituto Oceanográfico y Antártico de la Armada (Ecuador)", "ok": marea is not None})
+
     # ---- análisis
-    res = A.analizar(base_times, det, ens, ahora, enso)
+    res = A.analizar(base_times, det, ens, ahora, enso, marea)
     dias = res["dias"]
     ventana = f"de hoy, {dias[0]['etiqueta']}, al {dias[min(C.MAP_DAYS, len(dias)) - 1]['etiqueta']}" if dias else ""
     meta = {
@@ -139,8 +153,8 @@ def main() -> int:
         "miembros_total": miembros_total,
         "modelos_ok": [f["nombre"] for f in fuentes if f["ok"]],
         "titular": titular(res, enso),
-        "fuentes_texto": "Modelos: " + ", ".join(f["nombre"] for f in fuentes if f["ok"] and f["id"] not in ("cpc", "nasa", "estacional"))
-                         + " (vía Open-Meteo) · El Niño: NOAA CPC · Normales: NASA POWER",
+        "fuentes_texto": "Modelos: " + ", ".join(f["nombre"] for f in fuentes if f["ok"] and f["id"] not in ("cpc", "nasa", "estacional", "marea"))
+                         + " (vía Open-Meteo) · El Niño: NOAA CPC · Normales: NASA POWER · Marea: INOCAR",
     }
     os.makedirs(os.path.join(SALIDA, "latest"), exist_ok=True)
     os.makedirs(os.path.join(SALIDA, "historial"), exist_ok=True)
@@ -148,8 +162,13 @@ def main() -> int:
     M.dibujar(res, meta, png)
     with open(png, "rb") as fh:
         png_bytes = fh.read()
+    png_hoy = os.path.join(SALIDA, "latest", "hoy_por_hora.png")
+    hoy_bytes = None
+    if G.dibujar(res, meta, png_hoy):
+        with open(png_hoy, "rb") as fh:
+            hoy_bytes = fh.read()
 
-    html_txt = R.construir_html(res, meta, enso, estacional, fuentes, png_bytes)
+    html_txt = R.construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes)
     md_txt = R.construir_md(res, meta, enso)
     js_txt = R.construir_json(res, meta, enso, estacional, fuentes, clim)
     for nombre, txt in (("reporte.html", html_txt), ("reporte.md", md_txt), ("reporte.json", js_txt)):
@@ -181,6 +200,9 @@ def titular(res, enso) -> str:
         txt += f" Riesgo de anegamiento {riesgos[peor].lower()} en {R._lista(zonas_r)}."
     else:
         txt += " Riesgo de anegamiento de calles bajo en toda la ciudad."
+    ples = [m for m in res.get("mareas", []) if m["tipo"] == "pleamar" and m["fecha"] == res["hoy"]["fecha"]]
+    if ples:
+        txt += " Pleamares de hoy: " + R._lista([f"{m['hora']} ({m['altura']:.2f} m)" for m in ples]) + "."
     if enso and enso.get("semanal"):
         txt += (f" El Niño costero: Niño 1+2 en {enso['semanal']['nino12']:+.1f} °C "
                 f"({(enso.get('clase_costera') or '').lower()}).")

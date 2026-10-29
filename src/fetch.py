@@ -91,6 +91,7 @@ def fetch_ensemble(model_ids: list[str]):
             "models": mid,
             "timezone": C.TZ,
             "forecast_days": C.FORECAST_DAYS,
+            "past_days": 1,  # para tener las primeras horas de hoy
         }
         try:
             data = _as_list(_get("https://ensemble-api.open-meteo.com/v1/ensemble", params))

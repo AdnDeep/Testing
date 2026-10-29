@@ -232,7 +232,8 @@ def dibujar(res: dict, meta: dict, ruta_png: str):
 
     # ---------------- columna derecha: leyenda + zonas
     _leyenda(fig, hay_lluvia)
-    y = 0.69
+    _caja_marea(fig, res)
+    y = 0.612
     for z in ("norte", "centro", "sur"):
         y = _tarjeta_zona(fig, res["zonas"][z], y)
 
@@ -247,7 +248,7 @@ def dibujar(res: dict, meta: dict, ruta_png: str):
 
 
 def _leyenda(fig, hay_lluvia):
-    ax = fig.add_axes([0.66, 0.70, 0.32, 0.20])
+    ax = fig.add_axes([0.66, 0.735, 0.32, 0.165])
     ax.axis("off")
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
@@ -268,7 +269,7 @@ def _leyenda(fig, hay_lluvia):
 
 
 def _tarjeta_zona(fig, z: dict, y_top: float) -> float:
-    alto = 0.193
+    alto = 0.172
     ax = fig.add_axes([0.66, y_top - alto, 0.32, alto])
     ax.axis("off")
     ax.set_xlim(0, 1)
@@ -280,16 +281,37 @@ def _tarjeta_zona(fig, z: dict, y_top: float) -> float:
     tot = sum(d["lluvia_mm"] or 0 for d in dias)
     riesgo = max((d["riesgo_inundacion"] for d in dias), key=C.NIVELES_RIESGO.index) if dias else "Bajo"
     ax.text(0.95, 0.92, f"{tot:.0f} mm", fontsize=13, fontweight="bold", color="#C4141E", va="top", ha="right")
-    yy = 0.74
+    yy = 0.73
     for linea in _texto_zona(z):
         ax.text(0.05, yy, linea, fontsize=9, color=INK, va="top")
-        yy -= 0.105
+        yy -= 0.115
     intens = [d["intensidad_max_mmh"] for d in dias if d["intensidad_max_mmh"] is not None]
     if intens:
         ax.text(0.05, yy, f"Intensidad máx.: {max(intens):.1f} mm/h", fontsize=9, color=MUTED, va="top")
     col = NIVEL_COLOR.get(riesgo, ("#9AA5AF", 1))[0]
-    ax.add_patch(FancyBboxPatch((0.05, 0.10), 0.9, 0.15, boxstyle="round,pad=0,rounding_size=0.04",
+    ax.add_patch(FancyBboxPatch((0.05, 0.08), 0.9, 0.15, boxstyle="round,pad=0,rounding_size=0.04",
                                 fc=matplotlib.colors.to_rgba(col, 0.35 if riesgo != "Bajo" else 0.18), ec="none"))
-    ax.text(0.08, 0.175, f"Anegamiento: {riesgo}", fontsize=9.5, fontweight="bold",
+    ax.text(0.08, 0.155, f"Anegamiento: {riesgo}", fontsize=9.5, fontweight="bold",
             color="#0B2A5C" if riesgo != "Bajo" else MUTED, va="center")
-    return y_top - alto - 0.01
+    return y_top - alto - 0.008
+
+
+def _caja_marea(fig, res: dict):
+    """Pleamares de hoy, mañana y pasado mañana (INOCAR)."""
+    ax = fig.add_axes([0.66, 0.622, 0.32, 0.105])
+    ax.axis("off")
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.text(0, 0.97, "Pleamares del río Guayas (INOCAR)", fontsize=10, fontweight="bold", color=INK, va="top")
+    dias = res["dias"][:C.MAP_DAYS]
+    yy = 0.70
+    for d, nombre in zip(dias, ["Hoy", "Mañana", "Pasado"]):
+        ples = [m for m in res.get("mareas", []) if m["fecha"] == d["fecha"] and m["tipo"] == "pleamar"]
+        txt = "  ·  ".join(f"{m['hora']} {m['altura']:.2f} m" + ("*" if m["clase"] != "normal" else "")
+                           for m in ples) or "–"
+        ax.text(0, yy, f"{nombre}:", fontsize=8.8, color=MUTED, va="top")
+        ax.text(0.2, yy, txt, fontsize=8.8, color=INK, va="top", fontweight="bold")
+        yy -= 0.24
+    if any(m["clase"] != "normal" for m in res.get("mareas", []) if m["tipo"] == "pleamar"):
+        ax.text(0, 0.0, "* pleamar alta: el agua de las calles bajas no sale al río", fontsize=7.5, color=MUTED,
+                va="bottom")

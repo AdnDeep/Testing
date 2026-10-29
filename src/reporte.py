@@ -90,7 +90,10 @@ def _tabla_zona(z):
         pr = d["p10_p50_p90"]
         ens = f"{pr[0]:.0f}–{pr[2]:.0f}" if pr else "–"
         etiqueta = d["etiqueta"] + (" <small>(resto del día)</small>" if d["parcial"] else "")
-        marea = ' <span class="tide" title="Mareas de sicigia">aguaje</span>' if d["aguaje"] else ""
+        pm = d.get("pleamar_max_m")
+        clase_pm = next((p["clase"] for p in d.get("pleamares", []) if p["altura"] == pm), "normal")
+        marea = (f' <span class="tide" title="Pleamar {E(clase_pm)}">pleamar {pm:.1f} m</span>'
+                 if pm is not None and clase_pm != "normal" else "")
         filas.append(
             "<tr>"
             f"<th scope=\"row\">{etiqueta}{marea}</th>"
@@ -102,6 +105,7 @@ def _tabla_zona(z):
             f"<td class=\"num\">{_pct(d['prob_10mm'])}</td>"
             f"<td class=\"num\">{_pct(d['prob_25mm'])}</td>"
             f"<td class=\"num\">{_mm(d['intensidad_max_mmh'])}</td>"
+            f"<td class=\"num\">{_mm(d.get('pleamar_max_m'), 2)}</td>"
             f"<td>{_chip_riesgo(d['riesgo_inundacion'])}</td>"
             "</tr>")
     return (
@@ -109,7 +113,8 @@ def _tabla_zona(z):
         "<thead><tr><th scope=\"col\">Día</th><th scope=\"col\">Lluvia (mm)</th><th scope=\"col\">Tipo</th>"
         "<th scope=\"col\">Rango modelos</th><th scope=\"col\">Ensamble P10–P90</th>"
         "<th scope=\"col\">Prob. ≥1 mm</th><th scope=\"col\">≥10 mm</th><th scope=\"col\">≥25 mm</th>"
-        "<th scope=\"col\">Intens. máx. (mm/h)</th><th scope=\"col\">Anegamiento</th></tr></thead>"
+        "<th scope=\"col\">Intens. máx. (mm/h)</th><th scope=\"col\">Pleamar máx. (m)</th>"
+        "<th scope=\"col\">Anegamiento</th></tr></thead>"
         f"<tbody>{''.join(filas)}</tbody></table></div>")
 
 
@@ -131,8 +136,10 @@ def _sparkline(serie):
             f'<circle cx="{xs[-1]:.1f}" cy="{ys[-1]:.1f}" r="3.5" class="spark-dot"/></svg>')
 
 
-def construir_html(res, meta, enso, estacional, fuentes, png_bytes) -> str:
+def construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes=None) -> str:
     img64 = base64.b64encode(png_bytes).decode()
+    hoy_html = _seccion_hoy(res, hoy_bytes)
+    mareas_html = _seccion_mareas(res)
     zonas_html = []
     for zid in ("norte", "centro", "sur"):
         z = res["zonas"][zid]
@@ -252,6 +259,8 @@ def construir_html(res, meta, enso, estacional, fuentes, png_bytes) -> str:
     con posible anegamiento de calles. Círculos grises: puntos críticos vigilados sin riesgo previsto.</figcaption>
   </figure>
 
+  {hoy_html}
+
   <div class="zones">{''.join(zonas_html)}</div>
 
   <section class="panel" aria-labelledby="h-pts">
@@ -259,6 +268,7 @@ def construir_html(res, meta, enso, estacional, fuentes, png_bytes) -> str:
     {puntos_html}
   </section>
 
+  {mareas_html}
   {enso_html}
   {est_html}
 
@@ -268,17 +278,87 @@ def construir_html(res, meta, enso, estacional, fuentes, png_bytes) -> str:
     corrida. Las medias de los ensambles GEFS y GEPS pesan 1,5 y cada modelo determinista pesa 1, porque a partir del segundo
     día la media de un ensamble acierta más que una corrida única. Las probabilidades salen de contar cuántos de los
     {meta['miembros_total']} miembros de los ensambles superan cada umbral. La intensidad máxima horaria viene de GFS y GEM.</p>
-    <p>El riesgo de anegamiento cruza el nivel de lluvia (total diario e intensidad horaria) con la susceptibilidad de cada
-    sector, y sube un nivel cuando coinciden agravantes: aguaje, suelo saturado (más de 30 mm en 72 h) o un El Niño costero
-    moderado o mayor. Los modelos globales tienen entre 13 y 28 km de resolución: distinguen el norte del sur de la
-    ciudad, pero no una calle de otra.</p>
+    <p>El riesgo de anegamiento se calcula hora por hora en 28 sectores. Cruza la lluvia de las últimas 3 horas y la
+    intensidad con la susceptibilidad de cada sector, y sube un nivel cuando coinciden agravantes: marea alta en el río
+    (en los sectores que desaguan al Guayas o al Estero Salado), suelo saturado (más de 30 mm en 72 h) o un El Niño costero
+    moderado o mayor. El riesgo del día es el peor de sus horas. Los modelos globales tienen entre 13 y 28 km de
+    resolución: distinguen el norte del sur de la ciudad, pero no una calle de otra.</p>
+    <p>La marea se calcula con las 68 constantes armónicas oficiales de INOCAR para Guayaquil-Río. Las horas coinciden
+    con las pleamares que publica INOCAR y las alturas están en su misma escala. Es la marea astronómica: no incluye el
+    caudal del río ni la sobreelevación del mar por El Niño, que pueden sumar varios centímetros.</p>
     <h3>Fuentes de esta corrida</h3>
     <ul class="sources">{fuentes_li}</ul>
     <p class="fine">Orientativo y automático. Para alertas oficiales: INAMHI (inamhi.gob.ec) y Secretaría Nacional de
-    Gestión de Riesgos (gestionderiesgos.gob.ec). Mapa base © OpenStreetMap contributors © CARTO.</p>
+    Gestión de Riesgos (gestionderiesgos.gob.ec). Mapa base © OpenStreetMap contributors.</p>
   </section>
 </div>
 """
+
+
+def _seccion_hoy(res, hoy_bytes) -> str:
+    hoy = res.get("hoy") or {}
+    horas = hoy.get("horas") or []
+    if not horas:
+        return ""
+    img = ""
+    if hoy_bytes:
+        img = ('<figure class="chart"><img src="data:image/png;base64,' + base64.b64encode(hoy_bytes).decode() +
+               '" alt="Gráfico de hoy hora por hora: marea del río Guayas y lluvia por zona con riesgo de anegamiento">'
+               '<figcaption>Barras rojas: lluvia por hora (más claras: horas que ya pasaron, estimadas por los modelos). '
+               'Franjas celestes: marea alta en el río. Franja azul bajo cada zona: riesgo de anegamiento.</figcaption>'
+               '</figure>')
+    resumen = "".join(
+        f'<div class="today-zone"><h3>{E(C.ZONES[z]["nombre"])}</h3><p>{E(hoy["resumen"].get(z) or "")}</p></div>'
+        for z in ("norte", "centro", "sur"))
+    filas = []
+    for h in horas:
+        clase = "now" if h["actual"] else ("past" if h["pasada"] else "")
+        est = {"sube": "↑ sube", "baja": "↓ baja", "pleamar": "pleamar", "bajamar": "bajamar"}.get(h["marea_estado"], "")
+        marea_cls = ["", " tide-mid", " tide-high"][h["marea_clase"]]
+        celdas = [f'<th scope="row">{h["hora"]}{" <small>ahora</small>" if h["actual"] else ""}</th>',
+                  f'<td class="num{marea_cls}">{_mm(h["marea_m"], 2)}</td><td class="state">{est}</td>']
+        for z in ("norte", "centro", "sur"):
+            d = h["zonas"][z]
+            celdas.append(f'<td class="num">{_mm(d["lluvia_mm"])}</td><td class="num">{_pct(d["prob"])}</td>'
+                          f'<td>{_chip_riesgo(d["riesgo"])}</td>')
+        filas.append(f'<tr class="{clase}">{"".join(celdas)}</tr>')
+    cab = ('<thead><tr><th scope="col" rowspan="2">Hora</th><th scope="colgroup" colspan="2">Marea</th>'
+           '<th scope="colgroup" colspan="3">Norte</th><th scope="colgroup" colspan="3">Centro</th>'
+           '<th scope="colgroup" colspan="3">Sur</th></tr><tr><th scope="col">m</th><th scope="col">estado</th>'
+           + '<th scope="col">mm</th><th scope="col">prob.</th><th scope="col">anegamiento</th>' * 3 + '</tr></thead>')
+    return f"""
+  <section class="panel today" aria-labelledby="h-hoy">
+    <h2 id="h-hoy">Hoy, {E(hoy['etiqueta'])}, hora por hora</h2>
+    <div class="today-grid">{resumen}</div>
+    {img}
+    <div class="table-wrap"><table class="hourly">{cab}<tbody>{''.join(filas)}</tbody></table></div>
+    <p class="note">La probabilidad es la proporción de los miembros de los ensambles GEFS y GEPS con al menos 0,5 mm
+    entre la hora anterior y la siguiente. Las horas que ya pasaron son estimaciones de los modelos, no mediciones.</p>
+  </section>"""
+
+
+def _seccion_mareas(res) -> str:
+    mareas = res.get("mareas") or []
+    if not mareas:
+        return ""
+    u = res.get("marea_umbrales") or {}
+    filas = "".join(
+        f'<tr class="{"past" if m["pasada"] else ""}"><th scope="row">{E(m["etiqueta"])}</th>'
+        f'<td>{"Pleamar" if m["tipo"] == "pleamar" else "Bajamar"}</td><td class="num">{m["hora"]}</td>'
+        f'<td class="num strong">{m["altura"]:.2f}</td>'
+        f'<td>{E(m["clase"]) if m["tipo"] == "pleamar" else ""}</td></tr>'
+        for m in mareas)
+    return f"""
+  <section class="panel" aria-labelledby="h-mar">
+    <h2 id="h-mar">Mareas del río Guayas</h2>
+    <p>En pleamar el nivel del río y del Estero Salado sube por encima de muchas salidas de drenaje: el agua de lluvia no
+    puede salir y se acumula en las calles bajas. Desde unos {u.get('lento', 3.6):.1f} m el desagüe se vuelve lento y desde
+    {u.get('bloqueo', 4.3):.1f} m queda prácticamente bloqueado en el Sur, el Suburbio y las orillas. Con
+    {u.get('desborde', 4.8):.1f} m o más, la marea por sí sola puede anegar las orillas más bajas.</p>
+    <div class="table-wrap"><table><thead><tr><th scope="col">Día</th><th scope="col">Marea</th><th scope="col">Hora</th>
+    <th scope="col">Altura (m)</th><th scope="col">Pleamar</th></tr></thead><tbody>{filas}</tbody></table></div>
+    <p class="note">{E(res.get('marea_fuente') or '')}.</p>
+  </section>"""
 
 
 CSS = r"""
@@ -374,6 +454,23 @@ blockquote cite { display: block; font-style: normal; color: var(--muted); font-
 .ok-si { color: #2E8B57; font-weight: 700; }
 .ok-no { color: var(--rain); font-weight: 700; }
 .fine { color: var(--muted); font-size: 0.82rem; }
+.today-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
+.today-zone { display: grid; gap: 4px; align-content: start; padding: 12px 14px; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 6px; min-width: 0; }
+.today-zone h3 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0; }
+.today-zone p { font-size: 0.92rem; }
+.chart { margin: 0; display: grid; gap: 8px; }
+.chart img { width: 100%; max-width: 900px; height: auto; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.chart figcaption { color: var(--muted); font-size: 0.85rem; max-width: 900px; }
+table.hourly th, table.hourly td { padding: 6px 8px; }
+table.hourly thead tr:first-child th { text-align: center; }
+tr.past th, tr.past td { color: var(--muted); }
+tr.past .chip { opacity: 0.6; }
+tr.now th, tr.now td { background: var(--rain-soft); }
+tr.now th { box-shadow: inset 3px 0 0 var(--rain); }
+td.state { color: var(--muted); font-size: 0.8rem; }
+td.tide-mid { color: var(--flood); font-weight: 500; }
+td.tide-high { color: var(--flood-deep); font-weight: 700; }
 @media (min-width: 900px) {
   .zone { grid-template-columns: minmax(0, 1fr); }
 }
@@ -382,6 +479,25 @@ blockquote cite { display: block; font-style: normal; color: var(--muted); font-
 
 def construir_md(res, meta, enso) -> str:
     lineas = [f"# Lluvias Guayaquil — {meta['emitido_texto']}", "", meta["titular"], ""]
+    hoy = res.get("hoy") or {}
+    if hoy.get("horas"):
+        lineas.append(f"## Hoy, {hoy['etiqueta']}, hora por hora")
+        for z in ("norte", "centro", "sur"):
+            lineas.append(f"- **{C.ZONES[z]['nombre']}:** {hoy['resumen'].get(z, '')}")
+        lineas.append("")
+        lineas.append("| Hora | Marea (m) | Norte mm · aneg. | Centro mm · aneg. | Sur mm · aneg. |")
+        lineas.append("|---|---|---|---|---|")
+        for h in hoy["horas"]:
+            marca = " (ahora)" if h["actual"] else (" (pasó)" if h["pasada"] else "")
+            celdas = [f"{_mm(h['zonas'][z]['lluvia_mm'])} · {h['zonas'][z]['riesgo']}" for z in ("norte", "centro", "sur")]
+            lineas.append(f"| {h['hora']}{marca} | {_mm(h['marea_m'], 2)} {h['marea_estado']} | " + " | ".join(celdas) + " |")
+        lineas.append("")
+    if res.get("mareas"):
+        lineas.append("## Mareas (INOCAR)")
+        for m in res["mareas"]:
+            if m["tipo"] == "pleamar":
+                lineas.append(f"- Pleamar {m['etiqueta']} {m['hora']}: {m['altura']:.2f} m ({m['clase']})")
+        lineas.append("")
     for zid in ("norte", "centro", "sur"):
         z = res["zonas"][zid]
         lineas.append(f"## {z['nombre']}")
