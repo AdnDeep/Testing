@@ -1,7 +1,6 @@
 """Punto de entrada: python -m src.run  → output/latest/{mapa.png, reporte.html, reporte.md, reporte.json}"""
 from __future__ import annotations
 
-import json
 import os
 import sys
 import time
@@ -27,6 +26,8 @@ def corrida(dataset: str, tz) -> str | None:
     try:
         meta = F._get(f"https://api.open-meteo.com/data/{dataset}/static/meta.json", intentos=1, timeout=20)
         t = datetime.fromtimestamp(meta["last_run_initialisation_time"], tz=timezone.utc)
+        if (datetime.now(timezone.utc) - t).total_seconds() > 2 * 86400:
+            return None  # metadato desactualizado: no mostrarlo
         return t.strftime("%d/%m %H UTC")
     except Exception:
         return None
@@ -40,7 +41,16 @@ def main() -> int:
 
     for m in C.DET_MODELS:
         try:
-            times, arr = F.fetch_deterministic(m["id"])
+            times, arr = None, None
+            errores = []
+            for mid in [m["id"], *m.get("alt_ids", [])]:
+                try:
+                    times, arr = F.fetch_deterministic(mid)
+                    break
+                except F.FuenteNoDisponible as e:
+                    errores.append(f"{mid}: {e}")
+            if arr is None:
+                raise F.FuenteNoDisponible(" | ".join(errores))
             if base_times is None:
                 base_times = times
             det[m["id"]] = A.alinear(base_times, times, arr)
@@ -107,8 +117,9 @@ def main() -> int:
     # ---- Estacional CFSv2
     estacional = None
     try:
-        fechas, miembros = F.fetch_seasonal(C.SEASONAL_MODEL["id"], *CENTRO)
+        usado, fechas, miembros = F.fetch_seasonal([C.SEASONAL_MODEL["id"], *C.SEASONAL_MODEL["alt_ids"]], *CENTRO)
         estacional = A.perspectiva_estacional(fechas, miembros, clim, ahora)
+        print(f"[ok] estacional con {usado}: {miembros.shape[0]} miembros")
         print(f"[ok] CFSv2: {estacional}")
     except Exception as e:
         print(f"[--] CFSv2: {e}")
@@ -166,7 +177,7 @@ def titular(res, enso) -> str:
     peor = max(riesgos, key=lambda z: C.NIVELES_RIESGO.index(riesgos[z]))
     if riesgos[peor] != "Bajo":
         zonas_r = [nombres[z] for z in riesgos if riesgos[z] == riesgos[peor]]
-        txt += f" Riesgo de anegamiento {riesgos[peor].lower()} en {' y '.join(zonas_r)}."
+        txt += f" Riesgo de anegamiento {riesgos[peor].lower()} en {R._lista(zonas_r)}."
     else:
         txt += " Riesgo de anegamiento de calles bajo en toda la ciudad."
     if enso and enso.get("semanal"):

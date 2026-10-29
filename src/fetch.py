@@ -1,6 +1,7 @@
 """Descarga de datos: Open-Meteo (modelos NOAA/ECCC), NOAA CPC (ENSO), NASA POWER."""
 from __future__ import annotations
 
+import html as _html
 import re
 import time
 from datetime import date, timedelta
@@ -110,28 +111,39 @@ def fetch_ensemble(model_ids: list[str]):
     raise FuenteNoDisponible("; ".join(errores))
 
 
-def fetch_seasonal(model_id: str, lon: float, lat: float):
-    """Pronóstico estacional diario (miembros). Devuelve (dates, array[nmiembros, ndias])."""
-    base = {"latitude": f"{lat:.3f}", "longitude": f"{lon:.3f}", "timezone": C.TZ, "models": model_id}
-    intentos = [
-        {**base, "daily": "precipitation_sum", "forecast_days": 183},
-        {**base, "daily": "precipitation_sum"},
-    ]
+def fetch_seasonal(model_ids: list[str], lon: float, lat: float):
+    """Pronóstico estacional diario (miembros). Devuelve (id, dates, array[nmiembros, ndias])."""
     errores = []
-    for params in intentos:
-        try:
-            data = _get("https://seasonal-api.open-meteo.com/v1/seasonal", params)
-        except FuenteNoDisponible as e:
-            errores.append(str(e))
-            continue
-        d = data.get("daily") or {}
-        keys = sorted(k for k in d if k.startswith("precipitation_sum"))
-        if not keys:
-            errores.append("respuesta sin precipitation_sum")
-            continue
-        arr = np.vstack([_to_array(d[k]) for k in keys])
-        return d["time"], arr
-    raise FuenteNoDisponible("; ".join(errores))
+    for mid in model_ids:
+        base = {"latitude": f"{lat:.3f}", "longitude": f"{lon:.3f}", "timezone": C.TZ, "models": mid}
+        for extra in ({"daily": "precipitation_sum", "forecast_days": 183}, {"daily": "precipitation_sum"},
+                      {"six_hourly": "precipitation", "forecast_days": 183}):
+            params = {**base, **extra}
+            try:
+                data = _get("https://seasonal-api.open-meteo.com/v1/seasonal", params, intentos=2)
+            except FuenteNoDisponible as e:
+                errores.append(f"{mid} {list(extra)}: {e}")
+                continue
+            bloque = "daily" if "daily" in extra else "six_hourly"
+            d = data.get(bloque) or {}
+            keys = sorted(k for k in d if k.startswith("precipitation"))
+            if not keys:
+                errores.append(f"{mid} {list(extra)}: respuesta sin precipitación ({list(data)[:8]})")
+                continue
+            arr = np.vstack([_to_array(d[k]) for k in keys])
+            times = d["time"]
+            if bloque == "six_hourly":  # agregar a días locales
+                dias = sorted({t[:10] for t in times})
+                pos = {f: i for i, f in enumerate(dias)}
+                diario = np.zeros((arr.shape[0], len(dias)))
+                for j, t in enumerate(times):
+                    diario[:, pos[t[:10]]] += np.nan_to_num(arr[:, j])
+                arr, times = diario, dias
+            if np.all(np.isnan(arr)):
+                errores.append(f"{mid}: sin datos")
+                continue
+            return mid, times, arr
+    raise FuenteNoDisponible(" | ".join(errores))
 
 
 # ---------------------------------------------------------------- NASA POWER
@@ -200,8 +212,8 @@ def fetch_cpc_discusion():
     """Estado del Sistema de Alerta ENSO y sinopsis de la discusión mensual de NOAA CPC."""
     html = _get("https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
                 as_json=False)
-    texto = re.sub(r"<[^>]+>", " ", html)
-    texto = re.sub(r"&nbsp;|\s+", " ", texto)
+    texto = _html.unescape(re.sub(r"<[^>]+>", " ", html))
+    texto = re.sub(r"\s+", " ", texto)
     estado = re.search(r"ENSO Alert System Status:\s*([^.]+?)(?:\s{2,}|Synopsis|$)", texto)
     sinopsis = re.search(r"Synopsis:\s*(.{20,500}?\.)(?=\s+[A-Z]|\s*$)", texto)
     fecha = re.search(r"issued by\s+CLIMATE PREDICTION CENTER.*?(\d{1,2} [A-Z][a-z]+ \d{4})", texto)

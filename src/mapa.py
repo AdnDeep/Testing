@@ -2,7 +2,9 @@
 from __future__ import annotations
 
 import io
+import json
 import math
+import os
 import textwrap
 
 import matplotlib
@@ -21,10 +23,13 @@ from .fetch import SESSION
 
 R = 6378137.0
 ZOOM = 13
-TILE_URLS = [
-    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png",
-    "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-]
+# Teselas de OpenStreetMap. Se descargan una sola vez y se guardan en assets/ para respetar la
+# política de uso de OSM (nada de descargas repetidas).
+TILE_URL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+ASSETS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets")
+BASE_PNG = os.path.join(ASSETS, f"mapa_base_z{ZOOM}.png")
+BASE_JSON = os.path.join(ASSETS, f"mapa_base_z{ZOOM}.json")
+ATRIBUCION = "Mapa base © OpenStreetMap contributors"
 
 NIVEL_COLOR = {
     "Moderado": ("#6FA8E8", 0.88),
@@ -33,7 +38,7 @@ NIVEL_COLOR = {
 }
 LLUVIA_NIVELES = [1, 5, 10, 25, 50, 100, 200, 10000]
 LLUVIA_COLORES = ["#FFC9C9", "#FF9C9C", "#FF6B6B", "#E8383D", "#C4141E", "#900C15", "#5E0610"]
-LLUVIA_ALFA = [0.30, 0.38, 0.45, 0.52, 0.58, 0.64, 0.70]
+LLUVIA_ALFA = [0.20, 0.26, 0.32, 0.38, 0.44, 0.50, 0.56]
 
 INK = "#17222D"
 MUTED = "#5B6875"
@@ -63,32 +68,45 @@ def _tile_bounds_merc(x, y, z):
 
 
 def mapa_base():
-    """Descarga y une teselas del mapa base. Devuelve (imagen, extent_merc, atribución) o None."""
+    """Mapa base aclarado (OSM). Devuelve (imagen, extent_merc, atribución) o None."""
+    from PIL import ImageEnhance
+
+    if os.path.exists(BASE_PNG) and os.path.exists(BASE_JSON):
+        with open(BASE_JSON) as fh:
+            ext = tuple(json.load(fh)["extent_merc"])
+        return np.asarray(Image.open(BASE_PNG).convert("RGB")), ext, ATRIBUCION
+
     e = C.EXTENT
     xa, ya = _tile_xy(e["lon_min"], e["lat_max"], ZOOM)
     xb, yb = _tile_xy(e["lon_max"], e["lat_min"], ZOOM)
     xs = range(int(xa), int(xb) + 1)
     ys = range(int(ya), int(yb) + 1)
-    for plantilla in TILE_URLS:
-        try:
-            tiles = {}
-            for x in xs:
-                for y in ys:
-                    url = plantilla.format(s="abcd"[(x + y) % 4], z=ZOOM, x=x, y=y)
-                    r = SESSION.get(url, timeout=30)
-                    r.raise_for_status()
-                    tiles[(x, y)] = Image.open(io.BytesIO(r.content)).convert("RGB")
-            tw, th = next(iter(tiles.values())).size
-            mosaico = Image.new("RGB", (tw * len(xs), th * len(ys)))
-            for (x, y), im in tiles.items():
-                mosaico.paste(im, ((x - xs[0]) * tw, (y - ys[0]) * th))
-            x0, _, _, y1 = _tile_bounds_merc(xs[0], ys[0], ZOOM)
-            _, x1, y0, _ = _tile_bounds_merc(xs[-1], ys[-1], ZOOM)
-            atrib = "© OpenStreetMap contributors © CARTO" if "carto" in plantilla else "© OpenStreetMap contributors"
-            return np.asarray(mosaico), (x0, x1, y0, y1), atrib
-        except Exception as ex:  # probar la siguiente fuente de teselas
-            print(f"[mapa] teselas no disponibles desde {plantilla.split('/')[2]}: {ex}")
-    return None
+    try:
+        tiles = {}
+        for x in xs:
+            for y in ys:
+                r = SESSION.get(TILE_URL.format(z=ZOOM, x=x, y=y), timeout=30)
+                r.raise_for_status()
+                tiles[(x, y)] = Image.open(io.BytesIO(r.content)).convert("RGB")
+        tw, th = next(iter(tiles.values())).size
+        mosaico = Image.new("RGB", (tw * len(xs), th * len(ys)))
+        for (x, y), im in tiles.items():
+            mosaico.paste(im, ((x - xs[0]) * tw, (y - ys[0]) * th))
+        # Aclarar y quitar saturación para que el rojo y el azul se lean encima
+        mosaico = ImageEnhance.Color(mosaico).enhance(0.22)
+        mosaico = ImageEnhance.Contrast(mosaico).enhance(0.9)
+        mosaico = ImageEnhance.Brightness(mosaico).enhance(1.06)
+        x0, _, _, y1 = _tile_bounds_merc(xs[0], ys[0], ZOOM)
+        _, x1, y0, _ = _tile_bounds_merc(xs[-1], ys[-1], ZOOM)
+        os.makedirs(ASSETS, exist_ok=True)
+        mosaico.save(BASE_PNG, optimize=True)
+        with open(BASE_JSON, "w") as fh:
+            json.dump({"extent_merc": [x0, x1, y0, y1], "zoom": ZOOM, "fuente": TILE_URL,
+                       "atribucion": ATRIBUCION}, fh)
+        return np.asarray(mosaico), (x0, x1, y0, y1), ATRIBUCION
+    except Exception as ex:
+        print(f"[mapa] mapa base no disponible: {ex}")
+        return None
 
 
 def _campo_fino(campo: np.ndarray, n=260):
@@ -156,7 +174,10 @@ def dibujar(res: dict, meta: dict, ruta_png: str):
         cmap = ListedColormap(rgba)
         norm = BoundaryNorm(LLUVIA_NIVELES, cmap.N)
         ax.contourf(X, Y, val, levels=LLUVIA_NIVELES, cmap=cmap, norm=norm, zorder=2, antialiased=True)
-        ax.contour(X, Y, val, levels=[1, 10, 25, 50], colors=["#C4141E"], linewidths=0.6, alpha=0.55, zorder=2)
+        lineas = [v for v in (5, 10, 25, 50, 75, 100, 150, 200) if val.min() < v < val.max()]
+        if lineas:
+            cs = ax.contour(X, Y, val, levels=lineas, colors=["#9E0F18"], linewidths=0.8, alpha=0.75, zorder=3)
+            ax.clabel(cs, fmt="%d mm", fontsize=8, inline=True, colors="#7A0A12")
     else:
         bx, by = merc(-79.94, -2.300)
         ax.text(bx, by, "Sin lluvia ≥ 1 mm prevista en la ciudad\nen este periodo",

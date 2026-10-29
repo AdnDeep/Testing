@@ -79,7 +79,7 @@ HOTSPOTS = [
 # peso: contribución al promedio ponderado.
 DET_MODELS = [
     {"id": "gfs_seamless", "nombre": "NOAA GFS 0,25°", "centro": "NOAA/NCEP (EE. UU.)", "peso": 1.0, "intensidad": True},
-    {"id": "gfs_graphcast025", "nombre": "NOAA GraphCast-GFS (IA)", "centro": "NOAA/NCEP (EE. UU.)", "peso": 1.0, "intensidad": False},
+    {"id": "gfs_graphcast025", "alt_ids": ["ncep_gfs_graphcast025"], "nombre": "NOAA GraphCast-GFS (IA)", "centro": "NOAA/NCEP (EE. UU.)", "peso": 1.0, "intensidad": False},
     {"id": "ncep_aigfs025", "nombre": "NOAA AIGFS (IA)", "centro": "NOAA/NCEP (EE. UU.)", "peso": 1.0, "intensidad": False},
     {"id": "gem_global", "nombre": "ECCC GEM Global", "centro": "Environment and Climate Change Canada", "peso": 1.0, "intensidad": True},
 ]
@@ -91,7 +91,7 @@ ENS_MODELS = [
     {"id": "gem_global", "alt_ids": [], "nombre": "ECCC GEPS (ensamble)", "centro": "Environment and Climate Change Canada", "peso": 1.5},
 ]
 
-SEASONAL_MODEL = {"id": "cfsv2", "nombre": "NOAA CFSv2 (estacional)", "centro": "NOAA/NCEP (EE. UU.)"}
+SEASONAL_MODEL = {"id": "cfsv2", "alt_ids": ["ncep_cfsv2", "cfsv2_seamless"], "nombre": "NOAA CFSv2 (estacional)", "centro": "NOAA/NCEP (EE. UU.)"}
 
 FORECAST_DAYS = 8      # hoy + 7 días
 PAST_DAYS = 3          # para lluvia antecedente (suelo saturado)

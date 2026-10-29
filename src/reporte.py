@@ -37,7 +37,7 @@ def _signed(v, dec=1):
     return "–" if v is None else f"{v:+.{dec}f}"
 
 
-def resumen_zona(z: dict) -> str:
+def resumen_zona(z: dict, zid: str | None = None, puntos: list | None = None) -> str:
     dias = z["dias"][:C.MAP_DAYS]
     if not dias:
         return "Sin datos de pronóstico."
@@ -53,12 +53,23 @@ def resumen_zona(z: dict) -> str:
         txt = (f"{total:.1f} mm esperados en total hasta el {hasta}. "
                f"El día más lluvioso sería el {pico['etiqueta']}: {pico['lluvia_mm']:.1f} mm "
                f"({pico['categoria'].lower()}, probabilidad de lluvia {_pct(pico['prob_1mm'])}).")
-    if riesgo != "Bajo":
-        pts = sorted({p for d in dias for p in d["puntos_en_riesgo"]})
-        txt += f" Riesgo de anegamiento {riesgo.lower()} en: {', '.join(pts)}."
+    if riesgo != "Bajo" and puntos:
+        grupos = []
+        for nivel in ("Muy alto", "Alto", "Moderado"):
+            nombres = sorted(p["nombre"] for p in puntos if p["zona"] == zid and p["nivel_mapa"] == nivel)
+            if nombres:
+                grupos.append(f"{nivel.lower()} en {_lista(nombres)}")
+        txt += " Riesgo de anegamiento " + "; ".join(grupos) + "."
+    elif riesgo != "Bajo":
+        txt += f" Riesgo de anegamiento {riesgo.lower()}."
     else:
         txt += " Riesgo de anegamiento de calles: bajo."
     return txt
+
+
+def _lista(items):
+    items = list(items)
+    return items[0] if len(items) == 1 else ", ".join(items[:-1]) + " y " + items[-1]
 
 
 def _chip_lluvia(cat):
@@ -141,8 +152,8 @@ def construir_html(res, meta, enso, estacional, fuentes, png_bytes) -> str:
     </div>
   </div>
   <p class="sectors">{E(z['sectores'])}</p>
-  <p class="summary">{E(resumen_zona(z))}</p>
-  <p class="note">Lluvia de las últimas 72 h (modelos): {_mm(ante)} mm{' · suelo probablemente saturado' if ante and ante >= 30 else ''}</p>
+  <p class="summary">{E(resumen_zona(z, zid, res["puntos"]))}</p>
+  <p class="note">Lluvia de las últimas 72 h según los modelos: {_mm(ante)} mm{' · suelo probablemente saturado' if ante and ante >= 30 else ''}</p>
   {_tabla_zona(z)}
 </section>""")
 
@@ -372,7 +383,7 @@ def construir_md(res, meta, enso) -> str:
     for zid in ("norte", "centro", "sur"):
         z = res["zonas"][zid]
         lineas.append(f"## {z['nombre']}")
-        lineas.append(resumen_zona(z))
+        lineas.append(resumen_zona(z, zid, res["puntos"]))
         lineas.append("")
         lineas.append("| Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |")
         lineas.append("|---|---|---|---|---|---|")

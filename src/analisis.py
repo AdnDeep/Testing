@@ -273,6 +273,8 @@ def nivel_riesgo(mm_dia, mm_hora, sus, aguaje, suelo_saturado, enso_calido):
                                 ("El Niño costero", enso_calido)) if ok]
     sube = nl >= 1 and (len(factores) >= 2 or (factores and nl >= 2))
     nivel = min(base + (1 if sube else 0), 3)
+    if nivel == 3 and nl < 3 and not (nl == 2 and sus == 3 and len(factores) >= 2):
+        nivel = 2
     motivo = f"lluvia nivel {nl}/4, susceptibilidad {sus}/3"
     if sube:
         motivo += " + " + ", ".join(factores)
