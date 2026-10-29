@@ -193,7 +193,11 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
     else:
         nivel_m = np.full(nT, np.nan)
         extremos = []
-    clase_m = np.array([MR.clase_nivel(v) if not math.isnan(v) else 0 for v in nivel_m])
+    # El Niño eleva el nivel medio del mar frente a Ecuador; se suma al nivel astronómico para el riesgo.
+    icen = (enso or {}).get("icen_aprox")
+    sobre_m = 0.20 if icen is not None and icen >= 1.7 else (0.10 if icen is not None and icen >= 1.0 else 0.0)
+    nivel_ef = nivel_m + sobre_m
+    clase_m = np.array([MR.clase_nivel(v) if not math.isnan(v) else 0 for v in nivel_ef])
 
     def pleamares_de(fecha):
         return [e for e in extremos if e["tipo"] == "pleamar" and e["hora"].date() == fecha.date()]
@@ -292,7 +296,7 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
             if math.isnan(r3[i]):
                 continue
             niv_h[i], mot_h[i] = nivel_riesgo_horario(r3[i], inten_h[i], h["sus"], h["marea"], int(clase_m[i]),
-                                                      nivel_m[i], sat, enso_factor)
+                                                      nivel_ef[i], sat)
         riesgo_hora[h["nombre"]] = niv_h
         dias_h = []
         for di, dia in enumerate(dias):
@@ -300,8 +304,8 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
             inten = float(sum(wi * intens_pt[di, pi] for pi, wi in w)) if intensidad_ok else 0.0
             fila_z = z["dias"][di]
             marea_alta = (h["marea"] >= 1 and fila_z["pleamar_max_m"] is not None
-                          and fila_z["pleamar_max_m"] >= MR.NIVEL_BLOQUEO)
-            nivel_d, motivo = nivel_riesgo(mm, inten, h["sus"], marea_alta, sat, enso_factor)
+                          and fila_z["pleamar_max_m"] + sobre_m >= MR.NIVEL_BLOQUEO)
+            nivel_d, motivo = nivel_riesgo(mm, inten, h["sus"], marea_alta, sat)
             i_max = max(dia["idx"], key=lambda i: niv_h[i])
             if niv_h[i_max] > C.NIVELES_RIESGO.index(nivel_d):
                 nivel_d, motivo = C.NIVELES_RIESGO[niv_h[i_max]], mot_h[i_max]
@@ -350,11 +354,11 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
         rest = [i for i in idx_hoy if tiempos[i] >= ahora_h]
         total_dia = float(np.nansum(serie[idx_hoy])) if idx_hoy else 0.0
         total_rest = float(np.nansum(serie[rest])) if rest else 0.0
-        r3z = _rolling3(serie)
         txt = []
         if rest and total_rest >= 0.5:
-            fin = max(rest, key=lambda i: (r3z[i] if not math.isnan(r3z[i]) else -1))
-            ini = max(fin - 2, rest[0])
+            inicios = [i for i in rest if i + 2 <= rest[-1]] or [rest[0]]
+            ini = max(inicios, key=lambda i: float(np.nansum(serie[i:min(i + 3, rest[-1] + 1)])))
+            fin = min(ini + 2, rest[-1])
             pico = float(np.nansum(serie[ini:fin + 1]))
             txt.append(f"Quedan {total_rest:.1f} mm para el resto del día (total del día {total_dia:.1f} mm). "
                        f"Lo más fuerte: entre {tiempos[ini].strftime('%H:%M')} y "
@@ -388,6 +392,7 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
                 "horas": horas_hoy, "resumen": resumen_hoy},
         "mareas": mareas_ventana,
         "marea_fuente": marea.get("fuente") if marea else None,
+        "marea_sobreelevacion_enso_m": sobre_m,
         "marea_umbrales": marea.get("umbrales") if marea else None,
         "campo_mapa": acumulado_mapa.reshape(len(C.GRID_LATS), len(C.GRID_LONS)),
         "intensidad_mapa": np.nanmax(intens_pt[:C.MAP_DAYS], axis=0).reshape(len(C.GRID_LATS), len(C.GRID_LONS))
@@ -444,13 +449,12 @@ def _combinar(nl: int, sus: int, factores: list[str]) -> int:
     return nivel
 
 
-def nivel_riesgo(mm_dia, mm_hora, sus, marea_alta, suelo_saturado, enso_calido):
+def nivel_riesgo(mm_dia, mm_hora, sus, marea_alta, suelo_saturado):
     """Riesgo diario. marea_alta: el día tiene una pleamar que bloquea el desagüe del sector."""
     mm_dia = 0.0 if mm_dia is None or math.isnan(mm_dia) else mm_dia
     mm_hora = 0.0 if mm_hora is None or math.isnan(mm_hora) else mm_hora
     nl = nivel_lluvia(mm_dia, mm_hora)
-    factores = [n for n, ok in (("marea alta", marea_alta), ("suelo saturado", suelo_saturado),
-                                ("El Niño costero", enso_calido)) if ok]
+    factores = [n for n, ok in (("marea alta", marea_alta), ("suelo saturado", suelo_saturado)) if ok]
     nivel = _combinar(nl, sus, factores)
     motivo = f"lluvia del día nivel {nl}/4, susceptibilidad {sus}/3"
     if nivel > _MATRIZ[nl][sus - 1]:
@@ -458,7 +462,7 @@ def nivel_riesgo(mm_dia, mm_hora, sus, marea_alta, suelo_saturado, enso_calido):
     return C.NIVELES_RIESGO[nivel], motivo
 
 
-def nivel_riesgo_horario(mm_3h, mm_hora, sus, sens_marea, clase_marea, altura_marea, suelo_saturado, enso_calido):
+def nivel_riesgo_horario(mm_3h, mm_hora, sus, sens_marea, clase_marea, altura_marea, suelo_saturado):
     """Riesgo en una hora: lluvia acumulada en 3 h + intensidad + marea en ese momento."""
     from . import marea as MR
 
@@ -466,8 +470,7 @@ def nivel_riesgo_horario(mm_3h, mm_hora, sus, sens_marea, clase_marea, altura_ma
     mm_hora = 0.0 if mm_hora is None or math.isnan(mm_hora) else mm_hora
     nl = max(_nivel_por_umbrales(mm_3h, (5, 12, 25, 40)), _nivel_por_umbrales(mm_hora, (8, 15, 25, 40)))
     marea_bloquea = sens_marea * clase_marea >= 2
-    factores = [n for n, ok in (("marea alta", marea_bloquea), ("suelo saturado", suelo_saturado),
-                                ("El Niño costero", enso_calido)) if ok]
+    factores = [n for n, ok in (("marea alta", marea_bloquea), ("suelo saturado", suelo_saturado)) if ok]
     nivel = _combinar(nl, sus, factores)
     motivo = f"lluvia 3 h nivel {nl}/4, susceptibilidad {sus}/3"
     if nivel > _MATRIZ[nl][sus - 1]:

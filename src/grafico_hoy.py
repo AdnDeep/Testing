@@ -39,7 +39,7 @@ def dibujar(res: dict, meta: dict, ruta_png: str):
              "estimación de los modelos, no medición", fontsize=9.5, color=MUTED, va="top")
 
     alturas = [1.25, 1, 0.14, 1, 0.14, 1, 0.14]
-    gs = fig.add_gridspec(len(alturas), 1, height_ratios=alturas, left=0.10, right=0.86, top=0.885, bottom=0.10,
+    gs = fig.add_gridspec(len(alturas), 1, height_ratios=alturas, left=0.10, right=0.83, top=0.885, bottom=0.10,
                           hspace=0.28)
     ax_m = fig.add_subplot(gs[0])
     ejes = [ax_m]
@@ -56,7 +56,7 @@ def dibujar(res: dict, meta: dict, ruta_png: str):
         ax_m.set_ylim(max(0, lo - 0.9), max(hi + 1.0, MR.NIVEL_BLOQUEO + 0.8))
         for nivel, txt in ((MR.NIVEL_LENTO, "desagüe lento"), (MR.NIVEL_BLOQUEO, "desagüe bloqueado")):
             ax_m.axhline(nivel, color=MUTED, lw=0.8, zorder=2)
-            ax_m.text(len(horas) - 0.4, nivel, f" {nivel:.1f} m · {txt}", fontsize=8, color=MUTED, va="center",
+            ax_m.text(len(horas) - 0.4, nivel, f" {nivel:.1f} m: {txt}", fontsize=8, color=MUTED, va="center",
                       ha="left", clip_on=False)
         for e in res["mareas"]:
             if e["fecha"] != hoy["fecha"]:

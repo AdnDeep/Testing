@@ -189,8 +189,8 @@ def construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes=No
     if res["enso_factor"]:
         enso_impl = ("<p>El mar frente a la costa está más caliente de lo normal. Para Guayaquil eso significa "
                      "aguaceros más intensos y frecuentes, una estación lluviosa que puede adelantarse y un nivel del "
-                     "mar más alto, que frena el desagüe de las calles en pleamar. Por eso el riesgo de anegamiento "
-                     "sube un nivel cuando coincide con lluvia significativa.</p>")
+                     "mar más alto, que frena el desagüe de las calles en pleamar. Los modelos ya incluyen la lluvia "
+                     "extra; la sobreelevación del mar se suma a la marea en el cálculo de anegamiento.</p>")
     enso_html = f"""
 <section class="panel" aria-labelledby="h-enso">
   <h2 id="h-enso">El Niño: seguimiento</h2>
@@ -280,8 +280,9 @@ def construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes=No
     {meta['miembros_total']} miembros de los ensambles superan cada umbral. La intensidad máxima horaria viene de GFS y GEM.</p>
     <p>El riesgo de anegamiento se calcula hora por hora en 28 sectores. Cruza la lluvia de las últimas 3 horas y la
     intensidad con la susceptibilidad de cada sector, y sube un nivel cuando coinciden agravantes: marea alta en el río
-    (en los sectores que desaguan al Guayas o al Estero Salado), suelo saturado (más de 30 mm en 72 h) o un El Niño costero
-    moderado o mayor. El riesgo del día es el peor de sus horas. Los modelos globales tienen entre 13 y 28 km de
+    (en los sectores que desaguan al Guayas o al Estero Salado) y suelo saturado (más de 30 mm en 72 h). El riesgo del día
+    es el peor de sus horas. El Niño ya está dentro de la lluvia que dan los modelos; además eleva el nivel del mar, por
+    eso con un El Niño costero fuerte se suman 0,20 m a la marea (0,10 m si es moderado) al calcular el bloqueo del desagüe. Los modelos globales tienen entre 13 y 28 km de
     resolución: distinguen el norte del sur de la ciudad, pero no una calle de otra.</p>
     <p>La marea se calcula con las 68 constantes armónicas oficiales de INOCAR para Guayaquil-Río. Las horas coinciden
     con las pleamares que publica INOCAR y las alturas están en su misma escala. Es la marea astronómica: no incluye el
@@ -354,7 +355,8 @@ def _seccion_mareas(res) -> str:
     <p>En pleamar el nivel del río y del Estero Salado sube por encima de muchas salidas de drenaje: el agua de lluvia no
     puede salir y se acumula en las calles bajas. Desde unos {u.get('lento', 3.6):.1f} m el desagüe se vuelve lento y desde
     {u.get('bloqueo', 4.3):.1f} m queda prácticamente bloqueado en el Sur, el Suburbio y las orillas. Con
-    {u.get('desborde', 4.8):.1f} m o más, la marea por sí sola puede anegar las orillas más bajas.</p>
+    {u.get('desborde', 4.8):.1f} m o más, la marea por sí sola puede anegar las orillas más bajas.
+    {('Con El Niño actual, el cálculo de riesgo suma ' + f"{res.get('marea_sobreelevacion_enso_m'):.2f}".replace('.', ',') + ' m a estas alturas.') if res.get('marea_sobreelevacion_enso_m') else ''}</p>
     <div class="table-wrap"><table><thead><tr><th scope="col">Día</th><th scope="col">Marea</th><th scope="col">Hora</th>
     <th scope="col">Altura (m)</th><th scope="col">Pleamar</th></tr></thead><tbody>{filas}</tbody></table></div>
     <p class="note">{E(res.get('marea_fuente') or '')}.</p>

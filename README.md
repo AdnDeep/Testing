@@ -49,12 +49,11 @@ Los datos de los modelos se descargan a través de la API pública de [Open-Mete
    4,3 m queda bloqueado; con 4,8 m o más la marea sola puede anegar orillas bajas.
 4. **Riesgo de anegamiento, hora por hora.** En 28 puntos críticos se cruza la lluvia de las últimas 3 horas
    y la intensidad con la susceptibilidad del sector. El riesgo sube un nivel cuando coinciden agravantes:
-   marea alta en el río (en sectores que desaguan al Guayas o al Estero Salado), suelo saturado (más de 30 mm
-   en las 72 h previas) o un El Niño costero moderado o mayor (Niño 1+2 ≥ +1,0 °C, umbrales ENFEN). El riesgo
-   del día es el peor de sus horas.
-5. **El Niño.** Los modelos ya usan la temperatura del mar observada, así que El Niño está dentro de sus números.
-   Además, el reporte muestra su evolución y lo usa como agravante porque eleva el nivel del mar y dificulta el
-   desagüe de las calles en pleamar.
+   marea alta en el río (en sectores que desaguan al Guayas o al Estero Salado) y suelo saturado (más de 30 mm
+   en las 72 h previas). El riesgo del día es el peor de sus horas.
+5. **El Niño.** Los modelos ya usan la temperatura del mar observada, así que la lluvia extra de El Niño está
+   dentro de sus números. Además El Niño eleva el nivel del mar: con un El Niño costero fuerte (Niño 1+2 ≥ +1,7 °C,
+   umbrales ENFEN) se suman 0,20 m a la marea al calcular el bloqueo del desagüe (0,10 m si es moderado).
 
 Los parámetros (zonas, puntos críticos, pesos, umbrales) están en `src/config.py` y `src/analisis.py`.
 
