@@ -1,7 +1,7 @@
 {
  "meta": {
-  "emitido_iso": "2026-10-29T08:02-05:00",
-  "emitido_texto": "29/10/2026 08:02",
+  "emitido_iso": "2026-10-29T08:05-05:00",
+  "emitido_texto": "29/10/2026 08:05",
   "ventana_texto": "De hoy, jueves 29 de octubre, al sábado 31 de octubre",
   "miembros_total": 52,
   "modelos_ok": [
@@ -1344,63 +1344,63 @@
   {
    "nombre": "Los Vergeles / Orquídeas",
    "zona": "norte",
-   "lon": -79.927,
-   "lat": -2.105,
+   "lon": -79.909,
+   "lat": -2.096,
    "sus": 3,
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 13.6,
+     "lluvia_mm": 13.5,
      "intensidad_mmh": 2.6,
      "nivel": "Bajo",
      "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
     },
     {
      "fecha": "2026-10-30",
-     "lluvia_mm": 31.0,
-     "intensidad_mmh": 7.1,
+     "lluvia_mm": 31.4,
+     "intensidad_mmh": 7.7,
      "nivel": "Muy alto",
      "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-10-31",
-     "lluvia_mm": 34.8,
-     "intensidad_mmh": 11.6,
+     "lluvia_mm": 35.9,
+     "intensidad_mmh": 13.3,
      "nivel": "Muy alto",
      "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-11-01",
-     "lluvia_mm": 31.0,
-     "intensidad_mmh": 5.9,
+     "lluvia_mm": 31.1,
+     "intensidad_mmh": 6.1,
      "nivel": "Muy alto",
      "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-11-02",
      "lluvia_mm": 31.5,
-     "intensidad_mmh": 3.3,
+     "intensidad_mmh": 3.4,
      "nivel": "Muy alto",
      "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-11-03",
-     "lluvia_mm": 19.9,
-     "intensidad_mmh": 3.8,
+     "lluvia_mm": 19.7,
+     "intensidad_mmh": 3.9,
      "nivel": "Alto",
      "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 20.8,
-     "intensidad_mmh": 6.0,
+     "lluvia_mm": 20.7,
+     "intensidad_mmh": 5.9,
      "nivel": "Alto",
      "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-11-05",
      "lluvia_mm": 15.5,
-     "intensidad_mmh": 1.8,
+     "intensidad_mmh": 1.9,
      "nivel": "Alto",
      "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
     }
@@ -1411,41 +1411,41 @@
   {
    "nombre": "Mucho Lote",
    "zona": "norte",
-   "lon": -79.903,
-   "lat": -2.086,
+   "lon": -79.899,
+   "lat": -2.079,
    "sus": 2,
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 13.4,
-     "intensidad_mmh": 2.5,
+     "lluvia_mm": 13.3,
+     "intensidad_mmh": 2.4,
      "nivel": "Bajo",
      "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
     },
     {
      "fecha": "2026-10-30",
-     "lluvia_mm": 31.8,
-     "intensidad_mmh": 8.5,
+     "lluvia_mm": 32.6,
+     "intensidad_mmh": 8.9,
      "nivel": "Alto",
      "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-10-31",
-     "lluvia_mm": 37.2,
-     "intensidad_mmh": 15.2,
+     "lluvia_mm": 38.2,
+     "intensidad_mmh": 16.4,
      "nivel": "Alto",
      "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-11-01",
-     "lluvia_mm": 31.3,
-     "intensidad_mmh": 6.2,
+     "lluvia_mm": 31.5,
+     "intensidad_mmh": 6.4,
      "nivel": "Alto",
      "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-11-02",
-     "lluvia_mm": 31.5,
+     "lluvia_mm": 31.7,
      "intensidad_mmh": 3.4,
      "nivel": "Alto",
      "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
@@ -1453,20 +1453,20 @@
     {
      "fecha": "2026-11-03",
      "lluvia_mm": 19.6,
-     "intensidad_mmh": 3.9,
+     "intensidad_mmh": 4.0,
      "nivel": "Moderado",
      "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 20.6,
+     "lluvia_mm": 20.7,
      "intensidad_mmh": 5.8,
      "nivel": "Moderado",
      "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 15.5,
+     "lluvia_mm": 15.6,
      "intensidad_mmh": 1.9,
      "nivel": "Moderado",
      "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
@@ -3018,13 +3018,6 @@
    "corrida": "29/10 06 UTC"
   },
   {
-   "id": "gfs_graphcast025",
-   "nombre": "NOAA GraphCast-GFS (IA)",
-   "centro": "NOAA/NCEP (EE. UU.)",
-   "ok": false,
-   "detalle": "no disponible en esta corrida"
-  },
-  {
    "id": "ncep_aigfs025",
    "nombre": "NOAA AIGFS (IA)",
    "centro": "NOAA/NCEP (EE. UU.)",
@@ -3067,13 +3060,6 @@
    "nombre": "NASA POWER — climatología mensual de lluvia",
    "centro": "NASA Langley (EE. UU.)",
    "ok": true
-  },
-  {
-   "id": "cfsv2",
-   "nombre": "NOAA CFSv2 (estacional)",
-   "centro": "NOAA/NCEP (EE. UU.)",
-   "ok": false,
-   "detalle": "no disponible en esta corrida"
   }
  ],
  "climatologia_nasa_mm_dia": {
@@ -3092,7 +3078,6 @@
  },
  "pesos": {
   "gfs_seamless": 1.0,
-  "gfs_graphcast025": 1.0,
   "ncep_aigfs025": 1.0,
   "gem_global": 1.0,
   "ens:gfs025": 1.5,
