@@ -1,0 +1,3110 @@
+{
+ "meta": {
+  "emitido_iso": "2026-10-29T07:59-05:00",
+  "emitido_texto": "29/10/2026 07:59",
+  "ventana_texto": "De hoy, jueves 29 de octubre, al sábado 31 de octubre",
+  "miembros_total": 52,
+  "modelos_ok": [
+   "NOAA GFS 0,25°",
+   "NOAA AIGFS (IA)",
+   "ECCC GEM Global",
+   "NOAA GEFS (ensamble) — 31 miembros",
+   "ECCC GEPS (ensamble) — 21 miembros",
+   "NOAA CPC — índices Niño semanales, ONI y discusión ENSO",
+   "NASA POWER — climatología mensual de lluvia"
+  ],
+  "titular": "Lluvia prevista hasta el sábado 31 de octubre: Norte 86 mm, Centro 83 mm, Sur 78 mm. Riesgo de anegamiento muy alto en Norte y Centro y Sur. El Niño costero: Niño 1+2 en +5.2 °C (cálida extraordinaria).",
+  "fuentes_texto": "Modelos: NOAA GFS 0,25°, NOAA AIGFS (IA), ECCC GEM Global, NOAA GEFS (ensamble) — 31 miembros, ECCC GEPS (ensamble) — 21 miembros (vía Open-Meteo) · El Niño: NOAA CPC · Normales: NASA POWER"
+ },
+ "zonas": {
+  "norte": {
+   "nombre": "Norte",
+   "sectores": "Urdesa, Kennedy, Alborada, Sauces, Samanes, Guayacanes, Mapasingue, Prosperina, Bastión Popular, Flor de Bastión, Pascuales, Monte Sinaí",
+   "antecedente_72h_mm": 94.1,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "etiqueta": "jueves 29 de octubre",
+     "parcial": true,
+     "horas_ventana": 17,
+     "lluvia_mm": 15.0,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      6.1,
+      24.3
+     ],
+     "por_fuente": {
+      "gfs_seamless": 6.1,
+      "ncep_aigfs025": 18.3,
+      "gem_global": 9.8,
+      "ens:gfs025": 24.3,
+      "ens:gem_global": 12.8
+     },
+     "p10_p50_p90": [
+      0.5,
+      19.9,
+      32.6
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.865,
+     "prob_10mm": 0.769,
+     "prob_25mm": 0.327,
+     "prob_50mm": 0.019,
+     "intensidad_max_mmh": 2.8,
+     "horas_lluvia_gfs": 7,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Pascuales",
+      "Flor de Bastión",
+      "Bastión Popular",
+      "Monte Sinaí",
+      "Los Vergeles / Orquídeas",
+      "Mucho Lote",
+      "Samanes / Guayacanes",
+      "Sauces"
+     ]
+    },
+    {
+     "fecha": "2026-10-30",
+     "etiqueta": "viernes 30 de octubre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 34.4,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      25.6,
+      47.3
+     ],
+     "por_fuente": {
+      "gfs_seamless": 35.8,
+      "ncep_aigfs025": 47.3,
+      "gem_global": 34.2,
+      "ens:gfs025": 34.0,
+      "ens:gem_global": 25.6
+     },
+     "p10_p50_p90": [
+      13.4,
+      26.6,
+      50.8
+     ],
+     "miembros": 52,
+     "prob_1mm": 1.0,
+     "prob_10mm": 0.923,
+     "prob_25mm": 0.577,
+     "prob_50mm": 0.115,
+     "intensidad_max_mmh": 9.5,
+     "horas_lluvia_gfs": 17,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Muy alto",
+     "puntos_en_riesgo": [
+      "Pascuales",
+      "Flor de Bastión",
+      "Bastión Popular",
+      "Monte Sinaí",
+      "Los Vergeles / Orquídeas",
+      "Mucho Lote",
+      "Samanes / Guayacanes",
+      "Sauces",
+      "Alborada",
+      "Mapasingue",
+      "Prosperina",
+      "Urdesa / Kennedy"
+     ]
+    },
+    {
+     "fecha": "2026-10-31",
+     "etiqueta": "sábado 31 de octubre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 37.0,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      27.3,
+      79.9
+     ],
+     "por_fuente": {
+      "gfs_seamless": 27.3,
+      "ncep_aigfs025": 27.8,
+      "gem_global": 79.9,
+      "ens:gfs025": 30.5,
+      "ens:gem_global": 27.4
+     },
+     "p10_p50_p90": [
+      8.1,
+      24.7,
+      50.4
+     ],
+     "miembros": 52,
+     "prob_1mm": 1.0,
+     "prob_10mm": 0.846,
+     "prob_25mm": 0.5,
+     "prob_50mm": 0.115,
+     "intensidad_max_mmh": 18.8,
+     "horas_lluvia_gfs": 13,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Muy alto",
+     "puntos_en_riesgo": [
+      "Pascuales",
+      "Flor de Bastión",
+      "Bastión Popular",
+      "Monte Sinaí",
+      "Los Vergeles / Orquídeas",
+      "Mucho Lote",
+      "Samanes / Guayacanes",
+      "Sauces",
+      "Alborada",
+      "Mapasingue",
+      "Prosperina",
+      "Urdesa / Kennedy"
+     ]
+    },
+    {
+     "fecha": "2026-11-01",
+     "etiqueta": "domingo 1 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 31.8,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      8.5,
+      59.6
+     ],
+     "por_fuente": {
+      "gfs_seamless": 8.5,
+      "ncep_aigfs025": 33.0,
+      "gem_global": 59.6,
+      "ens:gfs025": 22.1,
+      "ens:gem_global": 37.8
+     },
+     "p10_p50_p90": [
+      5.0,
+      25.3,
+      54.9
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.981,
+     "prob_10mm": 0.788,
+     "prob_25mm": 0.5,
+     "prob_50mm": 0.135,
+     "intensidad_max_mmh": 8.8,
+     "horas_lluvia_gfs": 12,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Muy alto",
+     "puntos_en_riesgo": [
+      "Pascuales",
+      "Flor de Bastión",
+      "Bastión Popular",
+      "Monte Sinaí",
+      "Los Vergeles / Orquídeas",
+      "Mucho Lote",
+      "Samanes / Guayacanes",
+      "Sauces",
+      "Alborada",
+      "Mapasingue",
+      "Prosperina",
+      "Urdesa / Kennedy"
+     ]
+    },
+    {
+     "fecha": "2026-11-02",
+     "etiqueta": "lunes 2 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 32.2,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      19.7,
+      45.9
+     ],
+     "por_fuente": {
+      "gfs_seamless": 19.7,
+      "ncep_aigfs025": 45.0,
+      "gem_global": 20.3,
+      "ens:gfs025": 26.1,
+      "ens:gem_global": 45.9
+     },
+     "p10_p50_p90": [
+      8.5,
+      28.2,
+      61.9
+     ],
+     "miembros": 52,
+     "prob_1mm": 1.0,
+     "prob_10mm": 0.846,
+     "prob_25mm": 0.558,
+     "prob_50mm": 0.212,
+     "intensidad_max_mmh": 3.7,
+     "horas_lluvia_gfs": 13,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Muy alto",
+     "puntos_en_riesgo": [
+      "Pascuales",
+      "Flor de Bastión",
+      "Bastión Popular",
+      "Monte Sinaí",
+      "Los Vergeles / Orquídeas",
+      "Mucho Lote",
+      "Samanes / Guayacanes",
+      "Sauces",
+      "Alborada",
+      "Mapasingue",
+      "Prosperina",
+      "Urdesa / Kennedy"
+     ]
+    },
+    {
+     "fecha": "2026-11-03",
+     "etiqueta": "martes 3 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 19.7,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      11.2,
+      25.6
+     ],
+     "por_fuente": {
+      "gfs_seamless": 25.3,
+      "ncep_aigfs025": 16.5,
+      "gem_global": 11.2,
+      "ens:gfs025": 17.9,
+      "ens:gem_global": 25.6
+     },
+     "p10_p50_p90": [
+      1.2,
+      17.2,
+      44.5
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.904,
+     "prob_10mm": 0.615,
+     "prob_25mm": 0.327,
+     "prob_50mm": 0.077,
+     "intensidad_max_mmh": 4.0,
+     "horas_lluvia_gfs": 21,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Pascuales",
+      "Flor de Bastión",
+      "Bastión Popular",
+      "Monte Sinaí",
+      "Los Vergeles / Orquídeas",
+      "Mucho Lote",
+      "Samanes / Guayacanes",
+      "Sauces",
+      "Alborada",
+      "Mapasingue",
+      "Prosperina",
+      "Urdesa / Kennedy"
+     ]
+    },
+    {
+     "fecha": "2026-11-04",
+     "etiqueta": "miércoles 4 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 21.4,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      13.3,
+      40.9
+     ],
+     "por_fuente": {
+      "gfs_seamless": 26.3,
+      "ncep_aigfs025": 16.2,
+      "gem_global": 40.9,
+      "ens:gfs025": 13.3,
+      "ens:gem_global": 16.6
+     },
+     "p10_p50_p90": [
+      0.5,
+      10.4,
+      37.5
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.865,
+     "prob_10mm": 0.538,
+     "prob_25mm": 0.192,
+     "prob_50mm": 0.019,
+     "intensidad_max_mmh": 8.4,
+     "horas_lluvia_gfs": 15,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Pascuales",
+      "Flor de Bastión",
+      "Bastión Popular",
+      "Monte Sinaí",
+      "Los Vergeles / Orquídeas",
+      "Mucho Lote",
+      "Samanes / Guayacanes",
+      "Sauces",
+      "Alborada",
+      "Mapasingue",
+      "Prosperina",
+      "Urdesa / Kennedy"
+     ]
+    },
+    {
+     "fecha": "2026-11-05",
+     "etiqueta": "jueves 5 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 15.0,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      9.2,
+      25.0
+     ],
+     "por_fuente": {
+      "gfs_seamless": 13.6,
+      "ncep_aigfs025": 9.2,
+      "gem_global": 12.1,
+      "ens:gfs025": 11.9,
+      "ens:gem_global": 25.0
+     },
+     "p10_p50_p90": [
+      0.9,
+      10.6,
+      44.9
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.865,
+     "prob_10mm": 0.558,
+     "prob_25mm": 0.288,
+     "prob_50mm": 0.077,
+     "intensidad_max_mmh": 2.0,
+     "horas_lluvia_gfs": 15,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Pascuales",
+      "Flor de Bastión",
+      "Bastión Popular",
+      "Los Vergeles / Orquídeas",
+      "Mucho Lote",
+      "Samanes / Guayacanes",
+      "Sauces"
+     ]
+    }
+   ]
+  },
+  "centro": {
+   "nombre": "Centro",
+   "sectores": "Centro histórico, Las Peñas, Malecón, Barrio Garay, Suburbio Oeste, Cristo del Consuelo, Batallón del Suburbio",
+   "antecedente_72h_mm": 82.9,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "etiqueta": "jueves 29 de octubre",
+     "parcial": true,
+     "horas_ventana": 17,
+     "lluvia_mm": 12.8,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      4.3,
+      19.8
+     ],
+     "por_fuente": {
+      "gfs_seamless": 7.3,
+      "ncep_aigfs025": 16.4,
+      "gem_global": 4.3,
+      "ens:gfs025": 19.8,
+      "ens:gem_global": 12.8
+     },
+     "p10_p50_p90": [
+      0.5,
+      17.0,
+      29.0
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.865,
+     "prob_10mm": 0.654,
+     "prob_25mm": 0.212,
+     "prob_50mm": 0.019,
+     "intensidad_max_mmh": 2.1,
+     "horas_lluvia_gfs": 7,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Bajo",
+     "puntos_en_riesgo": []
+    },
+    {
+     "fecha": "2026-10-30",
+     "etiqueta": "viernes 30 de octubre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 35.6,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      25.6,
+      49.9
+     ],
+     "por_fuente": {
+      "gfs_seamless": 36.7,
+      "ncep_aigfs025": 49.9,
+      "gem_global": 41.0,
+      "ens:gfs025": 31.7,
+      "ens:gem_global": 25.6
+     },
+     "p10_p50_p90": [
+      13.7,
+      25.6,
+      46.6
+     ],
+     "miembros": 52,
+     "prob_1mm": 1.0,
+     "prob_10mm": 0.923,
+     "prob_25mm": 0.538,
+     "prob_50mm": 0.077,
+     "intensidad_max_mmh": 10.3,
+     "horas_lluvia_gfs": 17,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Muy alto",
+     "puntos_en_riesgo": [
+      "Av. Quito y Av. Machala",
+      "Barrio Garay",
+      "Suburbio Oeste (calle 29)",
+      "Batallón del Suburbio",
+      "Cristo del Consuelo",
+      "Malecón / calle Panamá"
+     ]
+    },
+    {
+     "fecha": "2026-10-31",
+     "etiqueta": "sábado 31 de octubre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 34.8,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      11.7,
+      87.6
+     ],
+     "por_fuente": {
+      "gfs_seamless": 11.7,
+      "ncep_aigfs025": 23.7,
+      "gem_global": 87.6,
+      "ens:gfs025": 29.9,
+      "ens:gem_global": 27.4
+     },
+     "p10_p50_p90": [
+      8.1,
+      25.4,
+      50.3
+     ],
+     "miembros": 52,
+     "prob_1mm": 1.0,
+     "prob_10mm": 0.846,
+     "prob_25mm": 0.5,
+     "prob_50mm": 0.115,
+     "intensidad_max_mmh": 10.4,
+     "horas_lluvia_gfs": 10,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Muy alto",
+     "puntos_en_riesgo": [
+      "Av. Quito y Av. Machala",
+      "Barrio Garay",
+      "Suburbio Oeste (calle 29)",
+      "Batallón del Suburbio",
+      "Cristo del Consuelo",
+      "Malecón / calle Panamá"
+     ]
+    },
+    {
+     "fecha": "2026-11-01",
+     "etiqueta": "domingo 1 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 28.9,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      7.2,
+      54.5
+     ],
+     "por_fuente": {
+      "gfs_seamless": 7.2,
+      "ncep_aigfs025": 23.2,
+      "gem_global": 54.5,
+      "ens:gfs025": 21.1,
+      "ens:gem_global": 37.8
+     },
+     "p10_p50_p90": [
+      4.2,
+      23.1,
+      62.4
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.981,
+     "prob_10mm": 0.788,
+     "prob_25mm": 0.423,
+     "prob_50mm": 0.115,
+     "intensidad_max_mmh": 7.0,
+     "horas_lluvia_gfs": 10,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Av. Quito y Av. Machala",
+      "Barrio Garay",
+      "Suburbio Oeste (calle 29)",
+      "Batallón del Suburbio",
+      "Cristo del Consuelo",
+      "Malecón / calle Panamá"
+     ]
+    },
+    {
+     "fecha": "2026-11-02",
+     "etiqueta": "lunes 2 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 29.5,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      10.3,
+      45.9
+     ],
+     "por_fuente": {
+      "gfs_seamless": 21.6,
+      "ncep_aigfs025": 44.9,
+      "gem_global": 10.3,
+      "ens:gfs025": 20.7,
+      "ens:gem_global": 45.9
+     },
+     "p10_p50_p90": [
+      7.0,
+      24.4,
+      61.2
+     ],
+     "miembros": 52,
+     "prob_1mm": 1.0,
+     "prob_10mm": 0.788,
+     "prob_25mm": 0.481,
+     "prob_50mm": 0.173,
+     "intensidad_max_mmh": 3.2,
+     "horas_lluvia_gfs": 14,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Av. Quito y Av. Machala",
+      "Barrio Garay",
+      "Suburbio Oeste (calle 29)",
+      "Batallón del Suburbio",
+      "Cristo del Consuelo",
+      "Malecón / calle Panamá"
+     ]
+    },
+    {
+     "fecha": "2026-11-03",
+     "etiqueta": "martes 3 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 19.4,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      11.9,
+      28.7
+     ],
+     "por_fuente": {
+      "gfs_seamless": 28.7,
+      "ncep_aigfs025": 16.4,
+      "gem_global": 11.9,
+      "ens:gfs025": 14.1,
+      "ens:gem_global": 25.6
+     },
+     "p10_p50_p90": [
+      1.1,
+      16.5,
+      40.9
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.904,
+     "prob_10mm": 0.596,
+     "prob_25mm": 0.269,
+     "prob_50mm": 0.058,
+     "intensidad_max_mmh": 3.6,
+     "horas_lluvia_gfs": 21,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Av. Quito y Av. Machala",
+      "Barrio Garay",
+      "Suburbio Oeste (calle 29)",
+      "Batallón del Suburbio",
+      "Cristo del Consuelo",
+      "Malecón / calle Panamá"
+     ]
+    },
+    {
+     "fecha": "2026-11-04",
+     "etiqueta": "miércoles 4 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 23.2,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      10.5,
+      54.6
+     ],
+     "por_fuente": {
+      "gfs_seamless": 28.6,
+      "ncep_aigfs025": 15.3,
+      "gem_global": 54.6,
+      "ens:gfs025": 10.5,
+      "ens:gem_global": 16.6
+     },
+     "p10_p50_p90": [
+      0.3,
+      9.3,
+      31.7
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.846,
+     "prob_10mm": 0.481,
+     "prob_25mm": 0.154,
+     "prob_50mm": 0.019,
+     "intensidad_max_mmh": 7.9,
+     "horas_lluvia_gfs": 18,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Av. Quito y Av. Machala",
+      "Barrio Garay",
+      "Suburbio Oeste (calle 29)",
+      "Batallón del Suburbio",
+      "Cristo del Consuelo",
+      "Malecón / calle Panamá"
+     ]
+    },
+    {
+     "fecha": "2026-11-05",
+     "etiqueta": "jueves 5 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 12.7,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      3.4,
+      25.0
+     ],
+     "por_fuente": {
+      "gfs_seamless": 14.3,
+      "ncep_aigfs025": 7.2,
+      "gem_global": 3.4,
+      "ens:gfs025": 9.2,
+      "ens:gem_global": 25.0
+     },
+     "p10_p50_p90": [
+      0.5,
+      8.9,
+      44.9
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.846,
+     "prob_10mm": 0.462,
+     "prob_25mm": 0.231,
+     "prob_50mm": 0.077,
+     "intensidad_max_mmh": 1.3,
+     "horas_lluvia_gfs": 18,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Bajo",
+     "puntos_en_riesgo": []
+    }
+   ]
+  },
+  "sur": {
+   "nombre": "Sur",
+   "sectores": "Centenario, Cuba, La Pradera, La Floresta, Los Esteros, Guasmo, Fertisa, Isla Trinitaria, Unión de Bananeros, Puerto Marítimo",
+   "antecedente_72h_mm": 84.8,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "etiqueta": "jueves 29 de octubre",
+     "parcial": true,
+     "horas_ventana": 17,
+     "lluvia_mm": 11.2,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      3.4,
+      19.8
+     ],
+     "por_fuente": {
+      "gfs_seamless": 3.4,
+      "ncep_aigfs025": 16.4,
+      "gem_global": 4.3,
+      "ens:gfs025": 19.8,
+      "ens:gem_global": 9.1
+     },
+     "p10_p50_p90": [
+      1.4,
+      15.3,
+      26.8
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.904,
+     "prob_10mm": 0.635,
+     "prob_25mm": 0.154,
+     "prob_50mm": 0.019,
+     "intensidad_max_mmh": 1.5,
+     "horas_lluvia_gfs": 5,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Bajo",
+     "puntos_en_riesgo": []
+    },
+    {
+     "fecha": "2026-10-30",
+     "etiqueta": "viernes 30 de octubre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 32.3,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      21.4,
+      49.9
+     ],
+     "por_fuente": {
+      "gfs_seamless": 21.4,
+      "ncep_aigfs025": 49.9,
+      "gem_global": 41.0,
+      "ens:gfs025": 31.7,
+      "ens:gem_global": 22.7
+     },
+     "p10_p50_p90": [
+      10.7,
+      24.9,
+      44.7
+     ],
+     "miembros": 52,
+     "prob_1mm": 1.0,
+     "prob_10mm": 0.904,
+     "prob_25mm": 0.5,
+     "prob_50mm": 0.058,
+     "intensidad_max_mmh": 8.4,
+     "horas_lluvia_gfs": 16,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Muy alto",
+     "puntos_en_riesgo": [
+      "Barrio Centenario",
+      "La Pradera",
+      "Los Esteros",
+      "Isla Trinitaria",
+      "La Floresta",
+      "Fertisa",
+      "Guasmo Norte",
+      "Guasmo Central",
+      "Guasmo Sur",
+      "Unión de Bananeros"
+     ]
+    },
+    {
+     "fecha": "2026-10-31",
+     "etiqueta": "sábado 31 de octubre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 34.6,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      12.9,
+      87.6
+     ],
+     "por_fuente": {
+      "gfs_seamless": 12.9,
+      "ncep_aigfs025": 23.7,
+      "gem_global": 87.6,
+      "ens:gfs025": 29.9,
+      "ens:gem_global": 25.7
+     },
+     "p10_p50_p90": [
+      8.3,
+      25.4,
+      45.7
+     ],
+     "miembros": 52,
+     "prob_1mm": 1.0,
+     "prob_10mm": 0.865,
+     "prob_25mm": 0.5,
+     "prob_50mm": 0.077,
+     "intensidad_max_mmh": 10.3,
+     "horas_lluvia_gfs": 13,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Muy alto",
+     "puntos_en_riesgo": [
+      "Barrio Centenario",
+      "La Pradera",
+      "Los Esteros",
+      "Isla Trinitaria",
+      "La Floresta",
+      "Fertisa",
+      "Guasmo Norte",
+      "Guasmo Central",
+      "Guasmo Sur",
+      "Unión de Bananeros"
+     ]
+    },
+    {
+     "fecha": "2026-11-01",
+     "etiqueta": "domingo 1 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 26.5,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      9.2,
+      54.5
+     ],
+     "por_fuente": {
+      "gfs_seamless": 9.2,
+      "ncep_aigfs025": 23.2,
+      "gem_global": 54.5,
+      "ens:gfs025": 21.1,
+      "ens:gem_global": 27.1
+     },
+     "p10_p50_p90": [
+      4.4,
+      20.0,
+      44.5
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.981,
+     "prob_10mm": 0.769,
+     "prob_25mm": 0.308,
+     "prob_50mm": 0.058,
+     "intensidad_max_mmh": 7.4,
+     "horas_lluvia_gfs": 10,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Barrio Centenario",
+      "La Pradera",
+      "Los Esteros",
+      "Isla Trinitaria",
+      "La Floresta",
+      "Fertisa",
+      "Guasmo Norte",
+      "Guasmo Central",
+      "Guasmo Sur",
+      "Unión de Bananeros"
+     ]
+    },
+    {
+     "fecha": "2026-11-02",
+     "etiqueta": "lunes 2 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 26.6,
+     "categoria": "Lluvia fuerte",
+     "rango_modelos": [
+      10.3,
+      44.9
+     ],
+     "por_fuente": {
+      "gfs_seamless": 18.5,
+      "ncep_aigfs025": 44.9,
+      "gem_global": 10.3,
+      "ens:gfs025": 20.7,
+      "ens:gem_global": 36.6
+     },
+     "p10_p50_p90": [
+      7.0,
+      23.4,
+      55.7
+     ],
+     "miembros": 52,
+     "prob_1mm": 1.0,
+     "prob_10mm": 0.808,
+     "prob_25mm": 0.423,
+     "prob_50mm": 0.135,
+     "intensidad_max_mmh": 3.2,
+     "horas_lluvia_gfs": 14,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Barrio Centenario",
+      "La Pradera",
+      "Los Esteros",
+      "Isla Trinitaria",
+      "La Floresta",
+      "Fertisa",
+      "Guasmo Norte",
+      "Guasmo Central",
+      "Guasmo Sur",
+      "Unión de Bananeros"
+     ]
+    },
+    {
+     "fecha": "2026-11-03",
+     "etiqueta": "martes 3 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 16.3,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      11.9,
+      20.1
+     ],
+     "por_fuente": {
+      "gfs_seamless": 20.1,
+      "ncep_aigfs025": 16.4,
+      "gem_global": 11.9,
+      "ens:gfs025": 14.1,
+      "ens:gem_global": 19.0
+     },
+     "p10_p50_p90": [
+      1.1,
+      13.0,
+      31.3
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.904,
+     "prob_10mm": 0.596,
+     "prob_25mm": 0.173,
+     "prob_50mm": 0.038,
+     "intensidad_max_mmh": 2.3,
+     "horas_lluvia_gfs": 24,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Barrio Centenario",
+      "La Pradera",
+      "Los Esteros",
+      "Isla Trinitaria",
+      "La Floresta",
+      "Fertisa",
+      "Guasmo Norte",
+      "Guasmo Central",
+      "Guasmo Sur"
+     ]
+    },
+    {
+     "fecha": "2026-11-04",
+     "etiqueta": "miércoles 4 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 21.7,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      10.5,
+      54.6
+     ],
+     "por_fuente": {
+      "gfs_seamless": 22.4,
+      "ncep_aigfs025": 15.3,
+      "gem_global": 54.6,
+      "ens:gfs025": 10.5,
+      "ens:gem_global": 14.8
+     },
+     "p10_p50_p90": [
+      0.8,
+      8.6,
+      28.3
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.865,
+     "prob_10mm": 0.481,
+     "prob_25mm": 0.154,
+     "prob_50mm": 0.0,
+     "intensidad_max_mmh": 6.7,
+     "horas_lluvia_gfs": 18,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Alto",
+     "puntos_en_riesgo": [
+      "Barrio Centenario",
+      "La Pradera",
+      "Los Esteros",
+      "Isla Trinitaria",
+      "La Floresta",
+      "Fertisa",
+      "Guasmo Norte",
+      "Guasmo Central",
+      "Guasmo Sur",
+      "Unión de Bananeros"
+     ]
+    },
+    {
+     "fecha": "2026-11-05",
+     "etiqueta": "jueves 5 de noviembre",
+     "parcial": false,
+     "horas_ventana": 24,
+     "lluvia_mm": 11.1,
+     "categoria": "Lluvia moderada",
+     "rango_modelos": [
+      3.4,
+      21.4
+     ],
+     "por_fuente": {
+      "gfs_seamless": 9.9,
+      "ncep_aigfs025": 7.2,
+      "gem_global": 3.4,
+      "ens:gfs025": 9.2,
+      "ens:gem_global": 21.4
+     },
+     "p10_p50_p90": [
+      0.6,
+      10.0,
+      39.6
+     ],
+     "miembros": 52,
+     "prob_1mm": 0.846,
+     "prob_10mm": 0.5,
+     "prob_25mm": 0.192,
+     "prob_50mm": 0.038,
+     "intensidad_max_mmh": 1.0,
+     "horas_lluvia_gfs": 15,
+     "aguaje": false,
+     "fase_lunar": "",
+     "riesgo_inundacion": "Bajo",
+     "puntos_en_riesgo": []
+    }
+   ]
+  }
+ },
+ "puntos": [
+  {
+   "nombre": "Pascuales",
+   "zona": "norte",
+   "lon": -79.96,
+   "lat": -2.072,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 15.5,
+     "intensidad_mmh": 2.4,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 32.1,
+     "intensidad_mmh": 8.9,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 37.9,
+     "intensidad_mmh": 16.3,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 31.4,
+     "intensidad_mmh": 6.3,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 31.5,
+     "intensidad_mmh": 3.4,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 19.5,
+     "intensidad_mmh": 4.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 20.5,
+     "intensidad_mmh": 5.7,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 15.6,
+     "intensidad_mmh": 2.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Flor de Bastión",
+   "zona": "norte",
+   "lon": -79.975,
+   "lat": -2.1,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 15.7,
+     "intensidad_mmh": 2.6,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 31.2,
+     "intensidad_mmh": 7.5,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 35.4,
+     "intensidad_mmh": 12.6,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 31.1,
+     "intensidad_mmh": 6.0,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 31.5,
+     "intensidad_mmh": 3.3,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 19.8,
+     "intensidad_mmh": 3.8,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 20.8,
+     "intensidad_mmh": 5.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 15.5,
+     "intensidad_mmh": 1.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Bastión Popular",
+   "zona": "norte",
+   "lon": -79.943,
+   "lat": -2.097,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 15.7,
+     "intensidad_mmh": 2.6,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 31.3,
+     "intensidad_mmh": 7.7,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 35.8,
+     "intensidad_mmh": 13.1,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 31.1,
+     "intensidad_mmh": 6.0,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 31.5,
+     "intensidad_mmh": 3.4,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 19.8,
+     "intensidad_mmh": 3.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 20.7,
+     "intensidad_mmh": 5.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 15.5,
+     "intensidad_mmh": 1.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Monte Sinaí",
+   "zona": "norte",
+   "lon": -80.002,
+   "lat": -2.122,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 15.6,
+     "intensidad_mmh": 2.6,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 28.8,
+     "intensidad_mmh": 5.7,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 33.4,
+     "intensidad_mmh": 9.0,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 30.6,
+     "intensidad_mmh": 5.8,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 30.9,
+     "intensidad_mmh": 3.3,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 19.3,
+     "intensidad_mmh": 3.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 20.2,
+     "intensidad_mmh": 6.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 15.0,
+     "intensidad_mmh": 1.6,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-31"
+  },
+  {
+   "nombre": "Los Vergeles / Orquídeas",
+   "zona": "norte",
+   "lon": -79.927,
+   "lat": -2.105,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 15.8,
+     "intensidad_mmh": 2.6,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 31.0,
+     "intensidad_mmh": 7.1,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 34.8,
+     "intensidad_mmh": 11.6,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 31.0,
+     "intensidad_mmh": 5.9,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 31.5,
+     "intensidad_mmh": 3.3,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 19.9,
+     "intensidad_mmh": 3.8,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 20.8,
+     "intensidad_mmh": 6.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 15.5,
+     "intensidad_mmh": 1.8,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Mucho Lote",
+   "zona": "norte",
+   "lon": -79.903,
+   "lat": -2.086,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 15.6,
+     "intensidad_mmh": 2.5,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 31.8,
+     "intensidad_mmh": 8.5,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 37.2,
+     "intensidad_mmh": 15.2,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 31.3,
+     "intensidad_mmh": 6.2,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 31.5,
+     "intensidad_mmh": 3.4,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 19.6,
+     "intensidad_mmh": 3.9,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 20.6,
+     "intensidad_mmh": 5.8,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 15.5,
+     "intensidad_mmh": 1.9,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Samanes / Guayacanes",
+   "zona": "norte",
+   "lon": -79.899,
+   "lat": -2.114,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 15.9,
+     "intensidad_mmh": 2.7,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 31.1,
+     "intensidad_mmh": 6.5,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 34.0,
+     "intensidad_mmh": 10.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 31.1,
+     "intensidad_mmh": 5.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 31.7,
+     "intensidad_mmh": 3.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 20.1,
+     "intensidad_mmh": 3.7,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 21.1,
+     "intensidad_mmh": 6.1,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 15.5,
+     "intensidad_mmh": 1.8,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Sauces",
+   "zona": "norte",
+   "lon": -79.89,
+   "lat": -2.126,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 15.4,
+     "intensidad_mmh": 2.4,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 35.5,
+     "intensidad_mmh": 6.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 35.3,
+     "intensidad_mmh": 8.8,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 32.2,
+     "intensidad_mmh": 6.5,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 32.9,
+     "intensidad_mmh": 3.4,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 20.5,
+     "intensidad_mmh": 3.5,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.1,
+     "intensidad_mmh": 6.4,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 15.3,
+     "intensidad_mmh": 1.7,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Alborada",
+   "zona": "norte",
+   "lon": -79.902,
+   "lat": -2.137,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 15.0,
+     "intensidad_mmh": 2.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 29.7,
+     "intensidad_mmh": 6.0,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 32.2,
+     "intensidad_mmh": 8.8,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 29.5,
+     "intensidad_mmh": 5.7,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 30.2,
+     "intensidad_mmh": 3.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 19.3,
+     "intensidad_mmh": 3.6,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 20.5,
+     "intensidad_mmh": 6.2,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 14.9,
+     "intensidad_mmh": 1.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-31"
+  },
+  {
+   "nombre": "Mapasingue",
+   "zona": "norte",
+   "lon": -79.925,
+   "lat": -2.155,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 13.9,
+     "intensidad_mmh": 2.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 29.0,
+     "intensidad_mmh": 6.0,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 31.3,
+     "intensidad_mmh": 8.8,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 28.2,
+     "intensidad_mmh": 5.7,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 28.7,
+     "intensidad_mmh": 3.3,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 18.5,
+     "intensidad_mmh": 3.6,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 19.9,
+     "intensidad_mmh": 6.2,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 14.3,
+     "intensidad_mmh": 1.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-31"
+  },
+  {
+   "nombre": "Prosperina",
+   "zona": "norte",
+   "lon": -79.95,
+   "lat": -2.148,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 14.3,
+     "intensidad_mmh": 2.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 29.3,
+     "intensidad_mmh": 6.0,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 31.6,
+     "intensidad_mmh": 8.8,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 28.7,
+     "intensidad_mmh": 5.7,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 29.3,
+     "intensidad_mmh": 3.3,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 18.8,
+     "intensidad_mmh": 3.7,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 20.2,
+     "intensidad_mmh": 6.2,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 14.6,
+     "intensidad_mmh": 1.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-31"
+  },
+  {
+   "nombre": "Urdesa / Kennedy",
+   "zona": "norte",
+   "lon": -79.9,
+   "lat": -2.163,
+   "sus": 1,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 13.6,
+     "intensidad_mmh": 2.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 1/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 29.0,
+     "intensidad_mmh": 6.2,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 31.1,
+     "intensidad_mmh": 9.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 27.7,
+     "intensidad_mmh": 5.6,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 28.2,
+     "intensidad_mmh": 3.3,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 18.3,
+     "intensidad_mmh": 3.6,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 20.0,
+     "intensidad_mmh": 6.2,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 14.1,
+     "intensidad_mmh": 1.7,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 1/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-31"
+  },
+  {
+   "nombre": "Av. Quito y Av. Machala",
+   "zona": "centro",
+   "lon": -79.892,
+   "lat": -2.201,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 12.7,
+     "intensidad_mmh": 1.9,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 33.6,
+     "intensidad_mmh": 9.1,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 33.4,
+     "intensidad_mmh": 10.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 27.9,
+     "intensidad_mmh": 5.1,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 28.3,
+     "intensidad_mmh": 3.2,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 19.0,
+     "intensidad_mmh": 3.5,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.8,
+     "intensidad_mmh": 7.2,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 12.6,
+     "intensidad_mmh": 1.1,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Barrio Garay",
+   "zona": "centro",
+   "lon": -79.901,
+   "lat": -2.198,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 12.7,
+     "intensidad_mmh": 2.2,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 30.6,
+     "intensidad_mmh": 8.6,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 31.4,
+     "intensidad_mmh": 10.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 26.5,
+     "intensidad_mmh": 4.7,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 26.8,
+     "intensidad_mmh": 3.3,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 18.5,
+     "intensidad_mmh": 3.6,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.2,
+     "intensidad_mmh": 7.0,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 12.7,
+     "intensidad_mmh": 1.1,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Suburbio Oeste (calle 29)",
+   "zona": "centro",
+   "lon": -79.913,
+   "lat": -2.201,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 12.7,
+     "intensidad_mmh": 2.1,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 30.7,
+     "intensidad_mmh": 8.7,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 31.4,
+     "intensidad_mmh": 10.4,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 26.5,
+     "intensidad_mmh": 4.6,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 26.7,
+     "intensidad_mmh": 3.2,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 18.5,
+     "intensidad_mmh": 3.6,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.3,
+     "intensidad_mmh": 7.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 12.5,
+     "intensidad_mmh": 1.0,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Batallón del Suburbio",
+   "zona": "centro",
+   "lon": -79.922,
+   "lat": -2.206,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 12.6,
+     "intensidad_mmh": 2.0,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 30.4,
+     "intensidad_mmh": 8.7,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 31.4,
+     "intensidad_mmh": 10.4,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 26.5,
+     "intensidad_mmh": 4.6,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 26.6,
+     "intensidad_mmh": 3.2,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 18.3,
+     "intensidad_mmh": 3.4,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.2,
+     "intensidad_mmh": 7.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 12.4,
+     "intensidad_mmh": 1.0,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Cristo del Consuelo",
+   "zona": "centro",
+   "lon": -79.916,
+   "lat": -2.211,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 12.5,
+     "intensidad_mmh": 2.0,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 30.1,
+     "intensidad_mmh": 8.6,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 31.4,
+     "intensidad_mmh": 10.4,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 26.5,
+     "intensidad_mmh": 4.6,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 26.5,
+     "intensidad_mmh": 3.1,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 18.1,
+     "intensidad_mmh": 3.2,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.1,
+     "intensidad_mmh": 7.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 12.3,
+     "intensidad_mmh": 1.0,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Malecón / calle Panamá",
+   "zona": "centro",
+   "lon": -79.879,
+   "lat": -2.19,
+   "sus": 1,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 13.0,
+     "intensidad_mmh": 1.7,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 1/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 38.2,
+     "intensidad_mmh": 9.1,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 36.4,
+     "intensidad_mmh": 9.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 30.6,
+     "intensidad_mmh": 6.2,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 31.4,
+     "intensidad_mmh": 3.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 19.8,
+     "intensidad_mmh": 3.4,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 23.3,
+     "intensidad_mmh": 7.3,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 1/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 13.0,
+     "intensidad_mmh": 1.3,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 1/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Barrio Centenario",
+   "zona": "sur",
+   "lon": -79.887,
+   "lat": -2.217,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 12.5,
+     "intensidad_mmh": 1.5,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 34.4,
+     "intensidad_mmh": 8.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 34.8,
+     "intensidad_mmh": 10.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 29.0,
+     "intensidad_mmh": 5.5,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 29.2,
+     "intensidad_mmh": 3.1,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 18.8,
+     "intensidad_mmh": 2.9,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.7,
+     "intensidad_mmh": 7.1,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 12.4,
+     "intensidad_mmh": 1.0,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "La Pradera",
+   "zona": "sur",
+   "lon": -79.89,
+   "lat": -2.232,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 12.3,
+     "intensidad_mmh": 1.3,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 32.4,
+     "intensidad_mmh": 8.5,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 34.1,
+     "intensidad_mmh": 10.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 28.5,
+     "intensidad_mmh": 5.3,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 28.3,
+     "intensidad_mmh": 3.0,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 18.0,
+     "intensidad_mmh": 2.4,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.2,
+     "intensidad_mmh": 6.8,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 12.0,
+     "intensidad_mmh": 0.9,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Los Esteros",
+   "zona": "sur",
+   "lon": -79.898,
+   "lat": -2.228,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 12.3,
+     "intensidad_mmh": 1.6,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 29.8,
+     "intensidad_mmh": 8.4,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 32.0,
+     "intensidad_mmh": 10.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 26.9,
+     "intensidad_mmh": 4.8,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 26.6,
+     "intensidad_mmh": 3.0,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 17.6,
+     "intensidad_mmh": 2.7,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 21.8,
+     "intensidad_mmh": 6.8,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 12.0,
+     "intensidad_mmh": 0.9,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-31"
+  },
+  {
+   "nombre": "Isla Trinitaria",
+   "zona": "sur",
+   "lon": -79.922,
+   "lat": -2.238,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 12.2,
+     "intensidad_mmh": 1.5,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 28.5,
+     "intensidad_mmh": 8.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 31.5,
+     "intensidad_mmh": 10.3,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 26.5,
+     "intensidad_mmh": 4.7,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 26.0,
+     "intensidad_mmh": 2.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 17.1,
+     "intensidad_mmh": 2.4,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 21.4,
+     "intensidad_mmh": 6.7,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 11.7,
+     "intensidad_mmh": 0.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-31"
+  },
+  {
+   "nombre": "La Floresta",
+   "zona": "sur",
+   "lon": -79.884,
+   "lat": -2.245,
+   "sus": 2,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 11.9,
+     "intensidad_mmh": 1.0,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 33.8,
+     "intensidad_mmh": 8.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 35.6,
+     "intensidad_mmh": 10.2,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 29.1,
+     "intensidad_mmh": 5.8,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 29.0,
+     "intensidad_mmh": 3.0,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 17.8,
+     "intensidad_mmh": 2.0,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.2,
+     "intensidad_mmh": 6.7,
+     "nivel": "Moderado",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 2/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 11.8,
+     "intensidad_mmh": 0.9,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 2/3"
+    }
+   ],
+   "nivel_mapa": "Alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Fertisa",
+   "zona": "sur",
+   "lon": -79.902,
+   "lat": -2.259,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 11.3,
+     "intensidad_mmh": 1.5,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 27.8,
+     "intensidad_mmh": 8.2,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 31.1,
+     "intensidad_mmh": 10.3,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 24.0,
+     "intensidad_mmh": 4.7,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 23.8,
+     "intensidad_mmh": 2.8,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 15.5,
+     "intensidad_mmh": 2.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 20.9,
+     "intensidad_mmh": 6.7,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 10.9,
+     "intensidad_mmh": 0.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-31"
+  },
+  {
+   "nombre": "Guasmo Norte",
+   "zona": "sur",
+   "lon": -79.881,
+   "lat": -2.252,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 11.6,
+     "intensidad_mmh": 0.9,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 34.6,
+     "intensidad_mmh": 8.3,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 36.2,
+     "intensidad_mmh": 10.2,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 28.8,
+     "intensidad_mmh": 6.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 28.8,
+     "intensidad_mmh": 3.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 17.4,
+     "intensidad_mmh": 1.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.2,
+     "intensidad_mmh": 6.7,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 11.5,
+     "intensidad_mmh": 0.9,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Guasmo Central",
+   "zona": "sur",
+   "lon": -79.878,
+   "lat": -2.266,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 11.0,
+     "intensidad_mmh": 0.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 35.1,
+     "intensidad_mmh": 8.4,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 36.7,
+     "intensidad_mmh": 10.2,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 27.5,
+     "intensidad_mmh": 6.2,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 27.9,
+     "intensidad_mmh": 3.0,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 16.5,
+     "intensidad_mmh": 1.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 22.1,
+     "intensidad_mmh": 6.7,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 10.9,
+     "intensidad_mmh": 0.9,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Guasmo Sur",
+   "zona": "sur",
+   "lon": -79.876,
+   "lat": -2.281,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 10.3,
+     "intensidad_mmh": 0.7,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 35.3,
+     "intensidad_mmh": 8.4,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 37.0,
+     "intensidad_mmh": 10.2,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 26.0,
+     "intensidad_mmh": 6.3,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 26.7,
+     "intensidad_mmh": 3.1,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 15.4,
+     "intensidad_mmh": 1.8,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 21.9,
+     "intensidad_mmh": 6.7,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 10.4,
+     "intensidad_mmh": 0.9,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  },
+  {
+   "nombre": "Unión de Bananeros",
+   "zona": "sur",
+   "lon": -79.89,
+   "lat": -2.286,
+   "sus": 3,
+   "dias": [
+    {
+     "fecha": "2026-10-29",
+     "lluvia_mm": 10.3,
+     "intensidad_mmh": 1.1,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    },
+    {
+     "fecha": "2026-10-30",
+     "lluvia_mm": 30.5,
+     "intensidad_mmh": 8.3,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-10-31",
+     "lluvia_mm": 33.3,
+     "intensidad_mmh": 10.2,
+     "nivel": "Muy alto",
+     "motivo": "lluvia nivel 2/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-01",
+     "lluvia_mm": 23.2,
+     "intensidad_mmh": 5.4,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-02",
+     "lluvia_mm": 23.6,
+     "intensidad_mmh": 2.9,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-03",
+     "lluvia_mm": 14.5,
+     "intensidad_mmh": 2.1,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    },
+    {
+     "fecha": "2026-11-04",
+     "lluvia_mm": 21.1,
+     "intensidad_mmh": 6.7,
+     "nivel": "Alto",
+     "motivo": "lluvia nivel 1/4, susceptibilidad 3/3 + suelo saturado, El Niño costero"
+    },
+    {
+     "fecha": "2026-11-05",
+     "lluvia_mm": 10.1,
+     "intensidad_mmh": 0.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia nivel 0/4, susceptibilidad 3/3"
+    }
+   ],
+   "nivel_mapa": "Muy alto",
+   "fecha_peor": "2026-10-30"
+  }
+ ],
+ "enso": {
+  "semanal": {
+   "semana": "21OCT2026",
+   "nino12_sst": 26.3,
+   "nino12": 5.2,
+   "nino3": 4.3,
+   "nino34": 3.4,
+   "nino4": 1.1
+  },
+  "icen_aprox": 5.22,
+  "clase_costera": "Cálida extraordinaria",
+  "oni": {
+   "temporada": "JAS",
+   "anio": 2026,
+   "anom": 2.16
+  },
+  "discusion": {
+   "estado": "El Ni&ntilde;o Advisory",
+   "sinopsis": "El Ni&ntilde;o continues to strengthen, with a strong-to-very strong El Ni&ntilde;o likely through January-March 2027 (remaining greater than an 83&#37; chance).",
+   "fecha": "8 October 2026",
+   "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml"
+  },
+  "tendencia_nino12": [
+   {
+    "semana": "02SEP2026",
+    "anom": 4.4
+   },
+   {
+    "semana": "09SEP2026",
+    "anom": 4.6
+   },
+   {
+    "semana": "16SEP2026",
+    "anom": 4.7
+   },
+   {
+    "semana": "23SEP2026",
+    "anom": 4.9
+   },
+   {
+    "semana": "30SEP2026",
+    "anom": 5.3
+   },
+   {
+    "semana": "07OCT2026",
+    "anom": 5.2
+   },
+   {
+    "semana": "14OCT2026",
+    "anom": 5.2
+   },
+   {
+    "semana": "21OCT2026",
+    "anom": 5.2
+   }
+  ]
+ },
+ "estacional": null,
+ "fuentes": [
+  {
+   "id": "gfs_seamless",
+   "nombre": "NOAA GFS 0,25°",
+   "centro": "NOAA/NCEP (EE. UU.)",
+   "peso": 1.0,
+   "ok": true,
+   "corrida": "29/10 06 UTC"
+  },
+  {
+   "id": "gfs_graphcast025",
+   "nombre": "NOAA GraphCast-GFS (IA)",
+   "centro": "NOAA/NCEP (EE. UU.)",
+   "ok": false,
+   "detalle": "no disponible en esta corrida"
+  },
+  {
+   "id": "ncep_aigfs025",
+   "nombre": "NOAA AIGFS (IA)",
+   "centro": "NOAA/NCEP (EE. UU.)",
+   "peso": 1.0,
+   "ok": true,
+   "corrida": "29/10 06 UTC"
+  },
+  {
+   "id": "gem_global",
+   "nombre": "ECCC GEM Global",
+   "centro": "Environment and Climate Change Canada",
+   "peso": 1.0,
+   "ok": true,
+   "corrida": "26/05 00 UTC"
+  },
+  {
+   "id": "ens:gfs025",
+   "nombre": "NOAA GEFS (ensamble) — 31 miembros",
+   "centro": "NOAA/NCEP (EE. UU.)",
+   "peso": 1.5,
+   "ok": true,
+   "corrida": "29/10 06 UTC"
+  },
+  {
+   "id": "ens:gem_global",
+   "nombre": "ECCC GEPS (ensamble) — 21 miembros",
+   "centro": "Environment and Climate Change Canada",
+   "peso": 1.5,
+   "ok": true,
+   "corrida": "29/10 00 UTC"
+  },
+  {
+   "id": "cpc",
+   "nombre": "NOAA CPC — índices Niño semanales, ONI y discusión ENSO",
+   "centro": "Climate Prediction Center (EE. UU.)",
+   "ok": true
+  },
+  {
+   "id": "nasa",
+   "nombre": "NASA POWER — climatología mensual de lluvia",
+   "centro": "NASA Langley (EE. UU.)",
+   "ok": true
+  },
+  {
+   "id": "cfsv2",
+   "nombre": "NOAA CFSv2 (estacional)",
+   "centro": "NOAA/NCEP (EE. UU.)",
+   "ok": false,
+   "detalle": "no disponible en esta corrida"
+  }
+ ],
+ "climatologia_nasa_mm_dia": {
+  "1": 3.98,
+  "2": 7.6,
+  "3": 6.85,
+  "4": 4.2,
+  "5": 1.22,
+  "6": 0.33,
+  "7": 0.11,
+  "8": 0.09,
+  "9": 0.08,
+  "10": 0.2,
+  "11": 0.27,
+  "12": 0.76
+ },
+ "pesos": {
+  "gfs_seamless": 1.0,
+  "gfs_graphcast025": 1.0,
+  "ncep_aigfs025": 1.0,
+  "gem_global": 1.0,
+  "ens:gfs025": 1.5,
+  "ens:gem_global": 1.5
+ }
+}
