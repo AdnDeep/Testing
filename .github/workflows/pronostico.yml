@@ -34,9 +34,23 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generar pronóstico
-        run: python -m src.run
+        id: gen
+        continue-on-error: true
+        run: |
+          mkdir -p output/latest output/estado
+          set -o pipefail
+          python -m src.run 2>&1 | tee output/estado/log.txt
+
+      - name: Registrar estado de la corrida
+        if: always()
+        run: |
+          mkdir -p output/estado
+          printf '{"corrida": "%s", "resultado": "%s", "fecha_utc": "%s", "commit": "%s"}\n' \
+            "${{ github.run_id }}" "${{ steps.gen.outcome }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "${{ github.sha }}" \
+            > output/estado/ultima_corrida.json
 
       - name: Guardar resultados en el repositorio
+        if: always()
         run: |
           git config user.name "pronostico-bot"
           git config user.email "pronostico-bot@users.noreply.github.com"
@@ -52,6 +66,7 @@ jobs:
           done
 
       - name: Publicar entregable como artefacto de la ejecución
+        if: steps.gen.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: pronostico-guayaquil
