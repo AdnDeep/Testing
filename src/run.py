@@ -164,11 +164,16 @@ def main() -> int:
         png_bytes = fh.read()
     png_hoy = os.path.join(SALIDA, "latest", "hoy_por_hora.png")
     hoy_bytes = None
-    if G.dibujar(res, meta, png_hoy):
+    if G.dibujar(res, meta, png_hoy, "hoy"):
         with open(png_hoy, "rb") as fh:
             hoy_bytes = fh.read()
+    png_man = os.path.join(SALIDA, "latest", "manana_por_hora.png")
+    man_bytes = None
+    if G.dibujar(res, meta, png_man, "manana"):
+        with open(png_man, "rb") as fh:
+            man_bytes = fh.read()
 
-    html_txt = R.construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes)
+    html_txt = R.construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes, man_bytes)
     md_txt = R.construir_md(res, meta, enso)
     js_txt = R.construir_json(res, meta, enso, estacional, fuentes, clim)
     for nombre, txt in (("reporte.html", html_txt), ("reporte.md", md_txt), ("reporte.json", js_txt)):

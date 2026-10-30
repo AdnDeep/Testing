@@ -22,9 +22,9 @@ BAND_BLOQUEO = "#C9DCF4"
 RIESGO = {"Moderado": "#6FA8E8", "Alto": "#2F74C9", "Muy alto": "#0B3D91"}
 
 
-def dibujar(res: dict, meta: dict, ruta_png: str):
-    hoy = res["hoy"]
-    horas = hoy["horas"]
+def dibujar(res: dict, meta: dict, ruta_png: str, clave: str = "hoy"):
+    hoy = res.get(clave) or {}
+    horas = hoy.get("horas") or []
     if not horas:
         return False
     xs = list(range(len(horas)))
@@ -32,11 +32,14 @@ def dibujar(res: dict, meta: dict, ruta_png: str):
     i_ahora = next((i for i, h in enumerate(horas) if h["actual"]), None)
 
     fig = plt.figure(figsize=(11, 10.2), dpi=150, facecolor="white")
-    fig.text(0.04, 0.975, f"HOY · {hoy['etiqueta'].upper()}", fontsize=19, fontweight="bold", color=INK, va="top")
+    titulo = "HOY" if clave == "hoy" else "MAÑANA"
+    fig.text(0.04, 0.975, f"{titulo} · {hoy['etiqueta'].upper()}", fontsize=19, fontweight="bold", color=INK,
+             va="top")
     fig.text(0.04, 0.945, "Hora por hora: marea del río Guayas y lluvia prevista por zona", fontsize=12.5,
              color=INK, va="top")
-    fig.text(0.04, 0.923, f"Emitido {meta['emitido_texto']} (hora de Ecuador) · horas anteriores a la actual: "
-             "estimación de los modelos, no medición", fontsize=9.5, color=MUTED, va="top")
+    nota = (" · horas anteriores a la actual: estimación de los modelos, no medición" if clave == "hoy" else "")
+    fig.text(0.04, 0.923, f"Emitido {meta['emitido_texto']} (hora de Ecuador){nota}", fontsize=9.5, color=MUTED,
+             va="top")
 
     alturas = [1.25, 1, 0.14, 1, 0.14, 1, 0.14]
     gs = fig.add_gridspec(len(alturas), 1, height_ratios=alturas, left=0.10, right=0.83, top=0.885, bottom=0.10,

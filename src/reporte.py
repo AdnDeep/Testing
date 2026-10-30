@@ -136,9 +136,9 @@ def _sparkline(serie):
             f'<circle cx="{xs[-1]:.1f}" cy="{ys[-1]:.1f}" r="3.5" class="spark-dot"/></svg>')
 
 
-def construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes=None) -> str:
+def construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes=None, man_bytes=None) -> str:
     img64 = base64.b64encode(png_bytes).decode()
-    hoy_html = _seccion_hoy(res, hoy_bytes)
+    hoy_html = _seccion_hoy(res, hoy_bytes) + _seccion_hoy(res, man_bytes, "manana")
     mareas_html = _seccion_mareas(res)
     zonas_html = []
     for zid in ("norte", "centro", "sur"):
@@ -296,15 +296,15 @@ def construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes=No
 """
 
 
-def _seccion_hoy(res, hoy_bytes) -> str:
-    hoy = res.get("hoy") or {}
+def _seccion_hoy(res, hoy_bytes, clave="hoy") -> str:
+    hoy = res.get(clave) or {}
     horas = hoy.get("horas") or []
     if not horas:
         return ""
     img = ""
     if hoy_bytes:
         img = ('<figure class="chart"><img src="data:image/png;base64,' + base64.b64encode(hoy_bytes).decode() +
-               '" alt="Gráfico de hoy hora por hora: marea del río Guayas y lluvia por zona con riesgo de anegamiento">'
+               f'" alt="Gráfico de {"hoy" if clave == "hoy" else "mañana"} hora por hora: marea del río Guayas y lluvia por zona con riesgo de anegamiento">'
                '<figcaption>Barras rojas: lluvia por hora (más claras: horas que ya pasaron, estimadas por los modelos). '
                'Franjas celestes: marea alta en el río. Franja azul bajo cada zona: riesgo de anegamiento.</figcaption>'
                '</figure>')
@@ -328,8 +328,8 @@ def _seccion_hoy(res, hoy_bytes) -> str:
            '<th scope="colgroup" colspan="3">Sur</th></tr><tr><th scope="col">m</th><th scope="col">estado</th>'
            + '<th scope="col">mm</th><th scope="col">prob.</th><th scope="col">anegamiento</th>' * 3 + '</tr></thead>')
     return f"""
-  <section class="panel today" aria-labelledby="h-hoy">
-    <h2 id="h-hoy">Hoy, {E(hoy['etiqueta'])}, hora por hora</h2>
+  <section class="panel today" aria-labelledby="h-{clave}">
+    <h2 id="h-{clave}">{'Hoy' if clave == 'hoy' else 'Mañana'}, {E(hoy['etiqueta'])}, hora por hora</h2>
     <div class="today-grid">{resumen}</div>
     {img}
     <div class="table-wrap"><table class="hourly">{cab}<tbody>{''.join(filas)}</tbody></table></div>
@@ -494,6 +494,18 @@ def construir_md(res, meta, enso) -> str:
             celdas = [f"{_mm(h['zonas'][z]['lluvia_mm'])} · {h['zonas'][z]['riesgo']}" for z in ("norte", "centro", "sur")]
             lineas.append(f"| {h['hora']}{marca} | {_mm(h['marea_m'], 2)} {h['marea_estado']} | " + " | ".join(celdas) + " |")
         lineas.append("")
+    man = res.get("manana") or {}
+    if man.get("horas"):
+        lineas.append(f"## Mañana, {man['etiqueta']}, hora por hora")
+        for z in ("norte", "centro", "sur"):
+            lineas.append(f"- **{C.ZONES[z]['nombre']}:** {man['resumen'].get(z, '')}")
+        lineas.append("")
+        lineas.append("| Hora | Marea (m) | Norte mm · aneg. | Centro mm · aneg. | Sur mm · aneg. |")
+        lineas.append("|---|---|---|---|---|")
+        for h in man["horas"]:
+            celdas = [f"{_mm(h['zonas'][z]['lluvia_mm'])} · {h['zonas'][z]['riesgo']}" for z in ("norte", "centro", "sur")]
+            lineas.append(f"| {h['hora']} | {_mm(h['marea_m'], 2)} {h['marea_estado']} | " + " | ".join(celdas) + " |")
+        lineas.append("")
     if res.get("mareas"):
         lineas.append("## Mareas (INOCAR)")
         for m in res["mareas"]:
@@ -535,7 +547,8 @@ def _limpiar(o):
 
 
 def construir_json(res, meta, enso, estacional, fuentes, clim) -> str:
-    return json.dumps(_limpiar({"meta": meta, "hoy": res.get("hoy"), "mareas": res.get("mareas"),
+    return json.dumps(_limpiar({"meta": meta, "hoy": res.get("hoy"), "manana": res.get("manana"),
+                                "mareas": res.get("mareas"),
                                 "marea_umbrales": res.get("marea_umbrales"),
                                 "marea_sobreelevacion_enso_m": res.get("marea_sobreelevacion_enso_m"),
                                 "zonas": res["zonas"], "puntos": res["puntos"], "enso": enso,

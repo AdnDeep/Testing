@@ -163,7 +163,6 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
         if idx:
             dias.append({"fecha": f, "idx": idx})
     idx_pasado = [i for i, t in enumerate(tiempos) if ahora_h - timedelta(hours=72) <= t < ahora_h]
-    idx_hoy = [i for i, t in enumerate(tiempos) if t.date() == hoy.date()]
 
     pesos = {m["id"]: m["peso"] for m in C.DET_MODELS}
     pesos.update({f"ens:{m['id']}": m["peso"] for m in C.ENS_MODELS})
@@ -325,57 +324,68 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
             fila["puntos_en_riesgo"] = [p["nombre"] for p in puntos if p["zona"] == z
                                         and C.NIVELES_RIESGO.index(p["dias"][di]["nivel"]) >= 1]
 
-    # ---------- hoy, hora por hora
-    horas_hoy = []
-    for i in idx_hoy:
-        fila = {"hora": tiempos[i].strftime("%H:%M"), "pasada": tiempos[i] < ahora_h,
-                "actual": tiempos[i] == ahora_h,
-                "marea_m": None if math.isnan(nivel_m[i]) else round(float(nivel_m[i]), 2),
-                "marea_estado": MR.estado(nivel_m, i) if marea is not None else "",
-                "marea_clase": int(clase_m[i]), "zonas": {}}
-        for z in zonas:
-            nombres = [p["nombre"] for p in puntos if p["zona"] == z]
-            niv = max((riesgo_hora[n][i] for n in nombres), default=0)
-            en_riesgo = [n for n in nombres if riesgo_hora[n][i] >= max(niv, 1)]
-            ints = float(np.nanmax(int_hora[zidx[z], i])) if intensidad_ok and not np.isnan(int_hora[zidx[z], i]).all() else None
-            ll = zona_hora[z][i]
-            pr = zona_prob[z][i]
-            fila["zonas"][z] = {
-                "lluvia_mm": None if math.isnan(ll) else round(float(ll), 1),
-                "prob": None if math.isnan(pr) else round(float(pr), 2),
-                "intensidad_mmh": None if ints is None or math.isnan(ints) else round(ints, 1),
-                "riesgo": C.NIVELES_RIESGO[niv], "sectores": en_riesgo,
-            }
-        horas_hoy.append(fila)
+    # ---------- hoy y mañana, hora por hora
+    def por_hora(fecha: datetime, es_hoy: bool) -> dict:
+        idx_d = [i for i, t in enumerate(tiempos) if t.date() == fecha.date()]
+        horas_d = []
+        for i in idx_d:
+            fila = {"hora": tiempos[i].strftime("%H:%M"), "pasada": tiempos[i] < ahora_h,
+                    "actual": tiempos[i] == ahora_h,
+                    "marea_m": None if math.isnan(nivel_m[i]) else round(float(nivel_m[i]), 2),
+                    "marea_estado": MR.estado(nivel_m, i) if marea is not None else "",
+                    "marea_clase": int(clase_m[i]), "zonas": {}}
+            for z in zonas:
+                nombres = [p["nombre"] for p in puntos if p["zona"] == z]
+                niv = max((riesgo_hora[n][i] for n in nombres), default=0)
+                en_riesgo = [n for n in nombres if riesgo_hora[n][i] >= max(niv, 1)]
+                ints = (float(np.nanmax(int_hora[zidx[z], i]))
+                        if intensidad_ok and not np.isnan(int_hora[zidx[z], i]).all() else None)
+                ll = zona_hora[z][i]
+                pr = zona_prob[z][i]
+                fila["zonas"][z] = {
+                    "lluvia_mm": None if math.isnan(ll) else round(float(ll), 1),
+                    "prob": None if math.isnan(pr) else round(float(pr), 2),
+                    "intensidad_mmh": None if ints is None or math.isnan(ints) else round(ints, 1),
+                    "riesgo": C.NIVELES_RIESGO[niv], "sectores": en_riesgo,
+                }
+            horas_d.append(fila)
 
-    resumen_hoy = {}
-    for z in zonas:
-        serie = zona_hora[z]
-        rest = [i for i in idx_hoy if tiempos[i] >= ahora_h]
-        total_dia = float(np.nansum(serie[idx_hoy])) if idx_hoy else 0.0
-        total_rest = float(np.nansum(serie[rest])) if rest else 0.0
-        txt = []
-        if rest and total_rest >= 0.5:
-            inicios = [i for i in rest if i + 2 <= rest[-1]] or [rest[0]]
-            ini = max(inicios, key=lambda i: float(np.nansum(serie[i:min(i + 3, rest[-1] + 1)])))
-            fin = min(ini + 2, rest[-1])
-            pico = float(np.nansum(serie[ini:fin + 1]))
-            txt.append(f"Quedan {total_rest:.1f} mm para el resto del día (total del día {total_dia:.1f} mm). "
-                       f"Lo más fuerte: entre {tiempos[ini].strftime('%H:%M')} y "
-                       f"{(tiempos[fin] + timedelta(hours=1)).strftime('%H:%M')}, con {pico:.1f} mm.")
-            altas = [i for i in range(ini, fin + 1) if clase_m[i] >= 1]
-            if altas:
-                txt.append("Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento.")
-            else:
-                txt.append("Ese momento cae con marea baja o media, lo que ayuda al desagüe.")
-        elif rest:
-            txt.append(f"Sin lluvia significativa para el resto del día (total del día {total_dia:.1f} mm).")
-        criticas = [(tiempos[i], C.NIVELES_RIESGO[max(riesgo_hora[p['nombre']][i] for p in puntos if p['zona'] == z)])
-                    for i in rest]
-        criticas = [(t, n) for t, n in criticas if n != "Bajo"]
-        if criticas:
-            txt.append("Horas con riesgo de anegamiento: " + _rangos_horas(criticas) + ".")
-        resumen_hoy[z] = " ".join(txt)
+        resumen = {}
+        for z in zonas:
+            serie = zona_hora[z]
+            rest = [i for i in idx_d if tiempos[i] >= ahora_h]
+            total_dia = float(np.nansum(serie[idx_d])) if idx_d else 0.0
+            total_rest = float(np.nansum(serie[rest])) if rest else 0.0
+            txt = []
+            if rest and total_rest >= 0.5:
+                inicios = [i for i in rest if i + 2 <= rest[-1]] or [rest[0]]
+                ini = max(inicios, key=lambda i: float(np.nansum(serie[i:min(i + 3, rest[-1] + 1)])))
+                fin = min(ini + 2, rest[-1])
+                pico = float(np.nansum(serie[ini:fin + 1]))
+                if es_hoy:
+                    txt.append(f"Quedan {total_rest:.1f} mm para el resto del día (total del día {total_dia:.1f} mm).")
+                else:
+                    txt.append(f"Total del día: {total_dia:.1f} mm.")
+                txt.append(f"Lo más fuerte: entre {tiempos[ini].strftime('%H:%M')} y "
+                           f"{(tiempos[fin] + timedelta(hours=1)).strftime('%H:%M')}, con {pico:.1f} mm.")
+                if any(clase_m[i] >= 1 for i in range(ini, fin + 1)):
+                    txt.append("Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento.")
+                else:
+                    txt.append("Ese momento cae con marea baja o media, lo que ayuda al desagüe.")
+            elif rest:
+                txt.append(f"Sin lluvia significativa{' para el resto del día' if es_hoy else ''} "
+                           f"(total del día {total_dia:.1f} mm).")
+            criticas = [(tiempos[i], C.NIVELES_RIESGO[max(riesgo_hora[p['nombre']][i] for p in puntos
+                                                          if p['zona'] == z)]) for i in rest]
+            criticas = [(t, n) for t, n in criticas if n != "Bajo"]
+            if criticas:
+                txt.append("Horas con riesgo de anegamiento: " + _rangos_horas(criticas) + ".")
+            resumen[z] = " ".join(txt)
+        return {"fecha": fecha.strftime("%Y-%m-%d"), "etiqueta": fecha_larga(fecha), "ahora": ahora_h.strftime("%H:%M"),
+                "horas": horas_d, "resumen": resumen}
+
+    dia_hoy = por_hora(hoy, True)
+    dia_manana = por_hora(hoy + timedelta(days=1), False)
 
     mareas_ventana = [{"tipo": e["tipo"], "fecha": e["hora"].strftime("%Y-%m-%d"), "etiqueta": fecha_larga(e["hora"]),
                        "hora": e["hora"].strftime("%H:%M"), "altura": e["altura"], "clase": e["clase"],
@@ -388,8 +398,8 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
         "dias": [{"fecha": d["fecha"].strftime("%Y-%m-%d"), "etiqueta": fecha_larga(d["fecha"])} for d in dias],
         "zonas": zonas,
         "puntos": puntos,
-        "hoy": {"fecha": hoy.strftime("%Y-%m-%d"), "etiqueta": fecha_larga(hoy), "ahora": ahora_h.strftime("%H:%M"),
-                "horas": horas_hoy, "resumen": resumen_hoy},
+        "hoy": dia_hoy,
+        "manana": dia_manana,
         "mareas": mareas_ventana,
         "marea_fuente": marea.get("fuente") if marea else None,
         "marea_sobreelevacion_enso_m": sobre_m,
