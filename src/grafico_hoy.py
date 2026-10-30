@@ -141,8 +141,18 @@ def dibujar(res: dict, meta: dict, ruta_png: str, clave: str = "hoy"):
         if ax is not ejes[-1]:
             plt.setp(ax.get_xticklabels(), visible=False)
     if i_ahora is not None:
-        ax_m.text(i_ahora + 0.15, ax_m.get_ylim()[0] + 0.12, f"ahora {horas[i_ahora]['hora']}", fontsize=8.5,
-                  color=INK, va="bottom", ha="left", fontweight="bold", zorder=7,
+        # Poner la etiqueta lejos de las etiquetas de pleamar (arriba) y bajamar (abajo) cercanas
+        cerca = [e["tipo"] for e in res["mareas"] if e["fecha"] == hoy["fecha"]
+                 and abs(int(e["hora"][:2]) + int(e["hora"][3:]) / 60 - i_ahora) < 4.5]
+        lo, hi = ax_m.get_ylim()
+        if "bajamar" in cerca and "pleamar" not in cerca:
+            y_txt, va = hi - 0.9, "top"
+        elif "pleamar" in cerca and "bajamar" not in cerca:
+            y_txt, va = lo + 0.12, "bottom"
+        else:
+            y_txt, va = (lo + hi) / 2, "center"
+        ax_m.text(i_ahora + 0.15, y_txt, f"ahora {horas[i_ahora]['hora']}", fontsize=8.5,
+                  color=INK, va=va, ha="left", fontweight="bold", zorder=7,
                   bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.85))
     ejes[-1].set_xticks(xs[::2])
     ejes[-1].set_xticklabels([horas[i]["hora"][:2] + "h" for i in xs[::2]])
