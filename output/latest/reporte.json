@@ -1,7 +1,7 @@
 {
  "meta": {
-  "emitido_iso": "2026-10-29T19:41-05:00",
-  "emitido_texto": "29/10/2026 19:41",
+  "emitido_iso": "2026-10-29T21:07-05:00",
+  "emitido_texto": "29/10/2026 21:07",
   "ventana_texto": "De hoy, jueves 29 de octubre, al sábado 31 de octubre",
   "miembros_total": 52,
   "modelos_ok": [
@@ -14,13 +14,13 @@
    "NASA POWER — climatología mensual de lluvia",
    "INOCAR — marea astronómica de Guayaquil (río Guayas)"
   ],
-  "titular": "Lluvia prevista hasta el sábado 31 de octubre: Norte 80 mm, Centro 77 mm, Sur 76 mm. Riesgo de anegamiento muy alto en Norte, Centro y Sur. Pleamares de hoy: 09:05 (4.23 m) y 21:45 (4.27 m). El Niño costero: Niño 1+2 en +5.2 °C (cálida extraordinaria).",
+  "titular": "Lluvia prevista hasta el sábado 31 de octubre: Norte 77 mm, Centro 73 mm, Sur 73 mm. Riesgo de anegamiento muy alto en Norte, Centro y Sur. Pleamares de hoy: 09:05 (4.23 m) y 21:45 (4.27 m). El Niño costero: Niño 1+2 en +5.2 °C (cálida extraordinaria).",
   "fuentes_texto": "Modelos: NOAA GFS 0,25°, NOAA AIGFS (IA), ECCC GEM Global, NOAA GEFS (ensamble) — 31 miembros, ECCC GEPS (ensamble) — 21 miembros (vía Open-Meteo) · El Niño: NOAA CPC · Normales: NASA POWER · Marea: INOCAR"
  },
  "hoy": {
   "fecha": "2026-10-29",
   "etiqueta": "jueves 29 de octubre",
-  "ahora": "19:00",
+  "ahora": "21:00",
   "horas": [
    {
     "hora": "00:00",
@@ -731,8 +731,8 @@
    },
    {
     "hora": "19:00",
-    "pasada": false,
-    "actual": true,
+    "pasada": true,
+    "actual": false,
     "marea_m": 3.06,
     "marea_estado": "sube",
     "marea_clase": 0,
@@ -772,7 +772,7 @@
    },
    {
     "hora": "20:00",
-    "pasada": false,
+    "pasada": true,
     "actual": false,
     "marea_m": 3.79,
     "marea_estado": "sube",
@@ -816,7 +816,7 @@
    {
     "hora": "21:00",
     "pasada": false,
-    "actual": false,
+    "actual": true,
     "marea_m": 4.15,
     "marea_estado": "sube",
     "marea_clase": 2,
@@ -943,15 +943,15 @@
    }
   ],
   "resumen": {
-   "norte": "Quedan 8.0 mm para el resto del día (total del día 31.8 mm). Lo más fuerte: entre 20:00 y 23:00, con 5.0 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 20:00–00:00 (moderado).",
-   "centro": "Quedan 8.7 mm para el resto del día (total del día 31.2 mm). Lo más fuerte: entre 20:00 y 23:00, con 5.3 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 19:00 (moderado), 20:00–00:00 (alto).",
-   "sur": "Quedan 8.3 mm para el resto del día (total del día 29.6 mm). Lo más fuerte: entre 19:00 y 22:00, con 5.1 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 19:00 (moderado), 20:00–00:00 (alto)."
+   "norte": "Quedan 4.8 mm para el resto del día (total del día 31.8 mm). Lo más fuerte: entre 21:00 y 00:00, con 4.8 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 21:00–00:00 (moderado).",
+   "centro": "Quedan 5.3 mm para el resto del día (total del día 31.2 mm). Lo más fuerte: entre 21:00 y 00:00, con 5.3 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 21:00–00:00 (alto).",
+   "sur": "Quedan 4.8 mm para el resto del día (total del día 29.6 mm). Lo más fuerte: entre 21:00 y 00:00, con 4.8 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 21:00–00:00 (alto)."
   }
  },
  "manana": {
   "fecha": "2026-10-30",
   "etiqueta": "viernes 30 de octubre",
-  "ahora": "19:00",
+  "ahora": "21:00",
   "horas": [
    {
     "hora": "00:00",
@@ -1979,38 +1979,38 @@
   "norte": {
    "nombre": "Norte",
    "sectores": "Urdesa, Kennedy, Alborada, Sauces, Samanes, Guayacanes, Mapasingue, Prosperina, Bastión Popular, Flor de Bastión, Pascuales, Monte Sinaí",
-   "antecedente_72h_mm": 78.1,
+   "antecedente_72h_mm": 76.4,
    "dias": [
     {
      "fecha": "2026-10-29",
      "etiqueta": "jueves 29 de octubre",
      "parcial": true,
-     "horas_ventana": 5,
-     "lluvia_mm": 8.0,
+     "horas_ventana": 3,
+     "lluvia_mm": 4.8,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
       0.0,
-      12.0
+      7.0
      ],
      "por_fuente": {
-      "gfs_seamless": 12.0,
-      "ncep_aigfs025": 4.3,
+      "gfs_seamless": 7.0,
+      "ncep_aigfs025": 3.2,
       "gem_global": 0.0,
-      "ens:gfs025": 10.2,
-      "ens:gem_global": 10.9
+      "ens:gfs025": 5.8,
+      "ens:gem_global": 6.7
      },
      "p10_p50_p90": [
-      0.6,
-      8.0,
-      23.1
+      0.2,
+      4.8,
+      15.1
      ],
      "miembros": 52,
-     "prob_1mm": 0.846,
-     "prob_10mm": 0.404,
-     "prob_25mm": 0.096,
+     "prob_1mm": 0.808,
+     "prob_10mm": 0.173,
+     "prob_25mm": 0.019,
      "prob_50mm": 0.0,
-     "intensidad_max_mmh": 2.5,
-     "horas_lluvia_gfs": 5,
+     "intensidad_max_mmh": 2.0,
+     "horas_lluvia_gfs": 3,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2427,32 +2427,32 @@
      "fecha": "2026-10-29",
      "etiqueta": "jueves 29 de octubre",
      "parcial": true,
-     "horas_ventana": 5,
-     "lluvia_mm": 8.7,
+     "horas_ventana": 3,
+     "lluvia_mm": 5.3,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
       0.3,
-      11.7
+      7.0
      ],
      "por_fuente": {
-      "gfs_seamless": 11.7,
-      "ncep_aigfs025": 7.8,
+      "gfs_seamless": 7.0,
+      "ncep_aigfs025": 5.7,
       "gem_global": 0.3,
-      "ens:gfs025": 10.5,
-      "ens:gem_global": 10.9
+      "ens:gfs025": 5.7,
+      "ens:gem_global": 6.7
      },
      "p10_p50_p90": [
-      0.7,
-      8.5,
-      23.0
+      0.2,
+      4.9,
+      15.0
      ],
      "miembros": 52,
-     "prob_1mm": 0.865,
-     "prob_10mm": 0.385,
-     "prob_25mm": 0.096,
-     "prob_50mm": 0.019,
+     "prob_1mm": 0.788,
+     "prob_10mm": 0.154,
+     "prob_25mm": 0.019,
+     "prob_50mm": 0.0,
      "intensidad_max_mmh": 2.0,
-     "horas_lluvia_gfs": 5,
+     "horas_lluvia_gfs": 3,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2844,38 +2844,38 @@
   "sur": {
    "nombre": "Sur",
    "sectores": "Centenario, Cuba, La Pradera, La Floresta, Los Esteros, Guasmo, Fertisa, Isla Trinitaria, Unión de Bananeros, Puerto Marítimo",
-   "antecedente_72h_mm": 74.8,
+   "antecedente_72h_mm": 74.9,
    "dias": [
     {
      "fecha": "2026-10-29",
      "etiqueta": "jueves 29 de octubre",
      "parcial": true,
-     "horas_ventana": 5,
-     "lluvia_mm": 8.3,
+     "horas_ventana": 3,
+     "lluvia_mm": 4.8,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
       0.3,
-      13.5
+      6.7
      ],
      "por_fuente": {
-      "gfs_seamless": 13.5,
-      "ncep_aigfs025": 7.8,
+      "gfs_seamless": 6.7,
+      "ncep_aigfs025": 5.7,
       "gem_global": 0.3,
-      "ens:gfs025": 10.5,
-      "ens:gem_global": 8.3
+      "ens:gfs025": 5.7,
+      "ens:gem_global": 5.1
      },
      "p10_p50_p90": [
-      1.1,
-      8.5,
-      16.2
+      0.2,
+      4.3,
+      9.9
      ],
      "miembros": 52,
-     "prob_1mm": 0.904,
-     "prob_10mm": 0.385,
-     "prob_25mm": 0.038,
-     "prob_50mm": 0.019,
-     "intensidad_max_mmh": 2.3,
-     "horas_lluvia_gfs": 5,
+     "prob_1mm": 0.808,
+     "prob_10mm": 0.096,
+     "prob_25mm": 0.019,
+     "prob_50mm": 0.0,
+     "intensidad_max_mmh": 2.0,
+     "horas_lluvia_gfs": 3,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2899,9 +2899,7 @@
       "Isla Trinitaria",
       "La Floresta",
       "Fertisa",
-      "Guasmo Norte",
-      "Guasmo Central",
-      "Unión de Bananeros"
+      "Guasmo Norte"
      ]
     },
     {
@@ -3293,7 +3291,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 7.5,
+     "lluvia_mm": 4.6,
      "intensidad_mmh": 1.6,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3369,7 +3367,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 7.9,
+     "lluvia_mm": 4.8,
      "intensidad_mmh": 1.8,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
@@ -3445,7 +3443,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 7.8,
+     "lluvia_mm": 4.8,
      "intensidad_mmh": 1.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3521,11 +3519,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 8.8,
-     "intensidad_mmh": 2.3,
+     "lluvia_mm": 5.3,
+     "intensidad_mmh": 2.0,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "20:00"
+     "hora_critica": "21:00"
     },
     {
      "fecha": "2026-10-30",
@@ -3597,7 +3595,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 7.8,
+     "lluvia_mm": 4.8,
      "intensidad_mmh": 1.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3673,7 +3671,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 7.5,
+     "lluvia_mm": 4.6,
      "intensidad_mmh": 1.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -3749,7 +3747,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 8.1,
+     "lluvia_mm": 4.9,
      "intensidad_mmh": 1.9,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -3825,7 +3823,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 7.9,
+     "lluvia_mm": 4.8,
      "intensidad_mmh": 1.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -3901,7 +3899,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 8.7,
+     "lluvia_mm": 5.2,
      "intensidad_mmh": 2.0,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -3977,7 +3975,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.1,
+     "lluvia_mm": 5.5,
      "intensidad_mmh": 2.0,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4053,7 +4051,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.0,
+     "lluvia_mm": 5.4,
      "intensidad_mmh": 1.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4129,7 +4127,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.3,
+     "lluvia_mm": 5.6,
      "intensidad_mmh": 2.0,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 1/3 + marea alta, suelo saturado",
@@ -4205,7 +4203,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 8.9,
+     "lluvia_mm": 5.4,
      "intensidad_mmh": 2.0,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4281,7 +4279,7 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.3,
+     "lluvia_mm": 5.6,
      "intensidad_mmh": 2.0,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4357,11 +4355,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.3,
+     "lluvia_mm": 5.6,
      "intensidad_mmh": 2.0,
      "nivel": "Alto",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "21:00"
     },
     {
      "fecha": "2026-10-30",
@@ -4433,11 +4431,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.4,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 5.6,
+     "intensidad_mmh": 2.0,
      "nivel": "Alto",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "21:00"
     },
     {
      "fecha": "2026-10-30",
@@ -4509,11 +4507,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.4,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 5.6,
+     "intensidad_mmh": 2.0,
      "nivel": "Alto",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "21:00"
     },
     {
      "fecha": "2026-10-30",
@@ -4585,11 +4583,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 8.3,
+     "lluvia_mm": 5.0,
      "intensidad_mmh": 1.9,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 1/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "22:00"
     },
     {
      "fecha": "2026-10-30",
@@ -4661,8 +4659,8 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 8.8,
-     "intensidad_mmh": 2.0,
+     "lluvia_mm": 5.2,
+     "intensidad_mmh": 1.9,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
      "hora_critica": "21:00"
@@ -4737,8 +4735,8 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.1,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 5.3,
+     "intensidad_mmh": 1.8,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
      "hora_critica": "21:00"
@@ -4813,11 +4811,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.5,
-     "intensidad_mmh": 2.2,
+     "lluvia_mm": 5.5,
+     "intensidad_mmh": 2.0,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "21:00"
     },
     {
      "fecha": "2026-10-30",
@@ -4889,11 +4887,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.7,
-     "intensidad_mmh": 2.3,
+     "lluvia_mm": 5.6,
+     "intensidad_mmh": 2.0,
      "nivel": "Alto",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "21:00"
     },
     {
      "fecha": "2026-10-30",
@@ -4965,11 +4963,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 8.6,
-     "intensidad_mmh": 1.9,
+     "lluvia_mm": 5.0,
+     "intensidad_mmh": 1.7,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "21:00"
     },
     {
      "fecha": "2026-10-30",
@@ -5041,11 +5039,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 9.1,
-     "intensidad_mmh": 2.3,
+     "lluvia_mm": 5.2,
+     "intensidad_mmh": 2.0,
      "nivel": "Alto",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "21:00"
     },
     {
      "fecha": "2026-10-30",
@@ -5117,11 +5115,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 8.2,
-     "intensidad_mmh": 1.9,
+     "lluvia_mm": 4.8,
+     "intensidad_mmh": 1.6,
      "nivel": "Alto",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "21:00"
     },
     {
      "fecha": "2026-10-30",
@@ -5193,11 +5191,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 7.6,
-     "intensidad_mmh": 1.8,
-     "nivel": "Alto",
-     "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "lluvia_mm": 4.4,
+     "intensidad_mmh": 1.5,
+     "nivel": "Bajo",
+     "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
+     "hora_critica": null
     },
     {
      "fecha": "2026-10-30",
@@ -5269,8 +5267,8 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 7.0,
-     "intensidad_mmh": 1.7,
+     "lluvia_mm": 4.1,
+     "intensidad_mmh": 1.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
      "hora_critica": null
@@ -5345,11 +5343,11 @@
    "dias": [
     {
      "fecha": "2026-10-29",
-     "lluvia_mm": 7.8,
-     "intensidad_mmh": 2.1,
-     "nivel": "Alto",
-     "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "lluvia_mm": 4.5,
+     "intensidad_mmh": 1.8,
+     "nivel": "Bajo",
+     "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
+     "hora_critica": null
     },
     {
      "fecha": "2026-10-30",
@@ -5477,7 +5475,7 @@
    "centro": "NOAA/NCEP (EE. UU.)",
    "peso": 1.0,
    "ok": true,
-   "corrida": "29/10 12 UTC"
+   "corrida": "29/10 18 UTC"
   },
   {
    "id": "ncep_aigfs025",
