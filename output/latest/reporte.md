@@ -1,4 +1,4 @@
-# Lluvias Guayaquil — 31/10/2026 10:02
+# Lluvias Guayaquil — 31/10/2026 10:51
 
 Lluvia prevista hasta el lunes 2 de noviembre: Norte 84 mm, Centro 77 mm, Sur 77 mm. Riesgo de anegamiento alto en Norte, Centro y Sur. Pleamares de hoy: 10:45 (3.86 m) y 23:30 (4.03 m). El Niño costero: Niño 1+2 en +5.2 °C (cálida extraordinaria).
 

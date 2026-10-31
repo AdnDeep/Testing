@@ -1,7 +1,7 @@
 {
  "meta": {
-  "emitido_iso": "2026-10-31T10:02-05:00",
-  "emitido_texto": "31/10/2026 10:02",
+  "emitido_iso": "2026-10-31T10:51-05:00",
+  "emitido_texto": "31/10/2026 10:51",
   "ventana_texto": "De hoy, sábado 31 de octubre, al lunes 2 de noviembre",
   "miembros_total": 52,
   "modelos_ok": [
@@ -1868,7 +1868,7 @@
    "hora": "10:45",
    "altura": 3.86,
    "clase": "normal",
-   "pasada": false
+   "pasada": true
   },
   {
    "tipo": "bajamar",
