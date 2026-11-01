@@ -1,0 +1,54 @@
+{
+ "anuario_2013": {
+  "url": "https://www.dundeeprecious.com/site/assets/files/12843/am_2013.pdf",
+  "status": 200,
+  "bytes": 3095049,
+  "last_modified": "Wed, 01 Feb 2023 21:27:59 GMT",
+  "chars": 1718124,
+  "guayas_lineas": 3
+ },
+ "anuario_2012": {
+  "url": "https://www.inamhi.gob.ec/wp-content/uploads/anuarios/meteorologicos/Am%202012.pdf",
+  "status": 200,
+  "bytes": 6614758,
+  "last_modified": "Thu, 09 Apr 2015 13:28:40 GMT",
+  "chars": 1450530,
+  "guayas_lineas": 25
+ },
+ "anuario_2011": {
+  "url": "https://www.inamhi.gob.ec/wp-content/uploads/anuarios/meteorologicos/Am%202011.pdf",
+  "status": 200,
+  "bytes": 4767838,
+  "last_modified": "Thu, 09 Apr 2015 13:23:46 GMT",
+  "chars": 1412444,
+  "guayas_lineas": 28
+ },
+ "boletin_diario_gye": {
+  "url": "https://www.inamhi.gob.ec/guayaquil/registrodgy.pdf",
+  "status": 200,
+  "bytes": 1442392,
+  "last_modified": "Thu, 29 Oct 2026 18:34:11 GMT",
+  "chars": 7840
+ },
+ "boletin_diario_cli_gye": {
+  "url": "https://www.inamhi.gob.ec/guayaquil/bol_dia_cli.pdf",
+  "status": 200,
+  "bytes": 1442392,
+  "last_modified": "Thu, 29 Oct 2026 18:34:15 GMT",
+  "chars": 7840
+ },
+ "boletin_mensual_gye": {
+  "url": "https://www.inamhi.gob.ec/guayaquil/bol_men_cli.pdf",
+  "status": 200,
+  "bytes": 3966483,
+  "last_modified": "Tue, 27 Oct 2026 19:18:23 GMT",
+  "chars": 6477
+ },
+ "mapa_red_meteorologica": {
+  "url": "https://www.inamhi.gob.ec/docum_institucion/MapasBiblioteca/mapa%20de%20red%20meteorologica%20del%20Ecuador.pdf",
+  "status": 200,
+  "bytes": 593462,
+  "last_modified": "Fri, 31 Jan 2014 22:57:08 GMT",
+  "chars": 34937
+ }
+}

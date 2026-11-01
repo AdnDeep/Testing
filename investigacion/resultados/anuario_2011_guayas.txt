@@ -1,0 +1,28 @@
+M0774    ABRETONES                              PV      140     2 º    11 '    0 " S   80 º    8 '    0 " W      0      Guayas          EX-CEDEGE                      129
+M0782    BARCELONA                              PV      140     1 º    54 '    0 " S   80 º   41 '    0 " W      0      Guayas          EX-CEDEGE                      129
+M0475    COLIMES DE BALZAR INAMHI               PV      130     1 º    32 '   34 " S   80 º    0 '   29 " W      28     Guayas            INAMHI                       129
+M0780    COLONCHE                               PG      140     2 º     1 '    0 " S   80 º   40 '    0 " W      0      Guayas          EX-CEDEGE                      129
+M0075    GUAYAQUIL INOCAR                       CP      130     2 º    16 '    1 " S   79 º   54 '    3 " W      4      Guayas                                         127
+M1096    GUAYAQUIL U.ESTATAL (RADIO SONDA       CP      130     2 º    12 '    0 " S   79 º   53 '    0 " W      6      Guayas            INAMHI        103            129
+M1123    HACIENDA TAURA (BANATEL)               CP      150     2 º    21 '    0 " S   79 º   38 '   10 " W     12      Guayas            INAMHI        107            129
+M0218    INGENIO SAN CARLOS (BATEY)        CP      130     2 º    12 '    0 " S   79 º   26 '   35 " W     35      Guayas             INAMHI            90             127
+M1173    ISLA PUNA-SECTOR BELLAVISTA       CO      130     2 º    46 '    8 " S   80 º   13 '   15 " W      8      Guayas             INAMHI                           130
+M0472    JULIO MORENO(SIMON BOLIVAR)       PV      140     2 º    10 '   44 " S   80 º   21 '   26 " W     130     Guayas                                              129
+M1146    JULIO MORENO-CEDEGE               PV      130     2 º    20 '   18 " S   80 º   21 '   24 " W       0     Guayas          EX-CEDEGE                           130
+M0476    LA CAPILLA INAMHI                 PV      130     1 º    41 '   46 " S   79 º   59 '   45 " W       7     Guayas             INAMHI                           129
+M1086    LA FLORIDA                        PV        0     0 º     0 '    0 " S    0 º    0 '    0 " W      0      Guayas          EX-CEDEGE                           129
+M0775    LIMONCITO                         PG      140     2 º    13 '    0 " S   80 º   14 '    0 " W      0      Guayas          EX-CEDEGE                           129
+M0619    MANGLARALTO                       PV      140     1 º    50 '   16 " S   80 º   44 '   48 " W       6     Guayas          EX-CEDEGE                           129
+M0037    MILAGRO(INGENIO VALDEZ)           AP      130     2 º     6 '   56 " S   79 º   35 '   57 " W      13     Guayas             INAMHI            38             127
+M0247    MURUCUMBA                         PG      130     0 º    48 '   17 " S   79 º   37 '    3 " W      64     Guayas          EX-CEDEGE                           128
+M0176    NARANJAL                          CO      170     2 º    39 '   44 " S   79 º   35 '   23 " W      50     Guayas             INAMHI            82             127
+M1207    NOBOL                             CO      100     1 º    54 '    0 " S   80 º    1 '   20 " W      7      Guayas             INAMHI           115             130
+M1085    PLAN AMERICA - DAULE             PV            130     1 º    47 '    0 " S   80 º    1 '   45 " W      0      Guayas        EX-CEDEGE                        129
+M0477    PUERTO INCA(CANNAR EN)           PV            160     2 º    31 '   49 " S   79 º   32 '   38 " W      50     Guayas             INAMHI                      129
+M0228    PUNA                             CO            140     2 º    44 '    3 " S   79 º   54 '    5 " W     45      Guayas                                         128
+M0776    SABANA GRANDE                    PV            140     2 º    28 '    0 " S   80 º   12 '   40 " W      0      Guayas          EX-CEDEGE                      129
+M0783    SALANGUILLO                      PV            140     1 º    57 '    0 " S   80 º   33 '   30 " W      0      Guayas          EX-CEDEGE                      129
+M1252    SAMBORONDON - UESS               PV            130     2 º     8 '    6 " S   79 º   52 '    3 " W      7      Guayas             INAMHI                      130
+M0777    SAN JUAN-GUAYAS                  PV            140     2 º    29 '    0 " S   80 º   20 '    7 " W      0      Guayas          EX-CEDEGE                      129
+M1152    SUBE Y BAJA-CEDEGE               PV            130     2 º    21 '   30 " S   80 º   26 '   48 " W       0     Guayas          EX-CEDEGE                      130
+                                                                                                                                                    M0358           M0359                                                                                                                                             GUAYAS
