@@ -1,0 +1,30 @@
+numero_boletin,estacion,tipo
+1,La Toma,PVA
+—,Parque Metropolitano,PVA
+4,Mucho Lote II,PVA
+5,Montebello (COE-SNGR),EMA
+6,Zumar,PVA
+7,Sergio Toral,PVA
+8,Estación de Bombeo C4,PVA
+9,Lagunas Guayacanes / Samanes,PVA
+10,Nueva Prosperina,PVA
+12,Facultad de Ciencias Naturales (UG),EMA
+14,Aeropuerto (DGAC),EMC
+15,Paraíso,PVA
+16,Durán,EMA
+17,Universidad Bolivariana del Ecuador (UBE),EMA
+18,Guayarte,PVA
+19,Santa Ana,PVA
+20,Javier Salitral,PVA
+—,Terranostra,PVA
+22,Puerto Hondo,EMA
+23,La Chala,PVA
+24,Pantanos Secos,PVA
+25,Cisne 2,PVA/EMA
+26,La Pradera,PVA
+—,Cami Trinipuerto,PVA
+28,Cami Pedregal,PVA
+29,Songa,EMA
+—,Tenguel (parroquia rural),EMA
+—,Puná (parroquia rural),EMA
+—,Progreso / Caimito (parroquia rural),EMA
