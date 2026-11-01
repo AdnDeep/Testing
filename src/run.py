@@ -9,6 +9,7 @@ from zoneinfo import ZoneInfo
 
 from . import analisis as A
 from . import config as C
+from . import correccion as CORR
 from . import fetch as F
 from . import grafico_hoy as G
 from . import mapa as M
@@ -155,7 +156,17 @@ def main() -> int:
                     "detalle": None if obs else "no disponible en esta corrida"})
 
     # ---- análisis
-    res = A.analizar(base_times, det, ens, ahora, enso, marea, obs)
+    # Pasada sin corregir: compara el boletín con los modelos y guarda el historial
+    res_crudo = A.analizar(base_times, det, ens, ahora, enso, marea, obs)
+    hist = CORR.actualizar_historial(SALIDA, res_crudo.get("observado"))
+    fac = CORR.factores(hist)
+    print(f"[ok] Corrección con pluviómetros: {fac}")
+    det_c, ens_c = CORR.aplicar(det, ens, fac)
+    res = A.analizar(base_times, det_c, ens_c, ahora, enso, marea, None) if fac.get("ciudad") else res_crudo
+    res["observado"] = res_crudo.get("observado")
+    res["correccion"] = {**fac, "sin_corregir": {z: [d["lluvia_mm"] for d in v["dias"][:3]]
+                                                 for z, v in res_crudo["zonas"].items()},
+                         "historial": hist[-CORR.MAX_BOLETINES:]}
     dias = res["dias"]
     ventana = f"de hoy, {dias[0]['etiqueta']}, al {dias[min(C.MAP_DAYS, len(dias)) - 1]['etiqueta']}" if dias else ""
     meta = {
@@ -164,7 +175,7 @@ def main() -> int:
         "ventana_texto": ventana[0].upper() + ventana[1:] if ventana else "",
         "miembros_total": miembros_total,
         "modelos_ok": [f["nombre"] for f in fuentes if f["ok"]],
-        "titular": titular(res, enso),
+        "titular": titular(res, enso) + (f" Cifras corregidas con pluviómetros del INAMHI (×{fac['ciudad']['factor']:.2f})." if fac.get("ciudad") else ""),
         "fuentes_texto": "Modelos: " + ", ".join(f["nombre"] for f in fuentes if f["ok"] and f["id"] not in ("cpc", "nasa", "estacional", "marea", "boletin"))
                          + " (vía Open-Meteo) · El Niño: NOAA CPC · Normales: NASA POWER · Marea: INOCAR",
     }

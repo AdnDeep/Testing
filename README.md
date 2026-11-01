@@ -57,7 +57,11 @@ Los datos de los modelos se descargan a través de la API pública de [Open-Mete
    Emapag/Interagua y estaciones del INAMHI, DGAC y universidades), lee la lluvia de 24 h de cada estación y la
    compara, por zona, con lo que estimaron los modelos para las mismas horas. La zona de cada estación está en
    `ESTACIONES_OBS_ZONA` de `src/config.py`.
-6. **El Niño.** Los modelos ya usan la temperatura del mar observada, así que la lluvia extra de El Niño está
+6. **Corrección con pluviómetros.** Cada boletín se guarda en `output/historial/boletines.json`. Por zona se
+   calcula la razón medido/modelos (limitada entre 0,2 y 2) y el pronóstico final es un promedio entre modelos y
+   medición: factor = 1 + w·(razón − 1), con w = n/(n + 2). Con 1 boletín lo medido pesa 33 %; con 8, 80 %.
+   Todo el reporte (mapa, gráficos, riesgo) usa las cifras corregidas (`src/correccion.py`).
+7. **El Niño.** Los modelos ya usan la temperatura del mar observada, así que la lluvia extra de El Niño está
    dentro de sus números. Además El Niño eleva el nivel del mar: con un El Niño costero fuerte (Niño 1+2 ≥ +1,7 °C,
    umbrales ENFEN) se suman 0,20 m a la marea al calcular el bloqueo del desagüe (0,10 m si es moderado).
 

@@ -139,7 +139,7 @@ def _sparkline(serie):
 def construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes=None, man_bytes=None) -> str:
     img64 = base64.b64encode(png_bytes).decode()
     hoy_html = _seccion_hoy(res, hoy_bytes) + _seccion_hoy(res, man_bytes, "manana")
-    obs_html = _seccion_observado(res)
+    obs_html = _seccion_correccion(res) + _seccion_observado(res)
     red_html = _seccion_red()
     mareas_html = _seccion_mareas(res)
     zonas_html = []
@@ -478,6 +478,50 @@ def _seccion_red() -> str:
   </section>"""
 
 
+def resumen_correccion(c) -> str:
+    if not c or not c.get("ciudad"):
+        return "Sin boletines comparables todavía: el pronóstico es el de los modelos, sin corregir."
+    ci = c["ciudad"]
+    pct = round((ci["factor"] - 1) * 100)
+    txt = (f"Pronóstico corregido con {ci['n']} boletín(es) del INAMHI: en esos días la lluvia medida fue "
+           f"{ci['razon'] * 100:.0f} % de lo que estimaron los modelos. El pronóstico final es un promedio entre los "
+           f"modelos y lo medido (lo medido pesa {ci['peso_medido'] * 100:.0f} %), así que las cantidades de los "
+           f"modelos se multiplican por {ci['factor']:.2f} ({pct:+d} %).")
+    return txt
+
+
+def _seccion_correccion(res) -> str:
+    c = res.get("correccion")
+    if not c:
+        return ""
+    filas = ""
+    if c.get("ciudad"):
+        for z in ("norte", "centro", "sur"):
+            fz = c["zonas"].get(z) or {}
+            crudo = (c.get("sin_corregir") or {}).get(z) or []
+            corr = [d["lluvia_mm"] for d in res["zonas"][z]["dias"][:3]]
+            def fmt(v):
+                return " · ".join(_mm(x) for x in v) if v else "–"
+            filas += (f"<tr><th scope=\"row\">{E(C.ZONES[z]['nombre'])}</th>"
+                      f"<td class=\"num\">{(fz.get('razon') or 0) * 100:.0f} %</td>"
+                      f"<td class=\"num strong\">{fz.get('factor', 1):.2f}</td>"
+                      f"<td class=\"num\">{fmt(crudo)}</td><td class=\"num strong\">{fmt(corr)}</td></tr>")
+        tabla = ('<div class="table-wrap"><table><thead><tr><th scope="col">Zona</th><th scope="col">Medido / modelos</th>'
+                 '<th scope="col">Factor aplicado</th><th scope="col">Modelos: hoy · mañana · pasado (mm)</th>'
+                 '<th scope="col">Corregido (mm)</th></tr></thead>' f'<tbody>{filas}</tbody></table></div>')
+    else:
+        tabla = ""
+    return f"""
+  <section class="panel" aria-labelledby="h-corr">
+    <h2 id="h-corr">Corrección con pluviómetros de Guayaquil</h2>
+    <p>{E(resumen_correccion(c))}</p>
+    {tabla}
+    <p class="note">Factor = 1 + w × (medido/modelos − 1), con w = n / (n + 2) y n = boletines comparados (se usan los
+    últimos 20). La razón se limita entre 20 % y 200 %. Todas las cifras de este reporte, mapa y gráficos ya están
+    corregidas; la columna "Modelos" muestra lo que habrían dado sin corregir.</p>
+  </section>"""
+
+
 CSS = r"""
 /* Layout: una columna de lectura; mapa protagonista; tres zonas en rejilla que se apila en teléfono */
 :root {
@@ -625,6 +669,9 @@ def construir_md(res, meta, enso) -> str:
             celdas = [f"{_mm(h['zonas'][z]['lluvia_mm'])} · {h['zonas'][z]['riesgo']}" for z in ("norte", "centro", "sur")]
             lineas.append(f"| {h['hora']} | {_mm(h['marea_m'], 2)} {h['marea_estado']} | " + " | ".join(celdas) + " |")
         lineas.append("")
+    lineas.append("## Corrección con pluviómetros")
+    lineas.append(resumen_correccion(res.get("correccion")))
+    lineas.append("")
     o = res.get("observado")
     if o:
         lineas.append(f"## Lluvia medida (boletín INAMHI {o.get('numero') or ''})")
@@ -678,7 +725,7 @@ def _limpiar(o):
 
 def construir_json(res, meta, enso, estacional, fuentes, clim) -> str:
     return json.dumps(_limpiar({"meta": meta, "hoy": res.get("hoy"), "manana": res.get("manana"),
-                                "observado": res.get("observado"),
+                                "observado": res.get("observado"), "correccion": res.get("correccion"),
                                 "mareas": res.get("mareas"),
                                 "marea_umbrales": res.get("marea_umbrales"),
                                 "marea_sobreelevacion_enso_m": res.get("marea_sobreelevacion_enso_m"),
