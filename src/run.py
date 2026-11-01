@@ -142,8 +142,20 @@ def main() -> int:
     fuentes.append({"id": "marea", "nombre": "INOCAR — marea astronómica de Guayaquil (río Guayas)",
                     "centro": "Instituto Oceanográfico y Antártico de la Armada (Ecuador)", "ok": marea is not None})
 
+    # ---- Lluvia observada: boletín diario Guayaquil-Durán del INAMHI
+    obs = None
+    try:
+        obs = F.fetch_boletin_inamhi()
+        print(f"[ok] Boletín INAMHI {obs['numero']}: {len(obs['estaciones'])} estaciones, "
+              f"{obs['inicio']} a {obs['fin']}")
+    except Exception as e:
+        print(f"[--] Boletín INAMHI: {e}")
+    fuentes.append({"id": "boletin", "nombre": "INAMHI — boletín diario Guayaquil-Durán (lluvia medida en 24 h)",
+                    "centro": "INAMHI, con Emapag/Interagua, DGAC y universidades", "ok": obs is not None,
+                    "detalle": None if obs else "no disponible en esta corrida"})
+
     # ---- análisis
-    res = A.analizar(base_times, det, ens, ahora, enso, marea)
+    res = A.analizar(base_times, det, ens, ahora, enso, marea, obs)
     dias = res["dias"]
     ventana = f"de hoy, {dias[0]['etiqueta']}, al {dias[min(C.MAP_DAYS, len(dias)) - 1]['etiqueta']}" if dias else ""
     meta = {
@@ -153,7 +165,7 @@ def main() -> int:
         "miembros_total": miembros_total,
         "modelos_ok": [f["nombre"] for f in fuentes if f["ok"]],
         "titular": titular(res, enso),
-        "fuentes_texto": "Modelos: " + ", ".join(f["nombre"] for f in fuentes if f["ok"] and f["id"] not in ("cpc", "nasa", "estacional", "marea"))
+        "fuentes_texto": "Modelos: " + ", ".join(f["nombre"] for f in fuentes if f["ok"] and f["id"] not in ("cpc", "nasa", "estacional", "marea", "boletin"))
                          + " (vía Open-Meteo) · El Niño: NOAA CPC · Normales: NASA POWER · Marea: INOCAR",
     }
     os.makedirs(os.path.join(SALIDA, "latest"), exist_ok=True)

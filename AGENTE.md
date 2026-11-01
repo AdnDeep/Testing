@@ -14,5 +14,5 @@ Este archivo describe lo que hace el agente de Claude cada vez que se le llama. 
    vigentes de INAMHI o de la Secretaría Nacional de Gestión de Riesgos para Guayaquil.
 7. Publicar `output/latest/reporte.html` en la página del reporte y enviar `output/latest/mapa.png` y
    `output/latest/hoy_por_hora.png`.
-8. Resumen para el usuario: titular, hoy hora por hora (horas críticas y pleamares), Norte / Centro / Sur,
-   El Niño, alertas oficiales y hora de emisión.
+8. Resumen para el usuario: titular, lluvia medida por el INAMHI frente a los modelos (campo `observado`), hoy y
+   mañana hora por hora (horas críticas y pleamares), Norte / Centro / Sur, El Niño, alertas oficiales y hora de emisión.

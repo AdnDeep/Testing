@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import html as _html
+import os
 import re
 import time
 from datetime import date, timedelta
@@ -224,3 +225,73 @@ def fetch_cpc_discusion():
         "fecha": fecha.group(1) if fecha else None,
         "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
     }
+
+
+# ---------------------------------------------------------------- INAMHI: boletín Guayaquil-Durán
+
+def _norm(t: str) -> str:
+    import unicodedata
+    t = unicodedata.normalize("NFKD", t.replace("ı", "i"))
+    t = "".join(c for c in t if not unicodedata.combining(c)).lower()
+    t = re.sub(r"[^a-z0-9]+", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def leer_boletin_inamhi(texto: str) -> dict:
+    """Extrae del texto del boletín (pdftotext -layout) la lluvia de 24 h por estación."""
+    import unicodedata
+    from datetime import datetime as _dt
+
+    out = {"numero": None, "emision": None, "inicio": None, "fin": None, "estaciones": []}
+    m = re.search(r"BOLET\S*N\s+Nro\s+(\d+\s*-\s*\d{4})", texto)
+    out["numero"] = m.group(1).replace(" ", "") if m else None
+    m = re.search(r"Guayaquil,\s+\w+\s+(\d{1,2}\s+de\s+\w+\s+de\s+\d{4})", texto)
+    out["emision"] = m.group(1) if m else None
+    m = re.search(r"Desde las (\d{2})h(\d{2}) del (\d{2}-\d{2}-\d{4}) hasta las (\d{2})h(\d{2}) del (\d{2}-\d{2}-\d{4})", texto)
+    if m:
+        out["inicio"] = _dt.strptime(f"{m.group(3)} {m.group(1)}:{m.group(2)}", "%d-%m-%Y %H:%M").isoformat(timespec="minutes")
+        out["fin"] = _dt.strptime(f"{m.group(6)} {m.group(4)}:{m.group(5)}", "%d-%m-%Y %H:%M").isoformat(timespec="minutes")
+    a = texto.find("Precipitaci")
+    b = texto.find("Tabla 1", a)
+    seccion = texto[a:b if b > a else a + 6000]
+    vistos = set()
+    patron = re.compile(r"(?:(\d{1,2})\.\s+)?\b(PVA|EMA|EMC)\s+(.+?)\s{2,}(\d+[.,]\d+|T)(?=\s|$)")
+    for mm in patron.finditer(seccion):
+        num, tipo, nombre, valor = mm.groups()
+        nombre = re.sub(r"\s+", " ", nombre).strip()
+        nombre = unicodedata.normalize("NFC", nombre.replace("\u0131\u0301", "\u00ed").replace("\u0131", "i"))
+        if _norm(nombre).startswith("universidad bolivariana"):
+            nombre = "Universidad Bolivariana del Ecuador (UBE)"
+        clave = _norm(nombre)
+        if not clave or clave in vistos:
+            continue
+        vistos.add(clave)
+        traza = valor == "T"
+        out["estaciones"].append({
+            "numero": int(num) if num else None, "tipo": tipo, "nombre": nombre, "clave": clave,
+            "mm": 0.0 if traza else float(valor.replace(",", ".")), "traza": traza,
+        })
+    return out
+
+
+def fetch_boletin_inamhi() -> dict:
+    """Descarga el boletín diario Guayaquil-Durán del INAMHI y lo lee (necesita pdftotext)."""
+    import subprocess
+    import tempfile
+
+    r = SESSION.get(C.BOLETIN_INAMHI_URL, timeout=120)
+    r.raise_for_status()
+    if r.content[:4] != b"%PDF":
+        raise FuenteNoDisponible("la respuesta no es un PDF")
+    with tempfile.TemporaryDirectory() as d:
+        pdf = os.path.join(d, "b.pdf")
+        txt = os.path.join(d, "b.txt")
+        with open(pdf, "wb") as fh:
+            fh.write(r.content)
+        subprocess.run(["pdftotext", "-layout", pdf, txt], check=True, timeout=60)
+        texto = open(txt, encoding="utf-8", errors="replace").read()
+    datos = leer_boletin_inamhi(texto)
+    datos["publicado"] = r.headers.get("Last-Modified")
+    if not datos["estaciones"]:
+        raise FuenteNoDisponible("no se encontraron estaciones en el boletín")
+    return datos

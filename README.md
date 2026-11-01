@@ -35,6 +35,8 @@ El historial de corridas (solo JSON) queda en `output/historial/`.
 | Índices Niño semanales, ONI, discusión ENSO | NOAA CPC (EE. UU.) | Seguimiento de El Niño |
 | POWER | NASA (EE. UU.) | Normales mensuales de lluvia |
 | Constantes armónicas Guayaquil-Río | INOCAR (Ecuador) | Marea del río Guayas hora por hora |
+| Boletín diario Guayaquil-Durán | INAMHI (Ecuador) | Lluvia medida en 24 h en 25 estaciones, comparada con los modelos |
+| Anuarios meteorológicos 2011–2012 | INAMHI (Ecuador) | Red de 21 estaciones con pluviómetro en el Guayas (`src/estaciones_inamhi_guayas.csv`), como referencia |
 
 Los datos de los modelos se descargan a través de la API pública de [Open-Meteo](https://open-meteo.com).
 
@@ -51,7 +53,11 @@ Los datos de los modelos se descargan a través de la API pública de [Open-Mete
    y la intensidad con la susceptibilidad del sector. El riesgo sube un nivel cuando coinciden agravantes:
    marea alta en el río (en sectores que desaguan al Guayas o al Estero Salado) y suelo saturado (más de 30 mm
    en las 72 h previas). El riesgo del día es el peor de sus horas.
-5. **El Niño.** Los modelos ya usan la temperatura del mar observada, así que la lluvia extra de El Niño está
+5. **Lluvia medida.** Cada corrida descarga el boletín diario Guayaquil-Durán del INAMHI (pluviómetros de
+   Emapag/Interagua y estaciones del INAMHI, DGAC y universidades), lee la lluvia de 24 h de cada estación y la
+   compara, por zona, con lo que estimaron los modelos para las mismas horas. La zona de cada estación está en
+   `ESTACIONES_OBS_ZONA` de `src/config.py`.
+6. **El Niño.** Los modelos ya usan la temperatura del mar observada, así que la lluvia extra de El Niño está
    dentro de sus números. Además El Niño eleva el nivel del mar: con un El Niño costero fuerte (Niño 1+2 ≥ +1,7 °C,
    umbrales ENFEN) se suman 0,20 m a la marea al calcular el bloqueo del desagüe (0,10 m si es moderado).
 

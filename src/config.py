@@ -97,7 +97,7 @@ ENS_MODELS = [
 SEASONAL_MODEL = None
 
 FORECAST_DAYS = 8      # hoy + 7 días
-PAST_DAYS = 3          # para lluvia antecedente (suelo saturado)
+PAST_DAYS = 5          # lluvia antecedente (72 h) y comparación con el boletín del INAMHI
 MAP_DAYS = 3           # hoy, mañana y pasado mañana
 
 # Umbrales de lluvia diaria (mm) para categorías
@@ -124,3 +124,35 @@ ICEN_UMBRALES = [
     (-1.4, "Fría moderada"),
     (float("-inf"), "Fría fuerte"),
 ]
+
+
+# ---------------------------------------------------------------- lluvia observada
+# Boletín diario Guayaquil-Durán del INAMHI (red de pluviómetros de Emapag/Interagua, estaciones automáticas
+# del INAMHI, universidades y Aviación Civil). Lluvia acumulada en 24 h, de 07:00 a 07:00.
+BOLETIN_INAMHI_URL = "https://www.inamhi.gob.ec/guayaquil/registrodgy.pdf"
+
+# Zona de cada estación según el sector que indica su nombre (ubicación aproximada). Las que no se pueden
+# ubicar con certeza quedan sin zona: cuentan en el total de la ciudad, no en el promedio de una zona.
+# Clave = nombre normalizado (minúsculas, sin tildes ni signos).
+ESTACIONES_OBS_ZONA = {
+    "mucho lote ii": "norte",
+    "lagunas guayacanes": "norte",
+    "guayacanes samanes": "norte",
+    "nueva prosperina": "norte",
+    "sergio toral": "norte",
+    "montebello": "norte",
+    "aeropuerto dgac": "norte",
+    "paraiso": "norte",
+    "facultad ccnn ug": "centro",
+    "estacion bombeo c4": None,
+    "santa ana": "centro",
+    "cisne 2": "centro",
+    "la pradera": "sur",
+    "cami trinipuerto": "sur",
+    "duran": "duran",
+    "puerto hondo": "oeste",
+    "terranostra": "oeste",
+    "tenguel": "rural",
+    "puna": "rural",
+    "progreso caimito": "rural",
+}

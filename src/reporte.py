@@ -139,6 +139,8 @@ def _sparkline(serie):
 def construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes=None, man_bytes=None) -> str:
     img64 = base64.b64encode(png_bytes).decode()
     hoy_html = _seccion_hoy(res, hoy_bytes) + _seccion_hoy(res, man_bytes, "manana")
+    obs_html = _seccion_observado(res)
+    red_html = _seccion_red()
     mareas_html = _seccion_mareas(res)
     zonas_html = []
     for zid in ("norte", "centro", "sur"):
@@ -268,9 +270,12 @@ def construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes=No
     {puntos_html}
   </section>
 
+  {obs_html}
   {mareas_html}
   {enso_html}
   {est_html}
+
+  {red_html}
 
   <section class="panel method" aria-labelledby="h-met">
     <h2 id="h-met">Cómo se calcula</h2>
@@ -360,6 +365,116 @@ def _seccion_mareas(res) -> str:
     <div class="table-wrap"><table><thead><tr><th scope="col">Día</th><th scope="col">Marea</th><th scope="col">Hora</th>
     <th scope="col">Altura (m)</th><th scope="col">Pleamar</th></tr></thead><tbody>{filas}</tbody></table></div>
     <p class="note">{E(res.get('marea_fuente') or '')}.</p>
+  </section>"""
+
+
+ZONA_TXT = {"norte": "Norte", "centro": "Centro", "sur": "Sur", "duran": "Durán", "oeste": "Vía a la Costa",
+            "rural": "Parroquia rural", None: "–"}
+TIPO_OBS = {"PVA": "Pluviómetro automático", "EMA": "Estación automática", "EMC": "Estación convencional"}
+
+
+def _fecha_corta(iso):
+    if not iso:
+        return "–"
+    from datetime import datetime as _dt
+    d = _dt.fromisoformat(iso)
+    return d.strftime("%d/%m %H:%M")
+
+
+def resumen_observado(o) -> str:
+    c = (o.get("ciudad") or {}).get("obs")
+    if not c:
+        return "El boletín no trae datos de lluvia."
+    txt = (f"Del {_fecha_corta(o['inicio'])} al {_fecha_corta(o['fin'])}: el mayor acumulado fue {c['max_mm']:.1f} mm "
+           f"en {c['max_estacion']}; {c['con_lluvia']} de {c['n']} estaciones urbanas midieron 1 mm o más "
+           f"(promedio {c['prom_mm']:.1f} mm).")
+    m = o["ciudad"].get("modelo_mm")
+    if m is not None:
+        dif = m - c["prom_mm"]
+        if abs(dif) < 1.0:
+            txt += f" Los modelos acertaron: estimaron {m:.1f} mm para la ciudad."
+        elif dif > 0:
+            txt += f" Los modelos estimaron {m:.1f} mm para la ciudad: sobreestimaron {dif:.1f} mm."
+        else:
+            txt += f" Los modelos estimaron {m:.1f} mm para la ciudad: subestimaron {-dif:.1f} mm."
+    return txt
+
+
+def _seccion_observado(res) -> str:
+    o = res.get("observado")
+    if not o:
+        return ""
+    filas_z = ""
+    for z in ("norte", "centro", "sur"):
+        d = o["zonas"][z]
+        ob = d["obs"]
+        dif = ""
+        if ob and d["modelo_mm"] is not None:
+            v = d["modelo_mm"] - ob["prom_mm"]
+            dif = f"{v:+.1f}"
+        filas_z += (f"<tr><th scope=\"row\">{E(d['nombre'])}</th><td class=\"num\">{ob['n'] if ob else 0}</td>"
+                    f"<td class=\"num strong\">{_mm(ob['prom_mm'] if ob else None)}</td>"
+                    f"<td class=\"num\">{_mm(ob['max_mm'] if ob else None)}</td>"
+                    f"<td>{E(ob['max_estacion']) if ob else '–'}</td>"
+                    f"<td class=\"num\">{_mm(d['modelo_mm'])}</td><td class=\"num\">{dif or '–'}</td></tr>")
+    tabla_z = ('<div class="table-wrap"><table><thead><tr><th scope="col">Zona</th><th scope="col">Estaciones</th>'
+               '<th scope="col">Medido, promedio (mm)</th><th scope="col">Máximo (mm)</th><th scope="col">Dónde</th>'
+               '<th scope="col">Modelos (mm)</th><th scope="col">Modelos − medido</th></tr></thead>'
+               f'<tbody>{filas_z}</tbody></table></div>')
+    est = sorted(o["estaciones"], key=lambda e: (-e["mm"], e["nombre"]))
+    filas_e = "".join(
+        f"<tr><th scope=\"row\">{E(e['nombre'])}</th><td>{E(TIPO_OBS.get(e['tipo'], e['tipo']))}</td>"
+        f"<td>{E(ZONA_TXT.get(e['zona'], '–'))}</td>"
+        f"<td class=\"num strong\">{'traza' if e['traza'] else _mm(e['mm'])}</td></tr>" for e in est)
+    tabla_e = ('<details><summary>Las ' + str(len(est)) + ' estaciones del boletín</summary>'
+               '<div class="table-wrap"><table><thead><tr><th scope="col">Estación</th><th scope="col">Tipo</th>'
+               '<th scope="col">Zona</th><th scope="col">Lluvia 24 h (mm)</th></tr></thead>'
+               f'<tbody>{filas_e}</tbody></table></div></details>')
+    viejo = ""
+    if o.get("horas_desde_fin") is not None and o["horas_desde_fin"] > 36:
+        viejo = (f'<p class="note">El último boletín publicado cubre hasta hace {o["horas_desde_fin"]} horas; '
+                 'el INAMHI no lo publica todos los días.</p>')
+    return f"""
+  <section class="panel" aria-labelledby="h-obs">
+    <h2 id="h-obs">Lluvia medida: boletín del INAMHI</h2>
+    <p>{E(resumen_observado(o))}</p>
+    {viejo}
+    {tabla_z}
+    {tabla_e}
+    <p class="note">Boletín Nro {E(o.get('numero') or '–')} Guayaquil-Durán, emitido el {E(o.get('emision') or '–')}.
+    Red de pluviómetros automáticos de Emapag/Interagua y estaciones del INAMHI, la Aviación Civil y universidades.
+    La zona de cada estación se asignó por el sector que indica su nombre; las que no se pueden ubicar con certeza
+    cuentan solo en el total de la ciudad. "Modelos" es lo que estimaron los modelos para las mismas 24 horas.</p>
+  </section>"""
+
+
+_EXCLUIR_RED = {"M0619", "M0782", "M0783", "M0780", "M0247", "M1086"}
+
+
+def _seccion_red() -> str:
+    import csv
+    import os
+    ruta = os.path.join(os.path.dirname(os.path.abspath(__file__)), "estaciones_inamhi_guayas.csv")
+    if not os.path.exists(ruta):
+        return ""
+    with open(ruta, encoding="utf-8") as fh:
+        filas = [r for r in csv.DictReader(fh) if r["codigo"] not in _EXCLUIR_RED]
+    cuerpo = "".join(
+        f"<tr><td class=\"num\">{E(r['codigo'])}</td><th scope=\"row\">{E(r['nombre'].title())}</th>"
+        f"<td>{E(r['tipo_nombre'])}</td><td class=\"num\">{float(r['lat']):.3f}</td>"
+        f"<td class=\"num\">{float(r['lon']):.3f}</td></tr>" for r in filas)
+    return f"""
+  <section class="panel" aria-labelledby="h-red">
+    <h2 id="h-red">Red de estaciones del INAMHI en el Guayas</h2>
+    <p>{len(filas)} estaciones con pluviómetro de la red nacional, según el último índice publicado (anuarios
+    2011 y 2012). No publican sus datos en línea, así que el agente no las usa en el cálculo; quedan como referencia.</p>
+    <details><summary>Ver las {len(filas)} estaciones</summary>
+    <div class="table-wrap"><table><thead><tr><th scope="col">Código</th><th scope="col">Estación</th>
+    <th scope="col">Tipo</th><th scope="col">Latitud</th><th scope="col">Longitud</th></tr></thead>
+    <tbody>{cuerpo}</tbody></table></div></details>
+    <p class="note">Se omiten Manglaralto, Barcelona, Salanguillo y Colonche (hoy en Santa Elena), Murucumba (coordenadas
+    fuera de la provincia) y La Florida (sin coordenadas). La estación Guayaquil Aeropuerto (M0056) es de la Aviación
+    Civil y aparece en el boletín como “Aeropuerto (DGAC)”.</p>
   </section>"""
 
 
@@ -473,6 +588,10 @@ tr.now th { box-shadow: inset 3px 0 0 var(--rain); }
 td.state { color: var(--muted); font-size: 0.8rem; }
 td.tide-mid { color: var(--flood); font-weight: 500; }
 td.tide-high { color: var(--flood-deep); font-weight: 700; }
+details { min-width: 0; }
+details > summary { cursor: pointer; font-weight: 600; padding: 6px 0; color: var(--flood); }
+details > summary:focus-visible { outline: 2px solid var(--flood); outline-offset: 2px; }
+details[open] > summary { margin-bottom: 8px; }
 @media (min-width: 900px) {
   .zone { grid-template-columns: minmax(0, 1fr); }
 }
@@ -505,6 +624,17 @@ def construir_md(res, meta, enso) -> str:
         for h in man["horas"]:
             celdas = [f"{_mm(h['zonas'][z]['lluvia_mm'])} · {h['zonas'][z]['riesgo']}" for z in ("norte", "centro", "sur")]
             lineas.append(f"| {h['hora']} | {_mm(h['marea_m'], 2)} {h['marea_estado']} | " + " | ".join(celdas) + " |")
+        lineas.append("")
+    o = res.get("observado")
+    if o:
+        lineas.append(f"## Lluvia medida (boletín INAMHI {o.get('numero') or ''})")
+        lineas.append(resumen_observado(o))
+        for z in ("norte", "centro", "sur"):
+            d = o["zonas"][z]
+            ob = d["obs"]
+            lineas.append(f"- {d['nombre']}: medido {_mm(ob['prom_mm'] if ob else None)} mm promedio "
+                          f"(máx. {_mm(ob['max_mm'] if ob else None)} en {ob['max_estacion'] if ob else '–'}); "
+                          f"modelos {_mm(d['modelo_mm'])} mm")
         lineas.append("")
     if res.get("mareas"):
         lineas.append("## Mareas (INOCAR)")
@@ -548,6 +678,7 @@ def _limpiar(o):
 
 def construir_json(res, meta, enso, estacional, fuentes, clim) -> str:
     return json.dumps(_limpiar({"meta": meta, "hoy": res.get("hoy"), "manana": res.get("manana"),
+                                "observado": res.get("observado"),
                                 "mareas": res.get("mareas"),
                                 "marea_umbrales": res.get("marea_umbrales"),
                                 "marea_sobreelevacion_enso_m": res.get("marea_sobreelevacion_enso_m"),

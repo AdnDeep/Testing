@@ -146,7 +146,8 @@ def _rangos_horas(horas: list[tuple[datetime, str]]) -> str:
     return ", ".join(partes)
 
 
-def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, marea: dict | None = None):
+def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, marea: dict | None = None,
+             obs: dict | None = None):
     """det: {id: (npts, nT)}; ens: {id: (npts, nmiem, nT)} ya alineados a base_times."""
     from . import marea as MR
 
@@ -393,8 +394,11 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
                       for e in extremos if e["hora"].date() <= (hoy + timedelta(days=C.MAP_DAYS - 1)).date()
                       and e["hora"].date() >= hoy.date()]
 
+    observado = comparar_observado(obs, tiempos, zona_hora, ahora_h) if obs else None
+
     acumulado_mapa = np.nansum(campo[:C.MAP_DAYS], axis=0) if len(dias) else np.zeros(npts)
     return {
+        "observado": observado,
         "dias": [{"fecha": d["fecha"].strftime("%Y-%m-%d"), "etiqueta": fecha_larga(d["fecha"])} for d in dias],
         "zonas": zonas,
         "puntos": puntos,
@@ -536,3 +540,48 @@ def perspectiva_estacional(fechas: list[str] | None, miembros: np.ndarray | None
             "miembros": len(por_miembro),
         })
     return meses or None
+
+
+# ------------------------------------------------------------------ lluvia observada (boletín INAMHI)
+
+def comparar_observado(obs: dict, tiempos: list, zona_hora: dict, ahora_h: datetime) -> dict:
+    """Lluvia de 24 h medida por la red Guayaquil-Durán frente a lo que estimaron los modelos."""
+    estaciones = []
+    for e in obs.get("estaciones", []):
+        estaciones.append({**e, "zona": C.ESTACIONES_OBS_ZONA.get(e["clave"])})
+    ini = datetime.fromisoformat(obs["inicio"]) if obs.get("inicio") else None
+    fin = datetime.fromisoformat(obs["fin"]) if obs.get("fin") else None
+    # La lluvia horaria de Open-Meteo en la hora T es la acumulada en la hora anterior: ventana (ini, fin]
+    idx = [i for i, t in enumerate(tiempos) if ini and fin and ini < t <= fin]
+
+    def modelo(z):
+        if len(idx) < 20:
+            return None
+        v = zona_hora[z][idx]
+        if np.isnan(v).sum() > 4:
+            return None
+        return round(float(np.nansum(v)), 1)
+
+    def resumen(lista):
+        if not lista:
+            return None
+        mx = max(lista, key=lambda e: e["mm"])
+        return {"n": len(lista), "prom_mm": round(sum(e["mm"] for e in lista) / len(lista), 1),
+                "max_mm": mx["mm"], "max_estacion": mx["nombre"],
+                "con_lluvia": sum(1 for e in lista if e["mm"] >= 1.0)}
+
+    zonas = {}
+    for z in ("norte", "centro", "sur"):
+        r = resumen([e for e in estaciones if e["zona"] == z])
+        zonas[z] = {"nombre": C.ZONES[z]["nombre"], "obs": r, "modelo_mm": modelo(z)}
+    urbanas = [e for e in estaciones if e["zona"] not in ("rural",)]
+    mod_ciudad = [zonas[z]["modelo_mm"] for z in zonas if zonas[z]["modelo_mm"] is not None]
+    ciudad = {"obs": resumen(urbanas),
+              "modelo_mm": round(sum(mod_ciudad) / len(mod_ciudad), 1) if len(mod_ciudad) == 3 else None}
+    return {
+        "numero": obs.get("numero"), "emision": obs.get("emision"), "publicado": obs.get("publicado"),
+        "inicio": obs.get("inicio"), "fin": obs.get("fin"),
+        "horas_desde_fin": round((ahora_h - fin).total_seconds() / 3600) if fin else None,
+        "comparable": ciudad["modelo_mm"] is not None,
+        "estaciones": estaciones, "zonas": zonas, "ciudad": ciudad,
+    }
