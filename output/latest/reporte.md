@@ -1,70 +1,70 @@
-# Lluvias Guayaquil — 01/11/2026 06:28
+# Lluvias Guayaquil — 01/11/2026 14:18
 
-Lluvia prevista hasta el martes 3 de noviembre: Norte 103 mm, Centro 102 mm, Sur 108 mm. Riesgo de anegamiento muy alto en Norte, Centro y Sur. Pleamares de hoy: 11:45 (3.71 m). El Niño costero: Niño 1+2 en +5.2 °C (cálida extraordinaria).
+Lluvia prevista hasta el martes 3 de noviembre: Norte 108 mm, Centro 106 mm, Sur 119 mm. Riesgo de anegamiento muy alto en Norte, Centro y Sur. Pleamares de hoy: 11:45 (3.71 m). El Niño costero: Niño 1+2 en +5.2 °C (cálida extraordinaria).
 
 ## Hoy, domingo 1 de noviembre, hora por hora
-- **Norte:** Quedan 43.9 mm para el resto del día (total del día 52.5 mm). Lo más fuerte: entre 21:00 y 00:00, con 23.3 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 17:00–20:00 (moderado), 20:00–00:00 (alto).
-- **Centro:** Quedan 43.7 mm para el resto del día (total del día 53.3 mm). Lo más fuerte: entre 21:00 y 00:00, con 23.4 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 17:00–20:00 (moderado), 20:00–23:00 (alto), 23:00 (muy alto).
-- **Sur:** Quedan 48.7 mm para el resto del día (total del día 59.1 mm). Lo más fuerte: entre 21:00 y 00:00, con 28.1 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 17:00–20:00 (moderado), 20:00–22:00 (alto), 22:00–00:00 (muy alto).
+- **Norte:** Quedan 54.3 mm para el resto del día (total del día 64.2 mm). Lo más fuerte: entre 21:00 y 00:00, con 30.7 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 17:00–19:00 (moderado), 19:00–21:00 (alto), 21:00–00:00 (muy alto).
+- **Centro:** Quedan 52.2 mm para el resto del día (total del día 63.6 mm). Lo más fuerte: entre 21:00 y 00:00, con 31.6 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 17:00–20:00 (moderado), 20:00–22:00 (alto), 22:00–00:00 (muy alto).
+- **Sur:** Quedan 60.4 mm para el resto del día (total del día 72.6 mm). Lo más fuerte: entre 21:00 y 00:00, con 39.6 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 17:00–20:00 (moderado), 20:00–22:00 (alto), 22:00–00:00 (muy alto).
 
 | Hora | Marea (m) | Norte mm · aneg. | Centro mm · aneg. | Sur mm · aneg. |
 |---|---|---|---|---|
 | 00:00 (pasó) | 3.96 baja | 2.0 · Moderado | 2.2 · Alto | 2.4 · Alto |
 | 01:00 (pasó) | 3.52 baja | 2.1 · Moderado | 2.3 · Alto | 2.3 · Alto |
-| 02:00 (pasó) | 2.96 baja | 1.6 · Moderado | 1.6 · Moderado | 1.8 · Moderado |
-| 03:00 (pasó) | 2.50 baja | 1.3 · Moderado | 1.3 · Moderado | 1.5 · Moderado |
-| 04:00 (pasó) | 2.07 baja | 1.1 · Bajo | 1.3 · Bajo | 1.4 · Moderado |
-| 05:00 (pasó) | 1.58 baja | 0.6 · Bajo | 0.8 · Bajo | 0.9 · Bajo |
-| 06:00 (ahora) | 1.14 baja | 0.6 · Bajo | 0.6 · Bajo | 0.7 · Bajo |
-| 07:00 | 1.13 bajamar | 0.6 · Bajo | 0.6 · Bajo | 0.7 · Bajo |
-| 08:00 | 1.78 sube | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
-| 09:00 | 2.66 sube | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
-| 10:00 | 3.27 sube | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
-| 11:00 | 3.61 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 12:00 | 3.69 pleamar | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 13:00 | 3.38 baja | 0.1 · Bajo | 0.1 · Bajo | 0.2 · Bajo |
-| 14:00 | 2.85 baja | 1.0 · Bajo | 1.1 · Bajo | 1.2 · Bajo |
-| 15:00 | 2.37 baja | 1.2 · Bajo | 1.3 · Bajo | 1.3 · Bajo |
-| 16:00 | 1.96 baja | 1.4 · Bajo | 1.5 · Bajo | 1.6 · Bajo |
-| 17:00 | 1.56 baja | 2.6 · Moderado | 2.5 · Moderado | 2.4 · Moderado |
-| 18:00 | 1.12 baja | 2.9 · Moderado | 2.7 · Moderado | 2.6 · Moderado |
-| 19:00 | 0.91 bajamar | 3.2 · Moderado | 3.0 · Moderado | 2.9 · Moderado |
-| 20:00 | 1.32 sube | 6.2 · Alto | 6.0 · Alto | 6.2 · Alto |
-| 21:00 | 2.24 sube | 6.6 · Alto | 6.5 · Alto | 7.6 · Alto |
-| 22:00 | 3.07 sube | 7.3 · Alto | 7.5 · Alto | 9.5 · Muy alto |
-| 23:00 | 3.59 sube | 9.4 · Alto | 9.3 · Muy alto | 11.0 · Muy alto |
+| 02:00 (pasó) | 2.96 baja | 1.4 · Moderado | 1.6 · Moderado | 1.8 · Moderado |
+| 03:00 (pasó) | 2.50 baja | 1.2 · Bajo | 1.3 · Moderado | 1.5 · Moderado |
+| 04:00 (pasó) | 2.07 baja | 0.9 · Bajo | 1.2 · Bajo | 1.4 · Moderado |
+| 05:00 (pasó) | 1.58 baja | 0.6 · Bajo | 0.9 · Bajo | 0.8 · Bajo |
+| 06:00 (pasó) | 1.14 baja | 0.5 · Bajo | 0.6 · Bajo | 0.6 · Bajo |
+| 07:00 (pasó) | 1.13 bajamar | 0.5 · Bajo | 0.5 · Bajo | 0.6 · Bajo |
+| 08:00 (pasó) | 1.78 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 09:00 (pasó) | 2.66 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 10:00 (pasó) | 3.27 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 11:00 (pasó) | 3.61 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 12:00 (pasó) | 3.69 pleamar | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 13:00 (pasó) | 3.38 baja | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
+| 14:00 (ahora) | 2.85 baja | 1.3 · Bajo | 1.3 · Bajo | 1.3 · Bajo |
+| 15:00 | 2.37 baja | 1.5 · Bajo | 1.6 · Bajo | 1.6 · Bajo |
+| 16:00 | 1.96 baja | 1.6 · Bajo | 1.7 · Bajo | 1.7 · Bajo |
+| 17:00 | 1.56 baja | 3.0 · Moderado | 2.7 · Moderado | 2.7 · Moderado |
+| 18:00 | 1.12 baja | 3.7 · Moderado | 3.3 · Moderado | 3.2 · Moderado |
+| 19:00 | 0.91 bajamar | 4.7 · Alto | 3.8 · Moderado | 3.8 · Moderado |
+| 20:00 | 1.32 sube | 7.9 · Alto | 6.3 · Alto | 6.5 · Alto |
+| 21:00 | 2.24 sube | 10.1 · Muy alto | 8.8 · Alto | 10.5 · Alto |
+| 22:00 | 3.07 sube | 11.0 · Muy alto | 11.8 · Muy alto | 14.5 · Muy alto |
+| 23:00 | 3.59 sube | 9.6 · Muy alto | 11.0 · Muy alto | 14.6 · Muy alto |
 
 ## Mañana, lunes 2 de noviembre, hora por hora
-- **Norte:** Total del día: 43.3 mm. Lo más fuerte: entre 00:00 y 03:00, con 23.8 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–02:00 (muy alto), 02:00–05:00 (alto), 05:00–08:00 (moderado).
-- **Centro:** Total del día: 43.7 mm. Lo más fuerte: entre 00:00 y 03:00, con 25.0 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–03:00 (muy alto), 03:00–05:00 (alto), 05:00–08:00 (moderado).
-- **Sur:** Total del día: 46.5 mm. Lo más fuerte: entre 00:00 y 03:00, con 25.4 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–03:00 (muy alto), 03:00–06:00 (alto), 06:00–08:00 (moderado).
+- **Norte:** Total del día: 41.0 mm. Lo más fuerte: entre 00:00 y 03:00, con 18.5 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–02:00 (muy alto), 02:00–05:00 (alto), 05:00–08:00 (moderado), 21:00–23:00 (moderado).
+- **Centro:** Total del día: 40.5 mm. Lo más fuerte: entre 00:00 y 03:00, con 21.6 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–03:00 (muy alto), 03:00 (alto), 04:00–08:00 (moderado).
+- **Sur:** Total del día: 46.0 mm. Lo más fuerte: entre 00:00 y 03:00, con 25.6 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–03:00 (muy alto), 03:00–05:00 (alto), 05:00–08:00 (moderado).
 
 | Hora | Marea (m) | Norte mm · aneg. | Centro mm · aneg. | Sur mm · aneg. |
 |---|---|---|---|---|
-| 00:00 | 3.92 pleamar | 9.6 · Muy alto | 9.7 · Muy alto | 9.3 · Muy alto |
-| 01:00 | 3.91 baja | 9.3 · Muy alto | 10.0 · Muy alto | 9.4 · Muy alto |
-| 02:00 | 3.52 baja | 5.0 · Alto | 5.3 · Muy alto | 6.7 · Muy alto |
-| 03:00 | 3.02 baja | 3.5 · Alto | 3.8 · Alto | 5.0 · Alto |
-| 04:00 | 2.52 baja | 3.2 · Alto | 3.4 · Alto | 4.1 · Alto |
-| 05:00 | 2.03 baja | 1.7 · Moderado | 1.7 · Moderado | 2.3 · Alto |
-| 06:00 | 1.55 baja | 1.7 · Moderado | 1.6 · Moderado | 1.9 · Moderado |
-| 07:00 | 1.14 baja | 1.6 · Moderado | 1.6 · Moderado | 1.7 · Moderado |
-| 08:00 | 1.10 bajamar | 0.8 · Bajo | 0.7 · Bajo | 0.6 · Bajo |
-| 09:00 | 1.67 sube | 0.5 · Bajo | 0.5 · Bajo | 0.6 · Bajo |
-| 10:00 | 2.47 sube | 0.5 · Bajo | 0.4 · Bajo | 0.5 · Bajo |
-| 11:00 | 3.08 sube | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
-| 12:00 | 3.49 sube | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
-| 13:00 | 3.64 pleamar | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
-| 14:00 | 3.41 baja | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
-| 15:00 | 2.96 baja | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
-| 16:00 | 2.48 baja | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
-| 17:00 | 2.01 baja | 0.4 · Bajo | 0.4 · Bajo | 0.3 · Bajo |
-| 18:00 | 1.57 baja | 0.4 · Bajo | 0.4 · Bajo | 0.3 · Bajo |
-| 19:00 | 1.15 baja | 0.6 · Bajo | 0.4 · Bajo | 0.3 · Bajo |
-| 20:00 | 0.93 bajamar | 0.9 · Bajo | 0.6 · Bajo | 0.5 · Bajo |
-| 21:00 | 1.30 sube | 0.9 · Bajo | 0.7 · Bajo | 0.5 · Bajo |
-| 22:00 | 2.14 sube | 0.8 · Bajo | 0.8 · Bajo | 0.7 · Bajo |
-| 23:00 | 2.93 sube | 0.8 · Bajo | 0.6 · Bajo | 0.6 · Bajo |
+| 00:00 | 3.92 pleamar | 8.0 · Muy alto | 9.1 · Muy alto | 11.5 · Muy alto |
+| 01:00 | 3.91 baja | 7.0 · Muy alto | 8.5 · Muy alto | 9.7 · Muy alto |
+| 02:00 | 3.52 baja | 3.5 · Alto | 3.9 · Muy alto | 4.4 · Muy alto |
+| 03:00 | 3.02 baja | 3.6 · Alto | 3.4 · Alto | 3.9 · Alto |
+| 04:00 | 2.52 baja | 3.5 · Alto | 3.4 · Moderado | 3.9 · Alto |
+| 05:00 | 2.03 baja | 1.8 · Moderado | 1.7 · Moderado | 2.1 · Moderado |
+| 06:00 | 1.55 baja | 1.5 · Moderado | 1.6 · Moderado | 1.8 · Moderado |
+| 07:00 | 1.14 baja | 1.5 · Moderado | 1.5 · Moderado | 1.6 · Moderado |
+| 08:00 | 1.10 bajamar | 0.3 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
+| 09:00 | 1.67 sube | 0.3 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
+| 10:00 | 2.47 sube | 0.3 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
+| 11:00 | 3.08 sube | 0.2 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 12:00 | 3.49 sube | 0.2 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 13:00 | 3.64 pleamar | 0.2 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 14:00 | 3.41 baja | 0.3 · Bajo | 0.3 · Bajo | 0.2 · Bajo |
+| 15:00 | 2.96 baja | 0.3 · Bajo | 0.3 · Bajo | 0.2 · Bajo |
+| 16:00 | 2.48 baja | 0.3 · Bajo | 0.3 · Bajo | 0.2 · Bajo |
+| 17:00 | 2.01 baja | 0.4 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
+| 18:00 | 1.57 baja | 0.8 · Bajo | 0.5 · Bajo | 0.5 · Bajo |
+| 19:00 | 1.15 baja | 1.2 · Bajo | 0.6 · Bajo | 0.6 · Bajo |
+| 20:00 | 0.93 bajamar | 1.8 · Bajo | 0.9 · Bajo | 0.8 · Bajo |
+| 21:00 | 1.30 sube | 1.7 · Moderado | 1.0 · Bajo | 0.9 · Bajo |
+| 22:00 | 2.14 sube | 1.4 · Moderado | 1.1 · Bajo | 1.0 · Bajo |
+| 23:00 | 2.93 sube | 1.1 · Bajo | 1.0 · Bajo | 1.0 · Bajo |
 
 ## Lluvia medida (boletín INAMHI 204-2026)
 Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombeo C4; 3 de 23 estaciones urbanas midieron 1 mm o más (promedio 0.8 mm). Los modelos estimaron 25.9 mm para la ciudad: sobreestimaron 25.1 mm.
@@ -80,46 +80,46 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 - Pleamar martes 3 de noviembre 14:10: 3.70 m (normal)
 
 ## Norte
-102.8 mm esperados en total hasta el martes 3 de noviembre. El día más lluvioso sería el domingo 1 de noviembre: 43.9 mm (lluvia fuerte, probabilidad de lluvia 98%). Riesgo de anegamiento muy alto en Alborada, Bastión Popular, Flor de Bastión, Los Vergeles / Orquídeas, Mapasingue, Monte Sinaí, Mucho Lote, Pascuales, Prosperina, Samanes / Guayacanes y Sauces; alto en Urdesa / Kennedy.
+107.8 mm esperados en total hasta el martes 3 de noviembre. El día más lluvioso sería el domingo 1 de noviembre: 54.3 mm (lluvia muy fuerte, probabilidad de lluvia 94%). Riesgo de anegamiento muy alto en Alborada, Bastión Popular, Flor de Bastión, Los Vergeles / Orquídeas, Mapasingue, Monte Sinaí, Mucho Lote, Pascuales, Prosperina, Samanes / Guayacanes y Sauces; alto en Urdesa / Kennedy.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| domingo 1 de noviembre | 43.9 | 98% | 94% | 21.2 | Alto |
-| lunes 2 de noviembre | 43.3 | 98% | 88% | 17.1 | Muy alto |
-| martes 3 de noviembre | 15.6 | 96% | 56% | 3.0 | Moderado |
-| miércoles 4 de noviembre | 16.1 | 90% | 54% | 3.2 | Moderado |
-| jueves 5 de noviembre | 15.1 | 87% | 50% | 4.1 | Alto |
-| viernes 6 de noviembre | 14.1 | 58% | 33% | 4.9 | Alto |
-| sábado 7 de noviembre | 10.6 | 50% | 25% | 2.2 | Bajo |
-| domingo 8 de noviembre | 10.5 | 69% | 38% | 2.3 | Bajo |
+| domingo 1 de noviembre | 54.3 | 94% | 81% | 26.3 | Muy alto |
+| lunes 2 de noviembre | 41.0 | 98% | 92% | 19.6 | Muy alto |
+| martes 3 de noviembre | 12.5 | 83% | 44% | 3.9 | Bajo |
+| miércoles 4 de noviembre | 20.1 | 96% | 71% | 4.3 | Moderado |
+| jueves 5 de noviembre | 19.9 | 98% | 67% | 9.0 | Alto |
+| viernes 6 de noviembre | 11.8 | 54% | 29% | 2.9 | Bajo |
+| sábado 7 de noviembre | 11.1 | 48% | 27% | 1.7 | Bajo |
+| domingo 8 de noviembre | 12.7 | 77% | 40% | 2.7 | Bajo |
 
 ## Centro
-101.6 mm esperados en total hasta el martes 3 de noviembre. El día más lluvioso sería el domingo 1 de noviembre: 43.7 mm (lluvia fuerte, probabilidad de lluvia 98%). Riesgo de anegamiento muy alto en Av. Quito y Av. Machala, Barrio Garay, Batallón del Suburbio, Cristo del Consuelo y Suburbio Oeste (calle 29); alto en Malecón / calle Panamá.
+106.3 mm esperados en total hasta el martes 3 de noviembre. El día más lluvioso sería el domingo 1 de noviembre: 52.2 mm (lluvia muy fuerte, probabilidad de lluvia 94%). Riesgo de anegamiento muy alto en Av. Quito y Av. Machala, Barrio Garay, Batallón del Suburbio, Cristo del Consuelo y Suburbio Oeste (calle 29); alto en Malecón / calle Panamá.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| domingo 1 de noviembre | 43.7 | 98% | 94% | 13.0 | Muy alto |
-| lunes 2 de noviembre | 43.7 | 98% | 88% | 16.3 | Muy alto |
-| martes 3 de noviembre | 14.2 | 90% | 46% | 2.1 | Bajo |
-| miércoles 4 de noviembre | 15.7 | 94% | 50% | 3.0 | Moderado |
-| jueves 5 de noviembre | 14.7 | 90% | 48% | 3.0 | Moderado |
-| viernes 6 de noviembre | 10.0 | 58% | 31% | 2.1 | Bajo |
-| sábado 7 de noviembre | 7.9 | 40% | 25% | 0.9 | Bajo |
-| domingo 8 de noviembre | 11.0 | 67% | 37% | 3.4 | Bajo |
+| domingo 1 de noviembre | 52.2 | 94% | 81% | 21.9 | Muy alto |
+| lunes 2 de noviembre | 40.5 | 98% | 92% | 9.2 | Muy alto |
+| martes 3 de noviembre | 13.6 | 77% | 35% | 4.1 | Bajo |
+| miércoles 4 de noviembre | 22.0 | 96% | 67% | 4.7 | Moderado |
+| jueves 5 de noviembre | 19.0 | 98% | 62% | 7.0 | Alto |
+| viernes 6 de noviembre | 13.3 | 58% | 29% | 3.1 | Bajo |
+| sábado 7 de noviembre | 8.1 | 48% | 23% | 0.6 | Bajo |
+| domingo 8 de noviembre | 15.1 | 71% | 35% | 3.9 | Alto |
 
 ## Sur
-108.5 mm esperados en total hasta el martes 3 de noviembre. El día más lluvioso sería el domingo 1 de noviembre: 48.7 mm (lluvia fuerte, probabilidad de lluvia 100%). Riesgo de anegamiento muy alto en Barrio Centenario, Fertisa, Guasmo Central, Guasmo Norte, Guasmo Sur, Isla Trinitaria, La Floresta, La Pradera, Los Esteros y Unión de Bananeros.
+119.1 mm esperados en total hasta el martes 3 de noviembre. El día más lluvioso sería el domingo 1 de noviembre: 60.4 mm (lluvia muy fuerte, probabilidad de lluvia 96%). Riesgo de anegamiento muy alto en Barrio Centenario, Fertisa, Guasmo Central, Guasmo Norte, Guasmo Sur, Isla Trinitaria, La Floresta, La Pradera, Los Esteros y Unión de Bananeros.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| domingo 1 de noviembre | 48.7 | 100% | 92% | 17.8 | Muy alto |
-| lunes 2 de noviembre | 46.5 | 100% | 94% | 16.8 | Muy alto |
-| martes 3 de noviembre | 13.3 | 90% | 42% | 1.9 | Bajo |
-| miércoles 4 de noviembre | 15.4 | 96% | 48% | 2.9 | Moderado |
-| jueves 5 de noviembre | 14.4 | 92% | 54% | 2.5 | Bajo |
-| viernes 6 de noviembre | 10.8 | 58% | 29% | 2.5 | Bajo |
-| sábado 7 de noviembre | 6.2 | 40% | 21% | 0.9 | Bajo |
-| domingo 8 de noviembre | 10.3 | 67% | 31% | 3.4 | Bajo |
+| domingo 1 de noviembre | 60.4 | 96% | 88% | 35.0 | Muy alto |
+| lunes 2 de noviembre | 46.0 | 100% | 88% | 17.9 | Muy alto |
+| martes 3 de noviembre | 12.7 | 81% | 31% | 4.0 | Bajo |
+| miércoles 4 de noviembre | 21.2 | 98% | 67% | 4.6 | Moderado |
+| jueves 5 de noviembre | 17.0 | 98% | 62% | 4.2 | Alto |
+| viernes 6 de noviembre | 14.5 | 63% | 27% | 4.4 | Alto |
+| sábado 7 de noviembre | 7.0 | 50% | 17% | 0.6 | Bajo |
+| domingo 8 de noviembre | 13.8 | 75% | 29% | 3.9 | Alto |
 
 ## El Niño
 - Estado NOAA: El Niño Advisory
