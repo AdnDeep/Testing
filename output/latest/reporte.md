@@ -1,11 +1,11 @@
-# Lluvias Guayaquil — 02/11/2026 18:39
+# Lluvias Guayaquil — 02/11/2026 20:51
 
-Lluvia prevista hasta el miércoles 4 de noviembre: Norte 41 mm, Centro 36 mm, Sur 34 mm. Riesgo de anegamiento moderado en Norte y Centro. Pleamares de hoy: 00:30 (3.97 m) y 12:55 (3.64 m). El Niño costero: Niño 1+2 en +5.4 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).
+Lluvia prevista hasta el miércoles 4 de noviembre: Norte 39 mm, Centro 34 mm, Sur 32 mm. Riesgo de anegamiento moderado en Norte y Centro. Pleamares de hoy: 00:30 (3.97 m) y 12:55 (3.64 m). El Niño costero: Niño 1+2 en +5.4 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).
 
 ## Hoy, lunes 2 de noviembre, hora por hora
-- **Norte:** Quedan 7.0 mm para el resto del día (total del día 46.5 mm). Lo más fuerte: entre 18:00 y 21:00, con 3.7 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
-- **Centro:** Quedan 5.2 mm para el resto del día (total del día 44.9 mm). Lo más fuerte: entre 18:00 y 21:00, con 3.0 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
-- **Sur:** Quedan 4.5 mm para el resto del día (total del día 41.4 mm). Lo más fuerte: entre 18:00 y 21:00, con 2.6 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
+- **Norte:** Quedan 4.5 mm para el resto del día (total del día 46.5 mm). Lo más fuerte: entre 21:00 y 00:00, con 3.3 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
+- **Centro:** Quedan 3.1 mm para el resto del día (total del día 44.9 mm). Lo más fuerte: entre 20:00 y 23:00, con 2.4 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
+- **Sur:** Quedan 2.6 mm para el resto del día (total del día 41.4 mm). Lo más fuerte: entre 21:00 y 00:00, con 2.0 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
 
 | Hora | Marea (m) | Norte mm · aneg. | Centro mm · aneg. | Sur mm · aneg. |
 |---|---|---|---|---|
@@ -27,9 +27,9 @@ Lluvia prevista hasta el miércoles 4 de noviembre: Norte 41 mm, Centro 36 mm, S
 | 15:00 (pasó) | 2.96 baja | 0.5 · Bajo | 0.5 · Bajo | 0.6 · Bajo |
 | 16:00 (pasó) | 2.48 baja | 0.7 · Bajo | 0.7 · Bajo | 0.6 · Bajo |
 | 17:00 (pasó) | 2.01 baja | 1.2 · Bajo | 1.0 · Bajo | 0.9 · Bajo |
-| 18:00 (ahora) | 1.57 baja | 1.3 · Bajo | 1.1 · Bajo | 1.1 · Bajo |
-| 19:00 | 1.15 baja | 1.2 · Bajo | 1.0 · Bajo | 0.9 · Bajo |
-| 20:00 | 0.93 bajamar | 1.2 · Bajo | 0.9 · Bajo | 0.6 · Bajo |
+| 18:00 (pasó) | 1.57 baja | 1.3 · Bajo | 1.1 · Bajo | 1.1 · Bajo |
+| 19:00 (pasó) | 1.15 baja | 1.2 · Bajo | 1.0 · Bajo | 0.9 · Bajo |
+| 20:00 (ahora) | 0.93 bajamar | 1.2 · Bajo | 0.9 · Bajo | 0.6 · Bajo |
 | 21:00 | 1.30 sube | 0.9 · Bajo | 0.8 · Bajo | 0.7 · Bajo |
 | 22:00 | 2.14 sube | 1.1 · Bajo | 0.8 · Bajo | 0.6 · Bajo |
 | 23:00 | 2.93 sube | 1.3 · Bajo | 0.7 · Bajo | 0.7 · Bajo |
@@ -84,11 +84,11 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 - Pleamar miércoles 4 de noviembre 15:20: 3.87 m (normal)
 
 ## Norte
-41.1 mm esperados en total hasta el miércoles 4 de noviembre. El día más lluvioso sería el martes 3 de noviembre: 18.1 mm (lluvia moderada, probabilidad de lluvia 88%). Riesgo de anegamiento moderado en Bastión Popular, Flor de Bastión, Los Vergeles / Orquídeas, Monte Sinaí y Pascuales.
+38.6 mm esperados en total hasta el miércoles 4 de noviembre. El día más lluvioso sería el martes 3 de noviembre: 18.1 mm (lluvia moderada, probabilidad de lluvia 88%). Riesgo de anegamiento moderado en Bastión Popular, Flor de Bastión, Los Vergeles / Orquídeas, Monte Sinaí y Pascuales.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| lunes 2 de noviembre | 7.0 | 77% | 13% | 3.2 | Bajo |
+| lunes 2 de noviembre | 4.5 | 71% | 6% | 3.2 | Bajo |
 | martes 3 de noviembre | 18.1 | 88% | 37% | 6.5 | Moderado |
 | miércoles 4 de noviembre | 16.0 | 98% | 67% | 4.4 | Moderado |
 | jueves 5 de noviembre | 23.3 | 98% | 81% | 11.8 | Alto |
@@ -98,11 +98,11 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 | lunes 9 de noviembre (aguaje) | 8.5 | 77% | 27% | 1.0 | Bajo |
 
 ## Centro
-35.7 mm esperados en total hasta el miércoles 4 de noviembre. El día más lluvioso sería el miércoles 4 de noviembre: 15.3 mm (lluvia moderada, probabilidad de lluvia 98%). Riesgo de anegamiento moderado en Batallón del Suburbio, Cristo del Consuelo y Suburbio Oeste (calle 29).
+33.6 mm esperados en total hasta el miércoles 4 de noviembre. El día más lluvioso sería el miércoles 4 de noviembre: 15.3 mm (lluvia moderada, probabilidad de lluvia 98%). Riesgo de anegamiento moderado en Batallón del Suburbio, Cristo del Consuelo y Suburbio Oeste (calle 29).
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| lunes 2 de noviembre | 5.2 | 73% | 13% | 1.9 | Bajo |
+| lunes 2 de noviembre | 3.1 | 62% | 6% | 1.2 | Bajo |
 | martes 3 de noviembre | 15.2 | 88% | 31% | 4.7 | Bajo |
 | miércoles 4 de noviembre | 15.3 | 98% | 63% | 3.5 | Moderado |
 | jueves 5 de noviembre | 25.1 | 98% | 73% | 11.9 | Alto |
@@ -112,11 +112,11 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 | lunes 9 de noviembre (aguaje) | 7.5 | 69% | 27% | 1.2 | Bajo |
 
 ## Sur
-33.6 mm esperados en total hasta el miércoles 4 de noviembre. El día más lluvioso sería el martes 3 de noviembre: 14.6 mm (lluvia moderada, probabilidad de lluvia 88%). Riesgo de anegamiento de calles: bajo.
+31.7 mm esperados en total hasta el miércoles 4 de noviembre. El día más lluvioso sería el martes 3 de noviembre: 14.6 mm (lluvia moderada, probabilidad de lluvia 88%). Riesgo de anegamiento de calles: bajo.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| lunes 2 de noviembre | 4.5 | 75% | 10% | 2.1 | Bajo |
+| lunes 2 de noviembre | 2.6 | 63% | 2% | 1.1 | Bajo |
 | martes 3 de noviembre | 14.6 | 88% | 33% | 4.6 | Bajo |
 | miércoles 4 de noviembre | 14.5 | 98% | 69% | 3.5 | Bajo |
 | jueves 5 de noviembre | 25.4 | 96% | 73% | 12.3 | Alto |
