@@ -1,11 +1,11 @@
-# Lluvias Guayaquil — 04/11/2026 07:27
+# Lluvias Guayaquil — 04/11/2026 10:07
 
-Lluvia prevista hasta el viernes 6 de noviembre: Norte 55 mm, Centro 55 mm, Sur 58 mm. Riesgo de anegamiento alto en Norte, Centro y Sur. Pleamares de hoy: 02:45 (4.07 m) y 15:20 (3.87 m). El Niño costero: Niño 1+2 en +5.4 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).
+Lluvia prevista hasta el viernes 6 de noviembre: Norte 53 mm, Centro 53 mm, Sur 56 mm. Riesgo de anegamiento alto en Norte, Centro y Sur. Pleamares de hoy: 02:45 (4.07 m) y 15:20 (3.87 m). El Niño costero: Niño 1+2 en +5.4 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).
 
 ## Hoy, miércoles 4 de noviembre, hora por hora
-- **Norte:** Quedan 13.7 mm para el resto del día (total del día 29.1 mm). Lo más fuerte: entre 20:00 y 23:00, con 4.9 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
-- **Centro:** Quedan 14.4 mm para el resto del día (total del día 27.6 mm). Lo más fuerte: entre 21:00 y 00:00, con 5.0 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 22:00–00:00 (moderado).
-- **Sur:** Quedan 14.6 mm para el resto del día (total del día 27.4 mm). Lo más fuerte: entre 21:00 y 00:00, con 5.3 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 22:00–00:00 (moderado).
+- **Norte:** Quedan 12.3 mm para el resto del día (total del día 29.1 mm). Lo más fuerte: entre 20:00 y 23:00, con 4.9 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
+- **Centro:** Quedan 12.7 mm para el resto del día (total del día 27.6 mm). Lo más fuerte: entre 21:00 y 00:00, con 5.0 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 22:00–00:00 (moderado).
+- **Sur:** Quedan 13.1 mm para el resto del día (total del día 27.4 mm). Lo más fuerte: entre 21:00 y 00:00, con 5.3 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 22:00–00:00 (moderado).
 
 | Hora | Marea (m) | Norte mm · aneg. | Centro mm · aneg. | Sur mm · aneg. |
 |---|---|---|---|---|
@@ -16,10 +16,10 @@ Lluvia prevista hasta el viernes 6 de noviembre: Norte 55 mm, Centro 55 mm, Sur 
 | 04:00 (pasó) | 3.78 baja | 2.4 · Moderado | 2.0 · Alto | 2.0 · Alto |
 | 05:00 (pasó) | 3.27 baja | 1.5 · Moderado | 1.9 · Moderado | 1.7 · Moderado |
 | 06:00 (pasó) | 2.64 baja | 0.9 · Bajo | 1.7 · Moderado | 1.6 · Moderado |
-| 07:00 (ahora) | 2.06 baja | 0.9 · Bajo | 1.2 · Bajo | 1.0 · Bajo |
-| 08:00 | 1.52 baja | 0.3 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
-| 09:00 | 0.97 baja | 0.3 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
-| 10:00 | 0.77 bajamar | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
+| 07:00 (pasó) | 2.06 baja | 0.9 · Bajo | 1.2 · Bajo | 1.0 · Bajo |
+| 08:00 (pasó) | 1.52 baja | 0.3 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
+| 09:00 (pasó) | 0.97 baja | 0.3 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
+| 10:00 (ahora) | 0.77 bajamar | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
 | 11:00 | 1.23 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
 | 12:00 | 2.05 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
 | 13:00 | 2.85 sube | 0.1 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
@@ -84,11 +84,11 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 - Pleamar viernes 6 de noviembre 17:25: 4.33 m (normal)
 
 ## Norte
-54.8 mm esperados en total hasta el viernes 6 de noviembre. El día más lluvioso sería el viernes 6 de noviembre: 22.7 mm (lluvia moderada, probabilidad de lluvia 94%). Riesgo de anegamiento alto en Los Vergeles / Orquídeas y Pascuales; moderado en Alborada, Bastión Popular, Flor de Bastión, Monte Sinaí, Mucho Lote, Samanes / Guayacanes, Sauces y Urdesa / Kennedy.
+53.4 mm esperados en total hasta el viernes 6 de noviembre. El día más lluvioso sería el viernes 6 de noviembre: 22.7 mm (lluvia moderada, probabilidad de lluvia 94%). Riesgo de anegamiento alto en Los Vergeles / Orquídeas y Pascuales; moderado en Alborada, Bastión Popular, Flor de Bastión, Monte Sinaí, Mucho Lote, Samanes / Guayacanes, Sauces y Urdesa / Kennedy.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| miércoles 4 de noviembre | 13.7 | 96% | 63% | 2.7 | Bajo |
+| miércoles 4 de noviembre | 12.3 | 92% | 56% | 2.7 | Bajo |
 | jueves 5 de noviembre | 18.4 | 94% | 69% | 3.7 | Alto |
 | viernes 6 de noviembre | 22.7 | 94% | 58% | 7.7 | Alto |
 | sábado 7 de noviembre | 13.6 | 79% | 38% | 1.9 | Bajo |
@@ -98,11 +98,11 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 | miércoles 11 de noviembre (aguaje) | 11.0 | 87% | 52% | 2.2 | Bajo |
 
 ## Centro
-54.7 mm esperados en total hasta el viernes 6 de noviembre. El día más lluvioso sería el viernes 6 de noviembre: 23.0 mm (lluvia moderada, probabilidad de lluvia 94%). Riesgo de anegamiento alto en Batallón del Suburbio, Cristo del Consuelo y Suburbio Oeste (calle 29); moderado en Av. Quito y Av. Machala, Barrio Garay y Malecón / calle Panamá.
+53.0 mm esperados en total hasta el viernes 6 de noviembre. El día más lluvioso sería el viernes 6 de noviembre: 23.0 mm (lluvia moderada, probabilidad de lluvia 94%). Riesgo de anegamiento alto en Batallón del Suburbio, Cristo del Consuelo y Suburbio Oeste (calle 29); moderado en Av. Quito y Av. Machala, Barrio Garay y Malecón / calle Panamá.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| miércoles 4 de noviembre | 14.4 | 94% | 60% | 2.8 | Moderado |
+| miércoles 4 de noviembre | 12.7 | 90% | 50% | 2.3 | Moderado |
 | jueves 5 de noviembre | 17.3 | 94% | 71% | 1.8 | Alto |
 | viernes 6 de noviembre | 23.0 | 94% | 63% | 7.1 | Alto |
 | sábado 7 de noviembre | 14.0 | 81% | 37% | 1.3 | Bajo |
@@ -112,11 +112,11 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 | miércoles 11 de noviembre (aguaje) | 8.0 | 75% | 48% | 1.0 | Bajo |
 
 ## Sur
-58.0 mm esperados en total hasta el viernes 6 de noviembre. El día más lluvioso sería el viernes 6 de noviembre: 25.7 mm (lluvia fuerte, probabilidad de lluvia 94%). Riesgo de anegamiento alto en Fertisa, Guasmo Central, Guasmo Norte, Guasmo Sur, Isla Trinitaria y Unión de Bananeros; moderado en Barrio Centenario, La Floresta, La Pradera y Los Esteros.
+56.5 mm esperados en total hasta el viernes 6 de noviembre. El día más lluvioso sería el viernes 6 de noviembre: 25.7 mm (lluvia fuerte, probabilidad de lluvia 94%). Riesgo de anegamiento alto en Fertisa, Guasmo Central, Guasmo Norte, Guasmo Sur, Isla Trinitaria y Unión de Bananeros; moderado en Barrio Centenario, La Floresta, La Pradera y Los Esteros.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| miércoles 4 de noviembre | 14.6 | 94% | 63% | 2.5 | Moderado |
+| miércoles 4 de noviembre | 13.1 | 90% | 54% | 2.3 | Moderado |
 | jueves 5 de noviembre | 17.7 | 94% | 71% | 1.9 | Alto |
 | viernes 6 de noviembre | 25.7 | 94% | 60% | 8.6 | Alto |
 | sábado 7 de noviembre | 13.3 | 77% | 35% | 1.5 | Bajo |
