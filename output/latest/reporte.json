@@ -1,7 +1,7 @@
 {
  "meta": {
-  "emitido_iso": "2026-11-04T10:07-05:00",
-  "emitido_texto": "04/11/2026 10:07",
+  "emitido_iso": "2026-11-04T10:59-05:00",
+  "emitido_texto": "04/11/2026 10:59",
   "ventana_texto": "De hoy, miércoles 4 de noviembre, al viernes 6 de noviembre",
   "miembros_total": 52,
   "modelos_ok": [
@@ -5558,7 +5558,7 @@
    "centro": "NOAA/NCEP (EE. UU.)",
    "peso": 1.0,
    "ok": true,
-   "corrida": "04/11 00 UTC"
+   "corrida": "04/11 06 UTC"
   },
   {
    "id": "ncep_aigfs025",

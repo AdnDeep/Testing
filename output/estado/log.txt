@@ -16,7 +16,7 @@
 [ok] Marea INOCAR: 04/11 02:45 4.07 m, 04/11 15:20 3.87 m, 05/11 03:45 4.21 m, 05/11 16:25 4.10 m
 [ok] Boletín INAMHI 204-2026: 25 estaciones, 2026-10-28T07:00 a 2026-10-29T07:00
 [ok] Corrección con pluviómetros: {'boletines': 1, 'ciudad': {'razon': 0.2, 'n': 1, 'peso_medido': 0.33, 'factor': 0.733}, 'zonas': {'norte': {'razon': 0.2, 'n': 1, 'peso_medido': 0.33, 'factor': 0.733, 'fuente': 'zona'}, 'centro': {'razon': 0.2, 'n': 1, 'peso_medido': 0.33, 'factor': 0.733, 'fuente': 'zona'}, 'sur': {'razon': 0.2, 'n': 1, 'peso_medido': 0.33, 'factor': 0.733, 'fuente': 'zona'}}}
-# Lluvias Guayaquil — 04/11/2026 10:07
+# Lluvias Guayaquil — 04/11/2026 10:59
 
 Lluvia prevista hasta el viernes 6 de noviembre: Norte 53 mm, Centro 53 mm, Sur 56 mm. Riesgo de anegamiento alto en Norte, Centro y Sur. Pleamares de hoy: 02:45 (4.07 m) y 15:20 (3.87 m). El Niño costero: Niño 1+2 en +5.4 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).
 
