@@ -1,13 +1,13 @@
 {
  "meta": {
-  "emitido_iso": "2026-11-04T21:42-05:00",
-  "emitido_texto": "04/11/2026 21:42",
+  "emitido_iso": "2026-11-04T23:41-05:00",
+  "emitido_texto": "04/11/2026 23:41",
   "ventana_texto": "De hoy, miércoles 4 de noviembre, al viernes 6 de noviembre",
   "miembros_total": 52,
   "modelos_ok": [
-   "NOAA GFS 0,25°",
+   "NOAA GFS 0,25° — solo intensidad",
    "NOAA AIGFS (IA)",
-   "ECCC GEM Global",
+   "ECCC GEM Global — solo intensidad",
    "NOAA GEFS (ensamble) — 31 miembros",
    "ECCC GEPS (ensamble) — 21 miembros",
    "NOAA CPC — índices Niño semanales, ONI y discusión ENSO",
@@ -15,13 +15,13 @@
    "INOCAR — marea astronómica de Guayaquil (río Guayas)",
    "INAMHI — boletín diario Guayaquil-Durán (lluvia medida en 24 h)"
   ],
-  "titular": "Lluvia prevista hasta el viernes 6 de noviembre: Norte 41 mm, Centro 40 mm, Sur 39 mm. Riesgo de anegamiento alto en Norte, Centro y Sur. Pleamares de hoy: 02:45 (4.07 m) y 15:20 (3.87 m). El Niño costero: Niño 1+2 en +5.4 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).",
-  "fuentes_texto": "Modelos: NOAA GFS 0,25°, NOAA AIGFS (IA), ECCC GEM Global, NOAA GEFS (ensamble) — 31 miembros, ECCC GEPS (ensamble) — 21 miembros (vía Open-Meteo) · El Niño: NOAA CPC · Normales: NASA POWER · Marea: INOCAR"
+  "titular": "Lluvia prevista hasta el viernes 6 de noviembre: Norte 38 mm, Centro 39 mm, Sur 38 mm. Riesgo de anegamiento alto en Norte, Centro y Sur. Pleamares de hoy: 02:45 (4.07 m) y 15:20 (3.87 m). El Niño costero: Niño 1+2 en +5.4 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).",
+  "fuentes_texto": "Modelos: NOAA GFS 0,25° — solo intensidad, NOAA AIGFS (IA), ECCC GEM Global — solo intensidad, NOAA GEFS (ensamble) — 31 miembros, ECCC GEPS (ensamble) — 21 miembros (vía Open-Meteo) · El Niño: NOAA CPC · Normales: NASA POWER · Marea: INOCAR"
  },
  "hoy": {
   "fecha": "2026-11-04",
   "etiqueta": "miércoles 4 de noviembre",
-  "ahora": "21:00",
+  "ahora": "23:00",
   "horas": [
    {
     "hora": "00:00",
@@ -32,23 +32,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 1.7,
+      "lluvia_mm": 1.3,
       "prob": 0.85,
       "intensidad_mmh": 3.3,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Monte Sinaí"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "centro": {
-      "lluvia_mm": 1.2,
+      "lluvia_mm": 1.3,
       "prob": 0.81,
       "intensidad_mmh": 1.4,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.2,
+      "lluvia_mm": 1.3,
       "prob": 0.87,
       "intensidad_mmh": 1.2,
       "riesgo": "Bajo",
@@ -65,27 +63,21 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 2.6,
+      "lluvia_mm": 1.3,
       "prob": 0.88,
       "intensidad_mmh": 7.3,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Pascuales",
-       "Flor de Bastión",
-       "Bastión Popular",
-       "Monte Sinaí",
-       "Los Vergeles / Orquídeas"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "centro": {
-      "lluvia_mm": 1.7,
+      "lluvia_mm": 1.3,
       "prob": 0.87,
       "intensidad_mmh": 3.7,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.7,
+      "lluvia_mm": 1.3,
       "prob": 0.88,
       "intensidad_mmh": 3.5,
       "riesgo": "Bajo",
@@ -102,38 +94,25 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 3.4,
+      "lluvia_mm": 1.1,
       "prob": 0.87,
       "intensidad_mmh": 10.3,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Pascuales",
-       "Flor de Bastión",
-       "Bastión Popular",
-       "Monte Sinaí",
-       "Los Vergeles / Orquídeas"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "centro": {
-      "lluvia_mm": 2.4,
+      "lluvia_mm": 0.9,
       "prob": 0.87,
       "intensidad_mmh": 7.3,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Malecón / calle Panamá"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "sur": {
-      "lluvia_mm": 2.3,
+      "lluvia_mm": 0.8,
       "prob": 0.9,
       "intensidad_mmh": 7.2,
-      "riesgo": "Alto",
-      "sectores": [
-       "Guasmo Norte",
-       "Guasmo Central",
-       "Guasmo Sur",
-       "Unión de Bananeros"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      }
     }
    },
@@ -146,42 +125,25 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 2.9,
+      "lluvia_mm": 1.1,
       "prob": 0.81,
       "intensidad_mmh": 7.4,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Pascuales",
-       "Flor de Bastión",
-       "Bastión Popular",
-       "Monte Sinaí",
-       "Los Vergeles / Orquídeas"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "centro": {
-      "lluvia_mm": 2.3,
+      "lluvia_mm": 0.9,
       "prob": 0.83,
       "intensidad_mmh": 6.4,
-      "riesgo": "Alto",
-      "sectores": [
-       "Suburbio Oeste (calle 29)",
-       "Batallón del Suburbio",
-       "Cristo del Consuelo"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "sur": {
-      "lluvia_mm": 2.3,
+      "lluvia_mm": 0.8,
       "prob": 0.87,
       "intensidad_mmh": 6.6,
-      "riesgo": "Alto",
-      "sectores": [
-       "Isla Trinitaria",
-       "Fertisa",
-       "Guasmo Norte",
-       "Guasmo Central",
-       "Guasmo Sur",
-       "Unión de Bananeros"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      }
     }
    },
@@ -194,42 +156,25 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 2.4,
+      "lluvia_mm": 1.1,
       "prob": 0.79,
       "intensidad_mmh": 6.1,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Pascuales",
-       "Flor de Bastión",
-       "Bastión Popular",
-       "Monte Sinaí",
-       "Los Vergeles / Orquídeas"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "centro": {
-      "lluvia_mm": 2.0,
+      "lluvia_mm": 0.9,
       "prob": 0.77,
       "intensidad_mmh": 5.1,
-      "riesgo": "Alto",
-      "sectores": [
-       "Suburbio Oeste (calle 29)",
-       "Batallón del Suburbio",
-       "Cristo del Consuelo"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "sur": {
-      "lluvia_mm": 2.0,
+      "lluvia_mm": 0.8,
       "prob": 0.81,
       "intensidad_mmh": 5.2,
-      "riesgo": "Alto",
-      "sectores": [
-       "Isla Trinitaria",
-       "Fertisa",
-       "Guasmo Norte",
-       "Guasmo Central",
-       "Guasmo Sur",
-       "Unión de Bananeros"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      }
     }
    },
@@ -242,42 +187,25 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 1.5,
+      "lluvia_mm": 1.2,
       "prob": 0.75,
       "intensidad_mmh": 2.6,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Pascuales",
-       "Flor de Bastión",
-       "Bastión Popular",
-       "Monte Sinaí",
-       "Los Vergeles / Orquídeas"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "centro": {
-      "lluvia_mm": 1.9,
+      "lluvia_mm": 1.0,
       "prob": 0.63,
       "intensidad_mmh": 4.3,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Suburbio Oeste (calle 29)",
-       "Batallón del Suburbio",
-       "Cristo del Consuelo"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.7,
+      "lluvia_mm": 0.8,
       "prob": 0.65,
       "intensidad_mmh": 4.4,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Isla Trinitaria",
-       "Fertisa",
-       "Guasmo Norte",
-       "Guasmo Central",
-       "Guasmo Sur",
-       "Unión de Bananeros"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      }
     }
    },
@@ -290,34 +218,25 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 1.2,
       "prob": 0.56,
       "intensidad_mmh": 1.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 1.7,
+      "lluvia_mm": 1.0,
       "prob": 0.38,
       "intensidad_mmh": 3.6,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Suburbio Oeste (calle 29)",
-       "Batallón del Suburbio",
-       "Cristo del Consuelo"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.6,
+      "lluvia_mm": 0.8,
       "prob": 0.4,
       "intensidad_mmh": 3.6,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Isla Trinitaria",
-       "Guasmo Norte",
-       "Guasmo Central",
-       "Guasmo Sur"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      }
     }
    },
@@ -330,21 +249,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 1.2,
       "prob": 0.75,
       "intensidad_mmh": 0.5,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 1.2,
+      "lluvia_mm": 1.0,
       "prob": 0.56,
       "intensidad_mmh": 1.8,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.0,
+      "lluvia_mm": 0.8,
       "prob": 0.54,
       "intensidad_mmh": 1.7,
       "riesgo": "Bajo",
@@ -361,21 +280,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.4,
+      "lluvia_mm": 0.5,
       "prob": 0.73,
       "intensidad_mmh": 0.3,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.4,
+      "lluvia_mm": 0.5,
       "prob": 0.62,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.3,
+      "lluvia_mm": 0.4,
       "prob": 0.63,
       "intensidad_mmh": 0.2,
       "riesgo": "Bajo",
@@ -392,21 +311,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.4,
+      "lluvia_mm": 0.5,
       "prob": 0.62,
       "intensidad_mmh": 0.4,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.4,
+      "lluvia_mm": 0.5,
       "prob": 0.54,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.3,
+      "lluvia_mm": 0.4,
       "prob": 0.56,
       "intensidad_mmh": 0.2,
       "riesgo": "Bajo",
@@ -423,14 +342,14 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.4,
+      "lluvia_mm": 0.5,
       "prob": 0.5,
       "intensidad_mmh": 0.4,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.4,
+      "lluvia_mm": 0.5,
       "prob": 0.5,
       "intensidad_mmh": 0.2,
       "riesgo": "Bajo",
@@ -454,21 +373,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.46,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.4,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.4,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
@@ -485,21 +404,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.27,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.25,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.25,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
@@ -516,21 +435,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.67,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.67,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.69,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
@@ -547,21 +466,21 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.8,
+      "lluvia_mm": 0.9,
       "prob": 0.67,
       "intensidad_mmh": 0.8,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.8,
+      "lluvia_mm": 1.0,
       "prob": 0.69,
       "intensidad_mmh": 0.5,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.8,
+      "lluvia_mm": 1.0,
       "prob": 0.71,
       "intensidad_mmh": 0.4,
       "riesgo": "Bajo",
@@ -609,14 +528,14 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 1.0,
+      "lluvia_mm": 0.9,
       "prob": 0.83,
       "intensidad_mmh": 1.4,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 1.0,
       "prob": 0.83,
       "intensidad_mmh": 0.9,
       "riesgo": "Bajo",
@@ -640,21 +559,21 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 1.3,
+      "lluvia_mm": 1.4,
       "prob": 0.85,
       "intensidad_mmh": 1.4,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 1.3,
+      "lluvia_mm": 1.4,
       "prob": 0.85,
       "intensidad_mmh": 1.2,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.3,
+      "lluvia_mm": 1.5,
       "prob": 0.87,
       "intensidad_mmh": 1.1,
       "riesgo": "Bajo",
@@ -671,21 +590,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 1.3,
+      "lluvia_mm": 1.4,
       "prob": 0.83,
       "intensidad_mmh": 1.3,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 1.3,
+      "lluvia_mm": 1.4,
       "prob": 0.83,
       "intensidad_mmh": 1.2,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.3,
+      "lluvia_mm": 1.5,
       "prob": 0.87,
       "intensidad_mmh": 1.0,
       "riesgo": "Bajo",
@@ -702,7 +621,7 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 1.6,
+      "lluvia_mm": 1.4,
       "prob": 0.87,
       "intensidad_mmh": 2.2,
       "riesgo": "Bajo",
@@ -716,7 +635,7 @@
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.4,
+      "lluvia_mm": 1.5,
       "prob": 0.87,
       "intensidad_mmh": 1.2,
       "riesgo": "Bajo",
@@ -733,20 +652,14 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 2.2,
+      "lluvia_mm": 1.9,
       "prob": 0.87,
       "intensidad_mmh": 3.2,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Pascuales",
-       "Flor de Bastión",
-       "Bastión Popular",
-       "Monte Sinaí",
-       "Los Vergeles / Orquídeas"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "centro": {
-      "lluvia_mm": 1.9,
+      "lluvia_mm": 2.0,
       "prob": 0.87,
       "intensidad_mmh": 2.2,
       "riesgo": "Bajo",
@@ -763,8 +676,8 @@
    },
    {
     "hora": "21:00",
-    "pasada": false,
-    "actual": true,
+    "pasada": true,
+    "actual": false,
     "marea_m": 1.16,
     "marea_estado": "baja",
     "marea_clase": 0,
@@ -783,7 +696,7 @@
       ]
      },
      "centro": {
-      "lluvia_mm": 2.1,
+      "lluvia_mm": 2.0,
       "prob": 0.85,
       "intensidad_mmh": 3.0,
       "riesgo": "Moderado",
@@ -794,7 +707,7 @@
       ]
      },
      "sur": {
-      "lluvia_mm": 2.1,
+      "lluvia_mm": 1.9,
       "prob": 0.85,
       "intensidad_mmh": 2.9,
       "riesgo": "Moderado",
@@ -803,6 +716,7 @@
        "Fertisa",
        "Guasmo Norte",
        "Guasmo Central",
+       "Guasmo Sur",
        "Unión de Bananeros"
       ]
      }
@@ -810,14 +724,14 @@
    },
    {
     "hora": "22:00",
-    "pasada": false,
+    "pasada": true,
     "actual": false,
     "marea_m": 0.81,
     "marea_estado": "bajamar",
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 1.6,
+      "lluvia_mm": 1.9,
       "prob": 0.9,
       "intensidad_mmh": 1.8,
       "riesgo": "Moderado",
@@ -830,7 +744,7 @@
       ]
      },
      "centro": {
-      "lluvia_mm": 2.1,
+      "lluvia_mm": 2.0,
       "prob": 0.9,
       "intensidad_mmh": 2.5,
       "riesgo": "Moderado",
@@ -841,7 +755,7 @@
       ]
      },
      "sur": {
-      "lluvia_mm": 2.0,
+      "lluvia_mm": 1.9,
       "prob": 0.9,
       "intensidad_mmh": 2.4,
       "riesgo": "Moderado",
@@ -859,13 +773,13 @@
    {
     "hora": "23:00",
     "pasada": false,
-    "actual": false,
+    "actual": true,
     "marea_m": 1.07,
     "marea_estado": "sube",
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 1.9,
+      "lluvia_mm": 2.0,
       "prob": 0.88,
       "intensidad_mmh": 2.1,
       "riesgo": "Moderado",
@@ -878,7 +792,7 @@
       ]
      },
      "centro": {
-      "lluvia_mm": 2.1,
+      "lluvia_mm": 2.2,
       "prob": 0.88,
       "intensidad_mmh": 2.2,
       "riesgo": "Moderado",
@@ -889,7 +803,7 @@
       ]
      },
      "sur": {
-      "lluvia_mm": 1.9,
+      "lluvia_mm": 2.1,
       "prob": 0.9,
       "intensidad_mmh": 1.6,
       "riesgo": "Moderado",
@@ -906,15 +820,15 @@
    }
   ],
   "resumen": {
-   "norte": "Quedan 5.4 mm para el resto del día (total del día 32.3 mm). Lo más fuerte: entre 21:00 y 00:00, con 5.4 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 21:00–00:00 (moderado).",
-   "centro": "Quedan 6.4 mm para el resto del día (total del día 31.0 mm). Lo más fuerte: entre 21:00 y 00:00, con 6.4 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 21:00–00:00 (moderado).",
-   "sur": "Quedan 6.0 mm para el resto del día (total del día 29.8 mm). Lo más fuerte: entre 21:00 y 00:00, con 6.0 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 21:00–00:00 (moderado)."
+   "norte": "Quedan 2.0 mm para el resto del día (total del día 26.2 mm). Lo más fuerte: entre 23:00 y 00:00, con 2.0 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 23:00 (moderado).",
+   "centro": "Quedan 2.2 mm para el resto del día (total del día 25.6 mm). Lo más fuerte: entre 23:00 y 00:00, con 2.2 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 23:00 (moderado).",
+   "sur": "Quedan 2.1 mm para el resto del día (total del día 24.2 mm). Lo más fuerte: entre 23:00 y 00:00, con 2.1 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe. Horas con riesgo de anegamiento: 23:00 (moderado)."
   }
  },
  "manana": {
   "fecha": "2026-11-05",
   "etiqueta": "jueves 5 de noviembre",
-  "ahora": "21:00",
+  "ahora": "23:00",
   "horas": [
    {
     "hora": "00:00",
@@ -925,7 +839,7 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 2.6,
+      "lluvia_mm": 2.0,
       "prob": 0.85,
       "intensidad_mmh": 5.7,
       "riesgo": "Moderado",
@@ -938,7 +852,7 @@
       ]
      },
      "centro": {
-      "lluvia_mm": 2.6,
+      "lluvia_mm": 2.2,
       "prob": 0.85,
       "intensidad_mmh": 4.3,
       "riesgo": "Moderado",
@@ -973,7 +887,7 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 2.3,
+      "lluvia_mm": 2.0,
       "prob": 0.87,
       "intensidad_mmh": 9.7,
       "riesgo": "Moderado",
@@ -986,7 +900,7 @@
       ]
      },
      "centro": {
-      "lluvia_mm": 2.3,
+      "lluvia_mm": 2.2,
       "prob": 0.87,
       "intensidad_mmh": 3.3,
       "riesgo": "Moderado",
@@ -1034,7 +948,7 @@
       ]
      },
      "centro": {
-      "lluvia_mm": 1.1,
+      "lluvia_mm": 1.2,
       "prob": 0.88,
       "intensidad_mmh": 1.0,
       "riesgo": "Alto",
@@ -1053,6 +967,7 @@
        "Isla Trinitaria",
        "Fertisa",
        "Guasmo Norte",
+       "Guasmo Central",
        "Unión de Bananeros"
       ]
      }
@@ -1067,23 +982,21 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.8,
+      "lluvia_mm": 1.1,
       "prob": 0.83,
       "intensidad_mmh": 0.5,
-      "riesgo": "Moderado",
-      "sectores": [
-       "Monte Sinaí"
-      ]
+      "riesgo": "Bajo",
+      "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 1.2,
       "prob": 0.83,
       "intensidad_mmh": 0.3,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.0,
+      "lluvia_mm": 1.2,
       "prob": 0.87,
       "intensidad_mmh": 0.6,
       "riesgo": "Bajo",
@@ -1100,21 +1013,21 @@
     "marea_clase": 2,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.8,
+      "lluvia_mm": 1.1,
       "prob": 0.83,
       "intensidad_mmh": 0.2,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 1.2,
       "prob": 0.85,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 1.2,
       "prob": 0.87,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
@@ -1131,21 +1044,21 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.4,
+      "lluvia_mm": 0.6,
       "prob": 0.77,
       "intensidad_mmh": 0.3,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.5,
+      "lluvia_mm": 0.7,
       "prob": 0.79,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.5,
+      "lluvia_mm": 0.7,
       "prob": 0.81,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
@@ -1162,21 +1075,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.4,
+      "lluvia_mm": 0.6,
       "prob": 0.69,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.5,
+      "lluvia_mm": 0.7,
       "prob": 0.69,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.5,
+      "lluvia_mm": 0.7,
       "prob": 0.75,
       "intensidad_mmh": 0.2,
       "riesgo": "Bajo",
@@ -1193,21 +1106,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.4,
+      "lluvia_mm": 0.6,
       "prob": 0.67,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.5,
+      "lluvia_mm": 0.7,
       "prob": 0.65,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.5,
+      "lluvia_mm": 0.7,
       "prob": 0.73,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
@@ -1224,14 +1137,14 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.6,
       "intensidad_mmh": 0.2,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.62,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
@@ -1255,14 +1168,14 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.31,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.37,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
@@ -1286,21 +1199,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.38,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.38,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.38,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
@@ -1331,7 +1244,7 @@
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.35,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
@@ -1362,7 +1275,7 @@
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.33,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
@@ -1393,7 +1306,7 @@
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.1,
+      "lluvia_mm": 0.2,
       "prob": 0.42,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
@@ -1410,21 +1323,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.3,
+      "lluvia_mm": 0.5,
       "prob": 0.4,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.3,
+      "lluvia_mm": 0.4,
       "prob": 0.4,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.3,
+      "lluvia_mm": 0.4,
       "prob": 0.4,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
@@ -1441,21 +1354,21 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.3,
+      "lluvia_mm": 0.5,
       "prob": 0.35,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.3,
+      "lluvia_mm": 0.4,
       "prob": 0.42,
       "intensidad_mmh": 0.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.3,
+      "lluvia_mm": 0.4,
       "prob": 0.44,
       "intensidad_mmh": 0.0,
       "riesgo": "Bajo",
@@ -1472,7 +1385,7 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.4,
+      "lluvia_mm": 0.5,
       "prob": 0.52,
       "intensidad_mmh": 0.4,
       "riesgo": "Bajo",
@@ -1503,21 +1416,21 @@
     "marea_clase": 1,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.7,
+      "lluvia_mm": 0.8,
       "prob": 0.56,
       "intensidad_mmh": 0.7,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.6,
+      "lluvia_mm": 0.8,
       "prob": 0.56,
       "intensidad_mmh": 0.4,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.6,
+      "lluvia_mm": 0.7,
       "prob": 0.58,
       "intensidad_mmh": 0.4,
       "riesgo": "Bajo",
@@ -1541,7 +1454,7 @@
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.7,
+      "lluvia_mm": 0.8,
       "prob": 0.56,
       "intensidad_mmh": 0.7,
       "riesgo": "Bajo",
@@ -1565,21 +1478,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 0.8,
       "prob": 0.65,
       "intensidad_mmh": 1.4,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 0.8,
       "prob": 0.65,
       "intensidad_mmh": 1.3,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.8,
+      "lluvia_mm": 0.7,
       "prob": 0.65,
       "intensidad_mmh": 1.2,
       "riesgo": "Bajo",
@@ -1603,14 +1516,14 @@
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 0.8,
       "prob": 0.63,
       "intensidad_mmh": 1.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 0.8,
       "prob": 0.63,
       "intensidad_mmh": 1.2,
       "riesgo": "Bajo",
@@ -1627,21 +1540,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 1.2,
+      "lluvia_mm": 0.8,
       "prob": 0.6,
       "intensidad_mmh": 2.1,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 0.8,
       "prob": 0.6,
       "intensidad_mmh": 1.3,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.0,
+      "lluvia_mm": 0.8,
       "prob": 0.6,
       "intensidad_mmh": 1.5,
       "riesgo": "Bajo",
@@ -1658,21 +1571,21 @@
     "marea_clase": 0,
     "zonas": {
      "norte": {
-      "lluvia_mm": 0.9,
+      "lluvia_mm": 0.8,
       "prob": 0.58,
       "intensidad_mmh": 1.3,
       "riesgo": "Bajo",
       "sectores": []
      },
      "centro": {
-      "lluvia_mm": 1.0,
+      "lluvia_mm": 0.8,
       "prob": 0.54,
       "intensidad_mmh": 1.6,
       "riesgo": "Bajo",
       "sectores": []
      },
      "sur": {
-      "lluvia_mm": 1.1,
+      "lluvia_mm": 0.8,
       "prob": 0.54,
       "intensidad_mmh": 1.6,
       "riesgo": "Bajo",
@@ -1713,9 +1626,9 @@
    }
   ],
   "resumen": {
-   "norte": "Total del día: 16.5 mm. Lo más fuerte: entre 00:00 y 03:00, con 5.9 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–04:00 (moderado).",
-   "centro": "Total del día: 16.9 mm. Lo más fuerte: entre 00:00 y 03:00, con 5.9 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–02:00 (moderado), 02:00 (alto).",
-   "sur": "Total del día: 16.4 mm. Lo más fuerte: entre 00:00 y 03:00, con 5.4 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–02:00 (moderado), 02:00 (alto)."
+   "norte": "Total del día: 16.9 mm. Lo más fuerte: entre 00:00 y 03:00, con 5.2 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–03:00 (moderado).",
+   "centro": "Total del día: 18.0 mm. Lo más fuerte: entre 00:00 y 03:00, con 5.6 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–02:00 (moderado), 02:00 (alto).",
+   "sur": "Total del día: 17.9 mm. Lo más fuerte: entre 00:00 y 03:00, con 5.4 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento. Horas con riesgo de anegamiento: 00:00–02:00 (moderado), 02:00 (alto)."
   }
  },
  "observado": {
@@ -1724,7 +1637,7 @@
   "publicado": "Thu, 29 Oct 2026 18:34:11 GMT",
   "inicio": "2026-10-28T07:00",
   "fin": "2026-10-29T07:00",
-  "horas_desde_fin": 158,
+  "horas_desde_fin": 160,
   "comparable": false,
   "estaciones": [
    {
@@ -2032,19 +1945,19 @@
   },
   "sin_corregir": {
    "norte": [
-    7.4,
-    22.5,
-    25.8
+    2.8,
+    23.1,
+    25.4
    ],
    "centro": [
-    8.7,
-    23.0,
-    23.4
+    3.0,
+    24.6,
+    25.2
    ],
    "sur": [
-    8.2,
-    22.4,
-    22.4
+    2.8,
+    24.4,
+    24.7
    ]
   },
   "historial": [
@@ -2108,7 +2021,7 @@
    "hora": "22:10",
    "altura": 0.81,
    "clase": "",
-   "pasada": false
+   "pasada": true
   },
   {
    "tipo": "pleamar",
@@ -2184,38 +2097,36 @@
   "norte": {
    "nombre": "Norte",
    "sectores": "Urdesa, Kennedy, Alborada, Sauces, Samanes, Guayacanes, Mapasingue, Prosperina, Bastión Popular, Flor de Bastión, Pascuales, Monte Sinaí",
-   "antecedente_72h_mm": 162.8,
+   "antecedente_72h_mm": 107.9,
    "dias": [
     {
      "fecha": "2026-11-04",
      "etiqueta": "miércoles 4 de noviembre",
      "parcial": true,
-     "horas_ventana": 3,
-     "lluvia_mm": 5.4,
+     "horas_ventana": 1,
+     "lluvia_mm": 2.0,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
-      4.5,
-      8.7
+      1.7,
+      2.9
      ],
      "por_fuente": {
-      "gfs_seamless": 4.5,
-      "ncep_aigfs025": 8.7,
-      "gem_global": 4.9,
-      "ens:gfs025": 5.1,
-      "ens:gem_global": 4.5
+      "ncep_aigfs025": 2.9,
+      "ens:gfs025": 1.7,
+      "ens:gem_global": 1.7
      },
      "p10_p50_p90": [
-      0.6,
-      4.2,
-      9.1
+      0.0,
+      1.4,
+      3.5
      ],
      "miembros": 52,
-     "prob_1mm": 0.865,
-     "prob_10mm": 0.096,
+     "prob_1mm": 0.712,
+     "prob_10mm": 0.0,
      "prob_25mm": 0.0,
      "prob_50mm": 0.0,
-     "intensidad_max_mmh": 2.2,
-     "horas_lluvia_gfs": 3,
+     "intensidad_max_mmh": 2.1,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2245,16 +2156,14 @@
      "etiqueta": "jueves 5 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 16.5,
+     "lluvia_mm": 16.9,
      "categoria": "Lluvia moderada",
      "rango_modelos": [
-      12.0,
+      12.7,
       21.1
      ],
      "por_fuente": {
-      "gfs_seamless": 19.1,
       "ncep_aigfs025": 12.7,
-      "gem_global": 12.0,
       "ens:gfs025": 21.1,
       "ens:gem_global": 15.5
      },
@@ -2269,7 +2178,7 @@
      "prob_25mm": 0.288,
      "prob_50mm": 0.038,
      "intensidad_max_mmh": 11.3,
-     "horas_lluvia_gfs": 12,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2304,16 +2213,14 @@
      "etiqueta": "viernes 6 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 18.9,
+     "lluvia_mm": 18.6,
      "categoria": "Lluvia moderada",
      "rango_modelos": [
       10.1,
       36.9
      ],
      "por_fuente": {
-      "gfs_seamless": 18.6,
       "ncep_aigfs025": 36.9,
-      "gem_global": 20.1,
       "ens:gfs025": 15.1,
       "ens:gem_global": 10.1
      },
@@ -2328,7 +2235,7 @@
      "prob_25mm": 0.212,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 6.0,
-     "horas_lluvia_gfs": 13,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2363,16 +2270,14 @@
      "etiqueta": "sábado 7 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 36.6,
-     "categoria": "Lluvia fuerte",
+     "lluvia_mm": 20.3,
+     "categoria": "Lluvia moderada",
      "rango_modelos": [
       14.1,
-      107.2
+      37.4
      ],
      "por_fuente": {
-      "gfs_seamless": 107.2,
       "ncep_aigfs025": 37.4,
-      "gem_global": 31.2,
       "ens:gfs025": 15.0,
       "ens:gem_global": 14.1
      },
@@ -2387,7 +2292,7 @@
      "prob_25mm": 0.173,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 24.6,
-     "horas_lluvia_gfs": 11,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2424,16 +2329,14 @@
      "etiqueta": "domingo 8 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 8.8,
-     "categoria": "Lluvia ligera",
+     "lluvia_mm": 12.1,
+     "categoria": "Lluvia moderada",
      "rango_modelos": [
-      1.3,
+      5.6,
       22.3
      ],
      "por_fuente": {
-      "gfs_seamless": 3.3,
       "ncep_aigfs025": 6.5,
-      "gem_global": 1.3,
       "ens:gfs025": 5.6,
       "ens:gem_global": 22.3
      },
@@ -2448,7 +2351,7 @@
      "prob_25mm": 0.154,
      "prob_50mm": 0.019,
      "intensidad_max_mmh": 0.8,
-     "horas_lluvia_gfs": 5,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2472,16 +2375,14 @@
      "etiqueta": "lunes 9 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 12.1,
+     "lluvia_mm": 11.5,
      "categoria": "Lluvia moderada",
      "rango_modelos": [
-      1.9,
-      24.5
+      4.4,
+      19.3
      ],
      "por_fuente": {
-      "gfs_seamless": 1.9,
       "ncep_aigfs025": 10.5,
-      "gem_global": 24.5,
       "ens:gfs025": 4.4,
       "ens:gem_global": 19.3
      },
@@ -2496,7 +2397,7 @@
      "prob_25mm": 0.115,
      "prob_50mm": 0.038,
      "intensidad_max_mmh": 2.4,
-     "horas_lluvia_gfs": 2,
+     "horas_lluvia_gfs": null,
      "aguaje": true,
      "fase_lunar": "luna nueva",
      "pleamares": [
@@ -2520,16 +2421,14 @@
      "etiqueta": "martes 10 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 12.6,
+     "lluvia_mm": 10.1,
      "categoria": "Lluvia moderada",
      "rango_modelos": [
-      1.8,
-      33.3
+      4.2,
+      15.7
      ],
      "por_fuente": {
-      "gfs_seamless": 1.8,
       "ncep_aigfs025": 4.2,
-      "gem_global": 33.3,
       "ens:gfs025": 8.5,
       "ens:gem_global": 15.7
      },
@@ -2544,7 +2443,7 @@
      "prob_25mm": 0.135,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 2.2,
-     "horas_lluvia_gfs": 0,
+     "horas_lluvia_gfs": null,
      "aguaje": true,
      "fase_lunar": "luna nueva",
      "pleamares": [
@@ -2568,16 +2467,14 @@
      "etiqueta": "miércoles 11 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 13.2,
+     "lluvia_mm": 11.2,
      "categoria": "Lluvia moderada",
      "rango_modelos": [
       0.2,
-      23.9
+      18.0
      ],
      "por_fuente": {
-      "gfs_seamless": 10.3,
       "ncep_aigfs025": 0.2,
-      "gem_global": 23.9,
       "ens:gfs025": 11.8,
       "ens:gem_global": 18.0
      },
@@ -2592,7 +2489,7 @@
      "prob_25mm": 0.154,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 3.4,
-     "horas_lluvia_gfs": 10,
+     "horas_lluvia_gfs": null,
      "aguaje": true,
      "fase_lunar": "luna nueva",
      "pleamares": [
@@ -2608,51 +2505,44 @@
       }
      ],
      "pleamar_max_m": 4.4,
-     "riesgo_inundacion": "Moderado",
-     "puntos_en_riesgo": [
-      "Pascuales",
-      "Flor de Bastión",
-      "Bastión Popular",
-      "Los Vergeles / Orquídeas"
-     ]
+     "riesgo_inundacion": "Bajo",
+     "puntos_en_riesgo": []
     }
    ]
   },
   "centro": {
    "nombre": "Centro",
    "sectores": "Centro histórico, Las Peñas, Malecón, Barrio Garay, Suburbio Oeste, Cristo del Consuelo, Batallón del Suburbio",
-   "antecedente_72h_mm": 152.4,
+   "antecedente_72h_mm": 129.4,
    "dias": [
     {
      "fecha": "2026-11-04",
      "etiqueta": "miércoles 4 de noviembre",
      "parcial": true,
-     "horas_ventana": 3,
-     "lluvia_mm": 6.4,
+     "horas_ventana": 1,
+     "lluvia_mm": 2.2,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
-      4.5,
-      9.5
+      1.7,
+      3.2
      ],
      "por_fuente": {
-      "gfs_seamless": 4.8,
-      "ncep_aigfs025": 9.5,
-      "gem_global": 8.7,
-      "ens:gfs025": 5.6,
-      "ens:gem_global": 4.5
+      "ncep_aigfs025": 3.2,
+      "ens:gfs025": 2.0,
+      "ens:gem_global": 1.7
      },
      "p10_p50_p90": [
-      0.6,
-      4.7,
-      10.0
+      0.0,
+      1.5,
+      3.2
      ],
      "miembros": 52,
-     "prob_1mm": 0.846,
-     "prob_10mm": 0.115,
-     "prob_25mm": 0.019,
+     "prob_1mm": 0.712,
+     "prob_10mm": 0.0,
+     "prob_25mm": 0.0,
      "prob_50mm": 0.0,
-     "intensidad_max_mmh": 3.1,
-     "horas_lluvia_gfs": 3,
+     "intensidad_max_mmh": 2.2,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2680,16 +2570,14 @@
      "etiqueta": "jueves 5 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 16.9,
+     "lluvia_mm": 18.0,
      "categoria": "Lluvia moderada",
      "rango_modelos": [
-      11.9,
+      13.9,
       23.3
      ],
      "por_fuente": {
-      "gfs_seamless": 17.2,
       "ncep_aigfs025": 13.9,
-      "gem_global": 11.9,
       "ens:gfs025": 23.3,
       "ens:gem_global": 15.5
      },
@@ -2704,7 +2592,7 @@
      "prob_25mm": 0.327,
      "prob_50mm": 0.077,
      "intensidad_max_mmh": 4.7,
-     "horas_lluvia_gfs": 11,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2735,16 +2623,14 @@
      "etiqueta": "viernes 6 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 17.1,
+     "lluvia_mm": 18.4,
      "categoria": "Lluvia moderada",
      "rango_modelos": [
-      9.7,
+      10.1,
       36.1
      ],
      "por_fuente": {
-      "gfs_seamless": 19.3,
       "ncep_aigfs025": 36.1,
-      "gem_global": 9.7,
       "ens:gfs025": 15.1,
       "ens:gem_global": 10.1
      },
@@ -2759,7 +2645,7 @@
      "prob_25mm": 0.212,
      "prob_50mm": 0.019,
      "intensidad_max_mmh": 4.7,
-     "horas_lluvia_gfs": 11,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2790,16 +2676,14 @@
      "etiqueta": "sábado 7 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 36.5,
-     "categoria": "Lluvia fuerte",
+     "lluvia_mm": 21.3,
+     "categoria": "Lluvia moderada",
      "rango_modelos": [
       12.6,
-      118.6
+      45.0
      ],
      "por_fuente": {
-      "gfs_seamless": 118.6,
       "ncep_aigfs025": 45.0,
-      "gem_global": 15.1,
       "ens:gfs025": 12.6,
       "ens:gem_global": 14.1
      },
@@ -2814,7 +2698,7 @@
      "prob_25mm": 0.135,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 19.0,
-     "horas_lluvia_gfs": 11,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2830,7 +2714,7 @@
       }
      ],
      "pleamar_max_m": 4.5,
-     "riesgo_inundacion": "Muy alto",
+     "riesgo_inundacion": "Alto",
      "puntos_en_riesgo": [
       "Av. Quito y Av. Machala",
       "Barrio Garay",
@@ -2845,16 +2729,14 @@
      "etiqueta": "domingo 8 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 9.0,
-     "categoria": "Lluvia ligera",
+     "lluvia_mm": 12.1,
+     "categoria": "Lluvia moderada",
      "rango_modelos": [
-      1.3,
+      4.7,
       22.3
      ],
      "por_fuente": {
-      "gfs_seamless": 1.3,
       "ncep_aigfs025": 7.9,
-      "gem_global": 4.3,
       "ens:gfs025": 4.7,
       "ens:gem_global": 22.3
      },
@@ -2869,7 +2751,7 @@
      "prob_25mm": 0.154,
      "prob_50mm": 0.019,
      "intensidad_max_mmh": 0.9,
-     "horas_lluvia_gfs": 3,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -2893,16 +2775,14 @@
      "etiqueta": "lunes 9 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 10.6,
-     "categoria": "Lluvia moderada",
+     "lluvia_mm": 9.5,
+     "categoria": "Lluvia ligera",
      "rango_modelos": [
-      1.9,
-      23.2
+      3.3,
+      19.3
      ],
      "por_fuente": {
-      "gfs_seamless": 1.9,
       "ncep_aigfs025": 4.3,
-      "gem_global": 23.2,
       "ens:gfs025": 3.3,
       "ens:gem_global": 19.3
      },
@@ -2917,7 +2797,7 @@
      "prob_25mm": 0.115,
      "prob_50mm": 0.038,
      "intensidad_max_mmh": 1.7,
-     "horas_lluvia_gfs": 2,
+     "horas_lluvia_gfs": null,
      "aguaje": true,
      "fase_lunar": "luna nueva",
      "pleamares": [
@@ -2941,16 +2821,14 @@
      "etiqueta": "martes 10 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 8.9,
+     "lluvia_mm": 8.3,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
       0.8,
-      19.1
+      15.7
      ],
      "por_fuente": {
-      "gfs_seamless": 0.9,
       "ncep_aigfs025": 0.8,
-      "gem_global": 19.1,
       "ens:gfs025": 5.8,
       "ens:gem_global": 15.7
      },
@@ -2965,7 +2843,7 @@
      "prob_25mm": 0.096,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 1.4,
-     "horas_lluvia_gfs": 0,
+     "horas_lluvia_gfs": null,
      "aguaje": true,
      "fase_lunar": "luna nueva",
      "pleamares": [
@@ -2989,16 +2867,14 @@
      "etiqueta": "miércoles 11 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 11.1,
+     "lluvia_mm": 10.5,
      "categoria": "Lluvia moderada",
      "rango_modelos": [
       0.0,
       18.0
      ],
      "por_fuente": {
-      "gfs_seamless": 10.2,
       "ncep_aigfs025": 0.0,
-      "gem_global": 14.5,
       "ens:gfs025": 10.0,
       "ens:gem_global": 18.0
      },
@@ -3013,7 +2889,7 @@
      "prob_25mm": 0.154,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 2.5,
-     "horas_lluvia_gfs": 10,
+     "horas_lluvia_gfs": null,
      "aguaje": true,
      "fase_lunar": "luna nueva",
      "pleamares": [
@@ -3037,38 +2913,36 @@
   "sur": {
    "nombre": "Sur",
    "sectores": "Centenario, Cuba, La Pradera, La Floresta, Los Esteros, Guasmo, Fertisa, Isla Trinitaria, Unión de Bananeros, Puerto Marítimo",
-   "antecedente_72h_mm": 146.8,
+   "antecedente_72h_mm": 129.4,
    "dias": [
     {
      "fecha": "2026-11-04",
      "etiqueta": "miércoles 4 de noviembre",
      "parcial": true,
-     "horas_ventana": 3,
-     "lluvia_mm": 6.0,
+     "horas_ventana": 1,
+     "lluvia_mm": 2.1,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
-      3.5,
-      9.5
+      1.4,
+      3.2
      ],
      "por_fuente": {
-      "gfs_seamless": 3.5,
-      "ncep_aigfs025": 9.5,
-      "gem_global": 8.7,
-      "ens:gfs025": 5.6,
-      "ens:gem_global": 3.9
+      "ncep_aigfs025": 3.2,
+      "ens:gfs025": 2.0,
+      "ens:gem_global": 1.4
      },
      "p10_p50_p90": [
-      0.6,
-      4.0,
-      9.1
+      0.1,
+      1.3,
+      3.1
      ],
      "miembros": 52,
-     "prob_1mm": 0.846,
-     "prob_10mm": 0.096,
-     "prob_25mm": 0.019,
+     "prob_1mm": 0.712,
+     "prob_10mm": 0.0,
+     "prob_25mm": 0.0,
      "prob_50mm": 0.0,
-     "intensidad_max_mmh": 2.9,
-     "horas_lluvia_gfs": 3,
+     "intensidad_max_mmh": 1.6,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -3099,16 +2973,14 @@
      "etiqueta": "jueves 5 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 16.4,
+     "lluvia_mm": 17.9,
      "categoria": "Lluvia moderada",
      "rango_modelos": [
-      11.9,
+      13.9,
       23.3
      ],
      "por_fuente": {
-      "gfs_seamless": 14.9,
       "ncep_aigfs025": 13.9,
-      "gem_global": 11.9,
       "ens:gfs025": 23.3,
       "ens:gem_global": 15.1
      },
@@ -3123,7 +2995,7 @@
      "prob_25mm": 0.288,
      "prob_50mm": 0.077,
      "intensidad_max_mmh": 4.0,
-     "horas_lluvia_gfs": 11,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -3158,16 +3030,14 @@
      "etiqueta": "viernes 6 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 16.4,
+     "lluvia_mm": 18.1,
      "categoria": "Lluvia moderada",
      "rango_modelos": [
       9.1,
       36.1
      ],
      "por_fuente": {
-      "gfs_seamless": 16.6,
       "ncep_aigfs025": 36.1,
-      "gem_global": 9.7,
       "ens:gfs025": 15.1,
       "ens:gem_global": 9.1
      },
@@ -3182,7 +3052,7 @@
      "prob_25mm": 0.212,
      "prob_50mm": 0.019,
      "intensidad_max_mmh": 3.7,
-     "horas_lluvia_gfs": 9,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -3217,16 +3087,14 @@
      "etiqueta": "sábado 7 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 39.1,
-     "categoria": "Lluvia fuerte",
+     "lluvia_mm": 20.0,
+     "categoria": "Lluvia moderada",
      "rango_modelos": [
       10.7,
-      139.9
+      45.0
      ],
      "por_fuente": {
-      "gfs_seamless": 139.9,
       "ncep_aigfs025": 45.0,
-      "gem_global": 15.1,
       "ens:gfs025": 12.6,
       "ens:gem_global": 10.7
      },
@@ -3241,7 +3109,7 @@
      "prob_25mm": 0.096,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 19.5,
-     "horas_lluvia_gfs": 11,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -3276,16 +3144,14 @@
      "etiqueta": "domingo 8 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 7.3,
+     "lluvia_mm": 9.8,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
-      0.4,
+      4.7,
       16.1
      ],
      "por_fuente": {
-      "gfs_seamless": 0.4,
       "ncep_aigfs025": 7.9,
-      "gem_global": 4.3,
       "ens:gfs025": 4.7,
       "ens:gem_global": 16.1
      },
@@ -3300,7 +3166,7 @@
      "prob_25mm": 0.077,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 0.8,
-     "horas_lluvia_gfs": 0,
+     "horas_lluvia_gfs": null,
      "aguaje": false,
      "fase_lunar": "",
      "pleamares": [
@@ -3324,16 +3190,14 @@
      "etiqueta": "lunes 9 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 9.8,
+     "lluvia_mm": 8.5,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
-      1.3,
-      23.2
+      3.3,
+      16.6
      ],
      "por_fuente": {
-      "gfs_seamless": 1.3,
       "ncep_aigfs025": 4.3,
-      "gem_global": 23.2,
       "ens:gfs025": 3.3,
       "ens:gem_global": 16.6
      },
@@ -3348,7 +3212,7 @@
      "prob_25mm": 0.115,
      "prob_50mm": 0.019,
      "intensidad_max_mmh": 1.5,
-     "horas_lluvia_gfs": 2,
+     "horas_lluvia_gfs": null,
      "aguaje": true,
      "fase_lunar": "luna nueva",
      "pleamares": [
@@ -3372,16 +3236,14 @@
      "etiqueta": "martes 10 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 7.6,
+     "lluvia_mm": 6.5,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
-      0.6,
-      19.1
+      0.8,
+      10.9
      ],
      "por_fuente": {
-      "gfs_seamless": 0.6,
       "ncep_aigfs025": 0.8,
-      "gem_global": 19.1,
       "ens:gfs025": 5.8,
       "ens:gem_global": 10.9
      },
@@ -3396,7 +3258,7 @@
      "prob_25mm": 0.019,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 1.4,
-     "horas_lluvia_gfs": 0,
+     "horas_lluvia_gfs": null,
      "aguaje": true,
      "fase_lunar": "luna nueva",
      "pleamares": [
@@ -3420,16 +3282,14 @@
      "etiqueta": "miércoles 11 de noviembre",
      "parcial": false,
      "horas_ventana": 24,
-     "lluvia_mm": 9.7,
+     "lluvia_mm": 9.4,
      "categoria": "Lluvia ligera",
      "rango_modelos": [
       0.0,
       15.2
      ],
      "por_fuente": {
-      "gfs_seamless": 5.7,
       "ncep_aigfs025": 0.0,
-      "gem_global": 14.5,
       "ens:gfs025": 10.0,
       "ens:gem_global": 15.2
      },
@@ -3444,7 +3304,7 @@
      "prob_25mm": 0.154,
      "prob_50mm": 0.0,
      "intensidad_max_mmh": 2.2,
-     "horas_lluvia_gfs": 9,
+     "horas_lluvia_gfs": null,
      "aguaje": true,
      "fase_lunar": "luna nueva",
      "pleamares": [
@@ -3477,15 +3337,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.3,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 2.0,
+     "intensidad_mmh": 1.7,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 15.5,
+     "lluvia_mm": 16.6,
      "intensidad_mmh": 4.4,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -3493,15 +3353,15 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 19.0,
+     "lluvia_mm": 18.7,
      "intensidad_mmh": 3.4,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "22:00"
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 33.7,
+     "lluvia_mm": 19.8,
      "intensidad_mmh": 18.7,
      "nivel": "Muy alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -3509,7 +3369,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 9.2,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 0.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3517,7 +3377,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 12.5,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 1.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3525,7 +3385,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 13.1,
+     "lluvia_mm": 10.5,
      "intensidad_mmh": 2.2,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3533,11 +3393,11 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 13.6,
+     "lluvia_mm": 11.2,
      "intensidad_mmh": 3.0,
-     "nivel": "Moderado",
-     "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "19:00"
+     "nivel": "Bajo",
+     "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
+     "hora_critica": null
     }
    ],
    "nivel_mapa": "Alto",
@@ -3553,15 +3413,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.3,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 2.0,
+     "intensidad_mmh": 1.8,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.1,
+     "lluvia_mm": 16.6,
      "intensidad_mmh": 4.7,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3",
@@ -3569,15 +3429,15 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 19.0,
+     "lluvia_mm": 18.7,
      "intensidad_mmh": 3.4,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "20:00"
+     "hora_critica": "22:00"
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 36.1,
+     "lluvia_mm": 19.8,
      "intensidad_mmh": 17.9,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3",
@@ -3585,7 +3445,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.8,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 0.6,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3593,7 +3453,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 12.5,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 2.0,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3601,7 +3461,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 13.0,
+     "lluvia_mm": 10.5,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3609,11 +3469,11 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 13.4,
+     "lluvia_mm": 11.2,
      "intensidad_mmh": 2.9,
-     "nivel": "Moderado",
-     "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "19:00"
+     "nivel": "Bajo",
+     "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
+     "hora_critica": null
     }
    ],
    "nivel_mapa": "Moderado",
@@ -3629,15 +3489,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.3,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 2.0,
+     "intensidad_mmh": 1.8,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.0,
+     "lluvia_mm": 16.6,
      "intensidad_mmh": 4.7,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3",
@@ -3645,15 +3505,15 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 19.0,
+     "lluvia_mm": 18.7,
      "intensidad_mmh": 3.4,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "20:00"
+     "hora_critica": "22:00"
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 35.7,
+     "lluvia_mm": 19.8,
      "intensidad_mmh": 18.1,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3",
@@ -3661,7 +3521,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.9,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 0.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3669,7 +3529,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 12.5,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 2.0,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3677,7 +3537,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 13.0,
+     "lluvia_mm": 10.5,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3685,11 +3545,11 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 13.5,
+     "lluvia_mm": 11.2,
      "intensidad_mmh": 2.9,
-     "nivel": "Moderado",
-     "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "19:00"
+     "nivel": "Bajo",
+     "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
+     "hora_critica": null
     }
    ],
    "nivel_mapa": "Moderado",
@@ -3705,15 +3565,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.4,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 2.0,
+     "intensidad_mmh": 1.8,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 18.9,
+     "lluvia_mm": 16.7,
      "intensidad_mmh": 8.5,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3",
@@ -3721,15 +3581,15 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 18.9,
+     "lluvia_mm": 18.7,
      "intensidad_mmh": 3.4,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "20:00"
+     "hora_critica": "22:00"
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 39.3,
+     "lluvia_mm": 19.9,
      "intensidad_mmh": 21.0,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3",
@@ -3737,7 +3597,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.4,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 0.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3745,7 +3605,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 12.5,
+     "lluvia_mm": 11.9,
      "intensidad_mmh": 2.3,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3753,7 +3613,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 12.8,
+     "lluvia_mm": 10.4,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3761,7 +3621,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 12.9,
+     "lluvia_mm": 11.2,
      "intensidad_mmh": 2.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3781,15 +3641,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.3,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 2.0,
+     "intensidad_mmh": 1.8,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.0,
+     "lluvia_mm": 16.6,
      "intensidad_mmh": 4.7,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -3797,15 +3657,15 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 19.0,
+     "lluvia_mm": 18.7,
      "intensidad_mmh": 3.4,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "20:00"
+     "hora_critica": "22:00"
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 35.6,
+     "lluvia_mm": 19.8,
      "intensidad_mmh": 18.1,
      "nivel": "Muy alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -3813,7 +3673,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.9,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 0.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3821,7 +3681,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 12.5,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 2.0,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3829,7 +3689,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 13.0,
+     "lluvia_mm": 10.5,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -3837,11 +3697,11 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 13.5,
+     "lluvia_mm": 11.2,
      "intensidad_mmh": 2.9,
-     "nivel": "Moderado",
-     "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "19:00"
+     "nivel": "Bajo",
+     "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
+     "hora_critica": null
     }
    ],
    "nivel_mapa": "Alto",
@@ -3857,15 +3717,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.3,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 2.0,
+     "intensidad_mmh": 1.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 15.5,
+     "lluvia_mm": 16.6,
      "intensidad_mmh": 4.3,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -3873,7 +3733,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 19.0,
+     "lluvia_mm": 18.7,
      "intensidad_mmh": 3.5,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -3881,7 +3741,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 33.9,
+     "lluvia_mm": 19.9,
      "intensidad_mmh": 18.8,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -3889,7 +3749,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 9.2,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 0.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -3897,7 +3757,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 12.5,
+     "lluvia_mm": 12.1,
      "intensidad_mmh": 1.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -3905,7 +3765,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 13.1,
+     "lluvia_mm": 10.5,
      "intensidad_mmh": 2.2,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -3913,7 +3773,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 13.6,
+     "lluvia_mm": 11.2,
      "intensidad_mmh": 3.0,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -3933,15 +3793,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.4,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 2.0,
+     "intensidad_mmh": 1.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.5,
+     "lluvia_mm": 16.6,
      "intensidad_mmh": 4.9,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -3949,7 +3809,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 19.0,
+     "lluvia_mm": 18.7,
      "intensidad_mmh": 3.5,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -3957,7 +3817,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 37.7,
+     "lluvia_mm": 19.9,
      "intensidad_mmh": 17.5,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -3965,7 +3825,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.5,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 0.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -3973,7 +3833,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 12.5,
+     "lluvia_mm": 12.1,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -3981,7 +3841,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 12.9,
+     "lluvia_mm": 10.5,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -3989,7 +3849,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 13.3,
+     "lluvia_mm": 11.2,
      "intensidad_mmh": 2.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4009,15 +3869,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.4,
-     "intensidad_mmh": 2.1,
+     "lluvia_mm": 2.0,
+     "intensidad_mmh": 1.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.1,
+     "lluvia_mm": 16.7,
      "intensidad_mmh": 4.4,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4025,7 +3885,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 18.9,
+     "lluvia_mm": 18.6,
      "intensidad_mmh": 4.1,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4033,15 +3893,15 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 38.3,
+     "lluvia_mm": 20.2,
      "intensidad_mmh": 17.9,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + marea alta, suelo saturado",
-     "hora_critica": "01:00"
+     "hora_critica": "02:00"
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.5,
+     "lluvia_mm": 12.1,
      "intensidad_mmh": 0.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4049,7 +3909,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 12.2,
+     "lluvia_mm": 11.8,
      "intensidad_mmh": 2.0,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4057,7 +3917,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 12.6,
+     "lluvia_mm": 10.5,
      "intensidad_mmh": 2.0,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4065,7 +3925,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 13.2,
+     "lluvia_mm": 11.4,
      "intensidad_mmh": 2.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4085,15 +3945,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.6,
-     "intensidad_mmh": 2.2,
+     "lluvia_mm": 2.1,
+     "intensidad_mmh": 1.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.2,
+     "lluvia_mm": 17.4,
      "intensidad_mmh": 5.1,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4101,7 +3961,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 19.1,
+     "lluvia_mm": 18.9,
      "intensidad_mmh": 3.5,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4109,7 +3969,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 38.7,
+     "lluvia_mm": 20.3,
      "intensidad_mmh": 17.2,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4117,7 +3977,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.5,
+     "lluvia_mm": 12.1,
      "intensidad_mmh": 0.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4125,7 +3985,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 11.8,
+     "lluvia_mm": 11.0,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4133,7 +3993,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 12.2,
+     "lluvia_mm": 9.5,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4141,7 +4001,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 12.9,
+     "lluvia_mm": 10.8,
      "intensidad_mmh": 2.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4161,15 +4021,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.8,
-     "intensidad_mmh": 2.2,
+     "lluvia_mm": 2.2,
+     "intensidad_mmh": 1.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.8,
+     "lluvia_mm": 18.2,
      "intensidad_mmh": 5.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3",
@@ -4177,7 +4037,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 19.2,
+     "lluvia_mm": 19.0,
      "intensidad_mmh": 3.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3",
@@ -4185,7 +4045,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 39.0,
+     "lluvia_mm": 20.7,
      "intensidad_mmh": 17.2,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + suelo saturado",
@@ -4193,7 +4053,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.5,
+     "lluvia_mm": 12.2,
      "intensidad_mmh": 0.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4201,7 +4061,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 11.1,
+     "lluvia_mm": 9.9,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4209,7 +4069,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 11.4,
+     "lluvia_mm": 8.4,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4217,7 +4077,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 12.7,
+     "lluvia_mm": 10.4,
      "intensidad_mmh": 2.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4237,15 +4097,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.7,
-     "intensidad_mmh": 2.2,
+     "lluvia_mm": 2.2,
+     "intensidad_mmh": 1.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.6,
+     "lluvia_mm": 17.9,
      "intensidad_mmh": 5.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3",
@@ -4253,7 +4113,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 19.2,
+     "lluvia_mm": 19.0,
      "intensidad_mmh": 3.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3",
@@ -4261,7 +4121,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 38.9,
+     "lluvia_mm": 20.6,
      "intensidad_mmh": 17.2,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + suelo saturado",
@@ -4269,7 +4129,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.5,
+     "lluvia_mm": 12.1,
      "intensidad_mmh": 0.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4277,7 +4137,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 11.4,
+     "lluvia_mm": 10.3,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4285,7 +4145,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 11.7,
+     "lluvia_mm": 8.8,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4293,7 +4153,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 12.8,
+     "lluvia_mm": 10.5,
      "intensidad_mmh": 2.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4313,15 +4173,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.9,
-     "intensidad_mmh": 2.2,
+     "lluvia_mm": 2.3,
+     "intensidad_mmh": 1.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 1/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.9,
+     "lluvia_mm": 18.4,
      "intensidad_mmh": 5.1,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 1/3 + marea alta, suelo saturado",
@@ -4337,7 +4197,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 38.8,
+     "lluvia_mm": 20.9,
      "intensidad_mmh": 16.9,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 1/3 + marea alta, suelo saturado",
@@ -4345,7 +4205,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.6,
+     "lluvia_mm": 12.2,
      "intensidad_mmh": 0.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 1/3",
@@ -4353,7 +4213,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.8,
+     "lluvia_mm": 9.6,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 1/3",
@@ -4361,7 +4221,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 11.1,
+     "lluvia_mm": 8.1,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 1/3",
@@ -4369,7 +4229,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 12.5,
+     "lluvia_mm": 10.2,
      "intensidad_mmh": 2.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 1/3",
@@ -4389,15 +4249,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.5,
-     "intensidad_mmh": 2.9,
+     "lluvia_mm": 2.2,
+     "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.3,
+     "lluvia_mm": 18.2,
      "intensidad_mmh": 4.3,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4405,7 +4265,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 17.3,
+     "lluvia_mm": 18.7,
      "intensidad_mmh": 3.3,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4413,15 +4273,15 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 36.4,
+     "lluvia_mm": 21.1,
      "intensidad_mmh": 14.5,
-     "nivel": "Alto",
-     "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + marea alta, suelo saturado",
-     "hora_critica": "02:00"
+     "nivel": "Moderado",
+     "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
+     "hora_critica": "05:00"
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 9.1,
+     "lluvia_mm": 12.1,
      "intensidad_mmh": 0.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4429,7 +4289,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.5,
+     "lluvia_mm": 9.6,
      "intensidad_mmh": 1.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4437,7 +4297,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.8,
+     "lluvia_mm": 8.2,
      "intensidad_mmh": 1.3,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4445,7 +4305,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 11.1,
+     "lluvia_mm": 10.4,
      "intensidad_mmh": 2.2,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4465,15 +4325,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.8,
-     "intensidad_mmh": 3.0,
+     "lluvia_mm": 2.3,
+     "intensidad_mmh": 2.2,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.9,
+     "lluvia_mm": 18.4,
      "intensidad_mmh": 4.7,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4481,7 +4341,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 17.7,
+     "lluvia_mm": 19.1,
      "intensidad_mmh": 3.0,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4489,15 +4349,15 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 36.3,
+     "lluvia_mm": 20.9,
      "intensidad_mmh": 13.4,
-     "nivel": "Alto",
-     "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + marea alta, suelo saturado",
-     "hora_critica": "03:00"
+     "nivel": "Moderado",
+     "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
+     "hora_critica": "05:00"
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 9.2,
+     "lluvia_mm": 12.2,
      "intensidad_mmh": 0.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4505,7 +4365,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.5,
+     "lluvia_mm": 9.6,
      "intensidad_mmh": 1.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4513,7 +4373,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.9,
+     "lluvia_mm": 8.1,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4521,7 +4381,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 11.1,
+     "lluvia_mm": 10.2,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4541,15 +4401,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.8,
-     "intensidad_mmh": 3.1,
+     "lluvia_mm": 2.3,
+     "intensidad_mmh": 2.2,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.9,
+     "lluvia_mm": 18.4,
      "intensidad_mmh": 4.7,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -4557,23 +4417,23 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 17.6,
+     "lluvia_mm": 19.1,
      "intensidad_mmh": 3.0,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "23:00"
+     "hora_critica": null
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 36.3,
+     "lluvia_mm": 20.9,
      "intensidad_mmh": 13.4,
-     "nivel": "Muy alto",
-     "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
+     "nivel": "Alto",
+     "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
      "hora_critica": "04:00"
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 9.2,
+     "lluvia_mm": 12.2,
      "intensidad_mmh": 0.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4581,7 +4441,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.5,
+     "lluvia_mm": 9.6,
      "intensidad_mmh": 1.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4589,7 +4449,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.8,
+     "lluvia_mm": 8.1,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4597,7 +4457,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 11.0,
+     "lluvia_mm": 10.2,
      "intensidad_mmh": 2.1,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4617,15 +4477,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.8,
-     "intensidad_mmh": 3.1,
+     "lluvia_mm": 2.3,
+     "intensidad_mmh": 2.1,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.9,
+     "lluvia_mm": 18.4,
      "intensidad_mmh": 4.6,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -4633,23 +4493,23 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 17.5,
+     "lluvia_mm": 19.1,
      "intensidad_mmh": 2.9,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "23:00"
+     "hora_critica": null
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 36.8,
+     "lluvia_mm": 20.9,
      "intensidad_mmh": 14.1,
-     "nivel": "Muy alto",
-     "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
+     "nivel": "Alto",
+     "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
      "hora_critica": "04:00"
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 9.2,
+     "lluvia_mm": 12.2,
      "intensidad_mmh": 0.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4657,7 +4517,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.5,
+     "lluvia_mm": 9.6,
      "intensidad_mmh": 1.6,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4665,7 +4525,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.8,
+     "lluvia_mm": 8.1,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4673,7 +4533,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 10.9,
+     "lluvia_mm": 10.2,
      "intensidad_mmh": 2.0,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4693,15 +4553,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.7,
-     "intensidad_mmh": 3.0,
+     "lluvia_mm": 2.3,
+     "intensidad_mmh": 2.1,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.8,
+     "lluvia_mm": 18.4,
      "intensidad_mmh": 4.5,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -4709,23 +4569,23 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 17.5,
+     "lluvia_mm": 19.1,
      "intensidad_mmh": 2.9,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "23:00"
+     "hora_critica": null
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 37.3,
+     "lluvia_mm": 20.9,
      "intensidad_mmh": 14.9,
-     "nivel": "Muy alto",
-     "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
+     "nivel": "Alto",
+     "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
      "hora_critica": "04:00"
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 9.2,
+     "lluvia_mm": 12.2,
      "intensidad_mmh": 0.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4733,7 +4593,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.5,
+     "lluvia_mm": 9.6,
      "intensidad_mmh": 1.6,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4741,7 +4601,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.8,
+     "lluvia_mm": 8.1,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4749,7 +4609,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 10.8,
+     "lluvia_mm": 10.2,
      "intensidad_mmh": 1.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -4769,15 +4629,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.0,
-     "intensidad_mmh": 2.4,
+     "lluvia_mm": 2.1,
+     "intensidad_mmh": 1.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 1/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.3,
+     "lluvia_mm": 17.8,
      "intensidad_mmh": 3.6,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 1/3 + marea alta, suelo saturado",
@@ -4785,7 +4645,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 17.3,
+     "lluvia_mm": 18.1,
      "intensidad_mmh": 4.1,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 1/3 + marea alta, suelo saturado",
@@ -4793,7 +4653,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 37.2,
+     "lluvia_mm": 21.5,
      "intensidad_mmh": 16.8,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 1/3 + marea alta, suelo saturado",
@@ -4801,7 +4661,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.8,
+     "lluvia_mm": 12.0,
      "intensidad_mmh": 0.6,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 1/3",
@@ -4809,7 +4669,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.6,
+     "lluvia_mm": 9.5,
      "intensidad_mmh": 1.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 1/3",
@@ -4817,7 +4677,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 9.4,
+     "lluvia_mm": 8.4,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 1/3",
@@ -4825,7 +4685,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 11.5,
+     "lluvia_mm": 10.7,
      "intensidad_mmh": 2.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 1/3",
@@ -4845,15 +4705,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.3,
-     "intensidad_mmh": 2.7,
+     "lluvia_mm": 2.2,
+     "intensidad_mmh": 1.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.7,
+     "lluvia_mm": 18.1,
      "intensidad_mmh": 3.8,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4861,7 +4721,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 16.9,
+     "lluvia_mm": 18.5,
      "intensidad_mmh": 3.3,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4869,15 +4729,15 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 38.0,
+     "lluvia_mm": 21.2,
      "intensidad_mmh": 16.8,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + marea alta, suelo saturado",
-     "hora_critica": "02:00"
+     "hora_critica": "05:00"
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.9,
+     "lluvia_mm": 12.1,
      "intensidad_mmh": 0.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4885,7 +4745,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.5,
+     "lluvia_mm": 9.5,
      "intensidad_mmh": 1.6,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4893,7 +4753,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.8,
+     "lluvia_mm": 8.3,
      "intensidad_mmh": 1.3,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4901,7 +4761,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 10.8,
+     "lluvia_mm": 10.5,
      "intensidad_mmh": 2.0,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4921,15 +4781,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.3,
-     "intensidad_mmh": 2.7,
+     "lluvia_mm": 2.2,
+     "intensidad_mmh": 1.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.8,
+     "lluvia_mm": 18.1,
      "intensidad_mmh": 3.7,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4937,7 +4797,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 16.9,
+     "lluvia_mm": 18.6,
      "intensidad_mmh": 3.0,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -4945,15 +4805,15 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 39.3,
+     "lluvia_mm": 21.2,
      "intensidad_mmh": 18.3,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + marea alta, suelo saturado",
-     "hora_critica": "02:00"
+     "hora_critica": "04:00"
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.9,
+     "lluvia_mm": 12.1,
      "intensidad_mmh": 0.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4961,7 +4821,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.5,
+     "lluvia_mm": 9.6,
      "intensidad_mmh": 1.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4969,7 +4829,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.8,
+     "lluvia_mm": 8.2,
      "intensidad_mmh": 1.3,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4977,7 +4837,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 10.5,
+     "lluvia_mm": 10.4,
      "intensidad_mmh": 1.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -4997,15 +4857,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.6,
-     "intensidad_mmh": 2.9,
+     "lluvia_mm": 2.2,
+     "intensidad_mmh": 1.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.4,
+     "lluvia_mm": 18.4,
      "intensidad_mmh": 4.1,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -5013,7 +4873,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 17.2,
+     "lluvia_mm": 19.0,
      "intensidad_mmh": 2.8,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -5021,15 +4881,15 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 38.9,
+     "lluvia_mm": 20.9,
      "intensidad_mmh": 17.7,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + marea alta, suelo saturado",
-     "hora_critica": "03:00"
+     "hora_critica": "04:00"
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 9.1,
+     "lluvia_mm": 12.2,
      "intensidad_mmh": 0.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -5037,7 +4897,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.5,
+     "lluvia_mm": 9.6,
      "intensidad_mmh": 1.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -5045,7 +4905,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.8,
+     "lluvia_mm": 8.1,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -5053,7 +4913,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 10.5,
+     "lluvia_mm": 10.3,
      "intensidad_mmh": 1.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -5073,15 +4933,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.6,
-     "intensidad_mmh": 2.9,
+     "lluvia_mm": 2.3,
+     "intensidad_mmh": 1.6,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.4,
+     "lluvia_mm": 18.4,
      "intensidad_mmh": 4.0,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5089,7 +4949,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 17.2,
+     "lluvia_mm": 19.1,
      "intensidad_mmh": 2.6,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5097,7 +4957,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 39.9,
+     "lluvia_mm": 20.9,
      "intensidad_mmh": 19.2,
      "nivel": "Muy alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5105,7 +4965,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 9.1,
+     "lluvia_mm": 12.2,
      "intensidad_mmh": 0.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5113,7 +4973,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.4,
+     "lluvia_mm": 9.6,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5121,7 +4981,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.8,
+     "lluvia_mm": 8.1,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5129,7 +4989,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 10.3,
+     "lluvia_mm": 10.2,
      "intensidad_mmh": 1.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5149,15 +5009,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.1,
-     "intensidad_mmh": 2.6,
+     "lluvia_mm": 2.1,
+     "intensidad_mmh": 1.6,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
      "hora_critica": null
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.3,
+     "lluvia_mm": 17.9,
      "intensidad_mmh": 3.4,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -5165,7 +5025,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 16.5,
+     "lluvia_mm": 18.2,
      "intensidad_mmh": 3.0,
      "nivel": "Moderado",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 2/3 + marea alta, suelo saturado",
@@ -5173,15 +5033,15 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 39.8,
+     "lluvia_mm": 21.0,
      "intensidad_mmh": 19.0,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 2/3 + marea alta, suelo saturado",
-     "hora_critica": "02:00"
+     "hora_critica": "04:00"
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 8.4,
+     "lluvia_mm": 11.5,
      "intensidad_mmh": 0.6,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -5189,7 +5049,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.3,
+     "lluvia_mm": 9.3,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -5197,7 +5057,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.5,
+     "lluvia_mm": 7.9,
      "intensidad_mmh": 1.3,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -5205,7 +5065,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 10.2,
+     "lluvia_mm": 10.3,
      "intensidad_mmh": 1.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 2/3",
@@ -5225,15 +5085,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.4,
-     "intensidad_mmh": 2.9,
+     "lluvia_mm": 2.1,
+     "intensidad_mmh": 1.6,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 17.2,
+     "lluvia_mm": 18.3,
      "intensidad_mmh": 4.0,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5241,7 +5101,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 17.0,
+     "lluvia_mm": 18.7,
      "intensidad_mmh": 2.6,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5249,7 +5109,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 39.3,
+     "lluvia_mm": 19.6,
      "intensidad_mmh": 19.5,
      "nivel": "Muy alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5257,7 +5117,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 7.6,
+     "lluvia_mm": 10.0,
      "intensidad_mmh": 0.8,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5265,7 +5125,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 9.8,
+     "lluvia_mm": 8.6,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5273,7 +5133,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 7.6,
+     "lluvia_mm": 6.4,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5281,7 +5141,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 9.6,
+     "lluvia_mm": 9.2,
      "intensidad_mmh": 1.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5301,15 +5161,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.9,
-     "intensidad_mmh": 2.5,
+     "lluvia_mm": 2.1,
+     "intensidad_mmh": 1.6,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.1,
+     "lluvia_mm": 17.8,
      "intensidad_mmh": 3.3,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5317,7 +5177,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 16.3,
+     "lluvia_mm": 17.9,
      "intensidad_mmh": 3.1,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5325,7 +5185,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 39.4,
+     "lluvia_mm": 20.6,
      "intensidad_mmh": 18.9,
      "nivel": "Muy alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5333,7 +5193,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 7.8,
+     "lluvia_mm": 10.6,
      "intensidad_mmh": 0.6,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5341,7 +5201,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 10.1,
+     "lluvia_mm": 8.9,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5349,7 +5209,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 8.1,
+     "lluvia_mm": 7.3,
      "intensidad_mmh": 1.3,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5377,23 +5237,23 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.7,
-     "intensidad_mmh": 2.4,
+     "lluvia_mm": 2.0,
+     "intensidad_mmh": 1.6,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 15.8,
+     "lluvia_mm": 17.6,
      "intensidad_mmh": 3.1,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
-     "hora_critica": "00:00"
+     "hora_critica": "02:00"
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 16.0,
+     "lluvia_mm": 17.5,
      "intensidad_mmh": 3.2,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5401,7 +5261,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 38.8,
+     "lluvia_mm": 19.8,
      "intensidad_mmh": 18.8,
      "nivel": "Muy alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5409,7 +5269,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 6.7,
+     "lluvia_mm": 9.0,
      "intensidad_mmh": 0.6,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5417,7 +5277,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 9.6,
+     "lluvia_mm": 8.2,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5425,7 +5285,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 7.3,
+     "lluvia_mm": 6.1,
      "intensidad_mmh": 1.2,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5433,7 +5293,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 9.5,
+     "lluvia_mm": 9.3,
      "intensidad_mmh": 1.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5453,15 +5313,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 5.6,
-     "intensidad_mmh": 2.4,
+     "lluvia_mm": 1.9,
+     "intensidad_mmh": 1.5,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "22:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 15.6,
+     "lluvia_mm": 17.4,
      "intensidad_mmh": 3.1,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5469,7 +5329,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 15.8,
+     "lluvia_mm": 17.2,
      "intensidad_mmh": 3.2,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5477,7 +5337,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 38.2,
+     "lluvia_mm": 19.0,
      "intensidad_mmh": 18.7,
      "nivel": "Muy alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5485,7 +5345,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 5.5,
+     "lluvia_mm": 7.3,
      "intensidad_mmh": 0.5,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5493,7 +5353,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 9.1,
+     "lluvia_mm": 7.5,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5501,7 +5361,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 6.4,
+     "lluvia_mm": 4.8,
      "intensidad_mmh": 1.2,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5509,7 +5369,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 9.0,
+     "lluvia_mm": 8.6,
      "intensidad_mmh": 1.9,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5529,15 +5389,15 @@
    "dias": [
     {
      "fecha": "2026-11-04",
-     "lluvia_mm": 6.0,
-     "intensidad_mmh": 2.7,
+     "lluvia_mm": 2.0,
+     "intensidad_mmh": 1.6,
      "nivel": "Moderado",
      "motivo": "lluvia 3 h nivel 1/4, susceptibilidad 3/3",
-     "hora_critica": "21:00"
+     "hora_critica": "23:00"
     },
     {
      "fecha": "2026-11-05",
-     "lluvia_mm": 16.5,
+     "lluvia_mm": 17.8,
      "intensidad_mmh": 3.6,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5545,7 +5405,7 @@
     },
     {
      "fecha": "2026-11-06",
-     "lluvia_mm": 16.3,
+     "lluvia_mm": 17.9,
      "intensidad_mmh": 2.8,
      "nivel": "Alto",
      "motivo": "lluvia del día nivel 1/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5553,7 +5413,7 @@
     },
     {
      "fecha": "2026-11-07",
-     "lluvia_mm": 38.3,
+     "lluvia_mm": 18.6,
      "intensidad_mmh": 19.2,
      "nivel": "Muy alto",
      "motivo": "lluvia del día nivel 2/4, susceptibilidad 3/3 + marea alta, suelo saturado",
@@ -5561,7 +5421,7 @@
     },
     {
      "fecha": "2026-11-08",
-     "lluvia_mm": 5.8,
+     "lluvia_mm": 7.5,
      "intensidad_mmh": 0.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5569,7 +5429,7 @@
     },
     {
      "fecha": "2026-11-09",
-     "lluvia_mm": 9.1,
+     "lluvia_mm": 7.5,
      "intensidad_mmh": 1.4,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5577,7 +5437,7 @@
     },
     {
      "fecha": "2026-11-10",
-     "lluvia_mm": 6.4,
+     "lluvia_mm": 4.6,
      "intensidad_mmh": 1.3,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5585,7 +5445,7 @@
     },
     {
      "fecha": "2026-11-11",
-     "lluvia_mm": 8.9,
+     "lluvia_mm": 8.3,
      "intensidad_mmh": 1.7,
      "nivel": "Bajo",
      "motivo": "lluvia del día nivel 0/4, susceptibilidad 3/3",
@@ -5657,9 +5517,9 @@
  "fuentes": [
   {
    "id": "gfs_seamless",
-   "nombre": "NOAA GFS 0,25°",
+   "nombre": "NOAA GFS 0,25° — solo intensidad",
    "centro": "NOAA/NCEP (EE. UU.)",
-   "peso": 1.0,
+   "peso": 0.0,
    "ok": true,
    "corrida": "04/11 18 UTC"
   },
@@ -5673,9 +5533,9 @@
   },
   {
    "id": "gem_global",
-   "nombre": "ECCC GEM Global",
+   "nombre": "ECCC GEM Global — solo intensidad",
    "centro": "Environment and Climate Change Canada",
-   "peso": 1.0,
+   "peso": 0.0,
    "ok": true,
    "corrida": null
   },
@@ -5736,9 +5596,7 @@
   "12": 0.76
  },
  "pesos": {
-  "gfs_seamless": 1.0,
   "ncep_aigfs025": 1.0,
-  "gem_global": 1.0,
   "ens:gfs025": 1.5,
   "ens:gem_global": 1.5
  }
