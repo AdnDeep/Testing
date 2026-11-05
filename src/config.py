@@ -78,11 +78,13 @@ HOTSPOTS = [
 
 # Modelos deterministas (API de pronóstico de Open-Meteo). Todos son de
 # centros norteamericanos: NOAA/NCEP (EE. UU.) y ECCC (Canadá).
-# peso: contribución al promedio ponderado.
+# peso: contribución al promedio ponderado. Con peso 0 el modelo queda fuera de los promedios de lluvia
+# y solo se usa para la intensidad horaria. GFS y GEM están en 0 porque son los que más se han alejado
+# del promedio general (37 corridas, del 29/10 al 04/11/2026).
 DET_MODELS = [
-    {"id": "gfs_seamless", "nombre": "NOAA GFS 0,25°", "centro": "NOAA/NCEP (EE. UU.)", "peso": 1.0, "intensidad": True},
+    {"id": "gfs_seamless", "nombre": "NOAA GFS 0,25°", "centro": "NOAA/NCEP (EE. UU.)", "peso": 0.0, "intensidad": True},
     {"id": "ncep_aigfs025", "nombre": "NOAA AIGFS (IA)", "centro": "NOAA/NCEP (EE. UU.)", "peso": 1.0, "intensidad": False},
-    {"id": "gem_global", "nombre": "ECCC GEM Global", "centro": "Environment and Climate Change Canada", "peso": 1.0, "intensidad": True},
+    {"id": "gem_global", "nombre": "ECCC GEM Global", "centro": "Environment and Climate Change Canada", "peso": 0.0, "intensidad": True},
 ]
 
 # Ensambles (API de ensambles de Open-Meteo). Su media pesa más porque,

@@ -57,7 +57,8 @@ def main() -> int:
             if base_times is None:
                 base_times = times
             det[m["id"]] = A.alinear(base_times, times, arr)
-            fuentes.append({"id": m["id"], "nombre": m["nombre"], "centro": m["centro"], "peso": m["peso"], "ok": True,
+            fuentes.append({"id": m["id"], "nombre": m["nombre"] + ("" if m["peso"] > 0 else " — solo intensidad"),
+                            "centro": m["centro"], "peso": m["peso"], "ok": True,
                             "corrida": corrida(META_DATASETS[m["id"]], tz)})
             print(f"[ok] {m['nombre']}")
         except F.FuenteNoDisponible as e:
@@ -85,6 +86,10 @@ def main() -> int:
                             "detalle": "no disponible en esta corrida"})
             print(f"[--] {m['nombre']}: {e}")
         time.sleep(1.5)
+
+    if not ens and not any(m["peso"] > 0 and m["id"] in det for m in C.DET_MODELS):
+        print("ERROR: ningún modelo del promedio de lluvia respondió", file=sys.stderr)
+        return 1
 
     # ---- ENSO (NOAA CPC)
     semanal = oni = disc = None

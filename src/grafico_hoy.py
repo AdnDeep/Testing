@@ -171,7 +171,7 @@ def dibujar(res: dict, meta: dict, ruta_png: str, clave: str = "hoy"):
         fig.patches.append(Rectangle((x0, ly - 0.006), 0.018, 0.012, transform=fig.transFigure, fc=col, ec="none"))
         fig.text(x0 + 0.022, ly, nombre, fontsize=8.5, color=INK, va="center")
         x0 += 0.095
-    fig.text(0.10, 0.028, "Lluvia: promedio ponderado NOAA GFS, AIGFS, GEFS y ECCC GEM, GEPS (vía Open-Meteo). "
+    fig.text(0.10, 0.028, "Lluvia: promedio ponderado NOAA AIGFS, GEFS y ECCC GEPS (vía Open-Meteo). "
              "Marea: constantes armónicas oficiales de INOCAR. Anegamiento: lluvia de 3 h + intensidad + marea + "
              "susceptibilidad del sector.", fontsize=7.6, color=MUTED, va="center", wrap=True)
     fig.savefig(ruta_png, dpi=150, facecolor="white")

@@ -280,9 +280,10 @@ def construir_html(res, meta, enso, estacional, fuentes, png_bytes, hoy_bytes=No
   <section class="panel method" aria-labelledby="h-met">
     <h2 id="h-met">Cómo se calcula</h2>
     <p>La lluvia de cada zona es el promedio ponderado de los modelos de NOAA (EE. UU.) y ECCC (Canadá) disponibles en esta
-    corrida. Las medias de los ensambles GEFS y GEPS pesan 1,5 y cada modelo determinista pesa 1, porque a partir del segundo
+    corrida. Las medias de los ensambles GEFS y GEPS pesan 1,5 y AIGFS pesa 1, porque a partir del segundo
     día la media de un ensamble acierta más que una corrida única. Las probabilidades salen de contar cuántos de los
-    {meta['miembros_total']} miembros de los ensambles superan cada umbral. La intensidad máxima horaria viene de GFS y GEM.</p>
+    {meta['miembros_total']} miembros de los ensambles superan cada umbral. La intensidad máxima horaria viene de GFS y GEM,
+    que no entran en el promedio de lluvia porque son los que más se han alejado de él.</p>
     <p>El riesgo de anegamiento se calcula hora por hora en 28 sectores. Cruza la lluvia de las últimas 3 horas y la
     intensidad con la susceptibilidad de cada sector, y sube un nivel cuando coinciden agravantes: marea alta en el río
     (en los sectores que desaguan al Guayas o al Estero Salado) y suelo saturado (más de 30 mm en 72 h). El riesgo del día

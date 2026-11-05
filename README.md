@@ -27,9 +27,9 @@ El historial de corridas (solo JSON) queda en `output/historial/`.
 
 | Fuente | Centro | Uso |
 |---|---|---|
-| GFS 0,25° | NOAA/NCEP (EE. UU.) | Modelo determinista, intensidad horaria |
+| GFS 0,25° | NOAA/NCEP (EE. UU.) | Solo intensidad horaria; fuera del promedio de lluvia |
 | AIGFS | NOAA/NCEP (EE. UU.) | Modelo de IA de NOAA |
-| GEM Global | ECCC (Canadá) | Modelo determinista, intensidad |
+| GEM Global | ECCC (Canadá) | Solo intensidad horaria; fuera del promedio de lluvia |
 | GEFS, 31 miembros | NOAA/NCEP (EE. UU.) | Media del ensamble y probabilidades |
 | GEPS, 21 miembros | ECCC (Canadá) | Media del ensamble y probabilidades |
 | Índices Niño semanales, ONI, discusión ENSO | NOAA CPC (EE. UU.) | Seguimiento de El Niño |
@@ -42,8 +42,9 @@ Los datos de los modelos se descargan a través de la API pública de [Open-Mete
 
 ## Método
 
-1. **Promedio ponderado.** Para cada zona y día se promedia la lluvia de todos los modelos disponibles. Cada
-   modelo determinista pesa 1 y cada media de ensamble pesa 1,5.
+1. **Promedio ponderado.** Para cada zona y día se promedia la lluvia de AIGFS (peso 1) y de las medias de GEFS
+   y GEPS (peso 1,5 cada una). GFS y GEM quedaron fuera porque son los que más se han alejado del promedio
+   general; para volver a incluirlos, basta darles peso en `src/config.py`.
 2. **Probabilidades.** Se cuentan los miembros de GEFS y GEPS que superan 1, 10, 25 y 50 mm.
 3. **Marea.** Se calcula con las 68 constantes armónicas oficiales de INOCAR para Guayaquil-Río
    (`src/marea_inocar_guayaquil.json`). Las horas coinciden al minuto con las pleamares publicadas por INOCAR

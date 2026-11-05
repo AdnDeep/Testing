@@ -165,12 +165,13 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
             dias.append({"fecha": f, "idx": idx})
     idx_pasado = [i for i, t in enumerate(tiempos) if ahora_h - timedelta(hours=72) <= t < ahora_h]
 
-    pesos = {m["id"]: m["peso"] for m in C.DET_MODELS}
+    # Un modelo con peso 0 no entra en los promedios de lluvia: solo aporta intensidad horaria.
+    pesos = {m["id"]: m["peso"] for m in C.DET_MODELS if m["peso"] > 0}
     pesos.update({f"ens:{m['id']}": m["peso"] for m in C.ENS_MODELS})
     intensidad_ok = [m["id"] for m in C.DET_MODELS if m["intensidad"] and m["id"] in det]
 
     # Series por punto de malla por fuente: (npts, nT)
-    fuentes_pt = dict(det)
+    fuentes_pt = {k: v for k, v in det.items() if k in pesos}
     for eid, arr in ens.items():
         with np.errstate(invalid="ignore"):
             fuentes_pt[f"ens:{eid}"] = np.nanmean(arr, axis=1)
@@ -238,8 +239,11 @@ def analizar(base_times, det, ens, ahora_local: datetime, enso: dict | None, mar
         else:
             zona_prob[z] = np.full(nT, np.nan)
 
+        # Los ensambles solo traen 1 día pasado. Si ningún modelo del promedio tiene las 72 h, se usan los demás
+        # para no perder la señal de suelo saturado.
+        con_pasado = [m for m in det if idx_pasado and not np.isnan(det[m][ids][:, idx_pasado]).all()]
         antecedente_vals = [float(np.nansum(det[m][ids][:, idx_pasado].mean(axis=0)))
-                            for m in det if idx_pasado and not np.isnan(det[m][ids][:, idx_pasado]).all()]
+                            for m in ([m for m in con_pasado if m in pesos] or con_pasado)]
         antecedente = float(np.mean(antecedente_vals)) if antecedente_vals else float("nan")
 
         filas = []
