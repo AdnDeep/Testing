@@ -16,14 +16,14 @@
 [ok] Marea INOCAR: 09/11 07:10 4.46 m, 09/11 19:45 4.58 m, 10/11 07:45 4.38 m, 10/11 20:15 4.51 m
 [ok] Boletín INAMHI 204-2026: 25 estaciones, 2026-10-28T07:00 a 2026-10-29T07:00
 [ok] Corrección con pluviómetros: {'boletines': 1, 'ciudad': {'razon': 0.2, 'n': 1, 'peso_medido': 0.33, 'factor': 0.733}, 'zonas': {'norte': {'razon': 0.2, 'n': 1, 'peso_medido': 0.33, 'factor': 0.733, 'fuente': 'zona'}, 'centro': {'razon': 0.2, 'n': 1, 'peso_medido': 0.33, 'factor': 0.733, 'fuente': 'zona'}, 'sur': {'razon': 0.2, 'n': 1, 'peso_medido': 0.33, 'factor': 0.733, 'fuente': 'zona'}}}
-# Lluvias Guayaquil — 09/11/2026 08:17
+# Lluvias Guayaquil — 09/11/2026 09:28
 
-Lluvia prevista hasta el miércoles 11 de noviembre: Norte 42 mm, Centro 40 mm, Sur 38 mm. Riesgo de anegamiento moderado en Norte. Pleamares de hoy: 07:10 (4.46 m) y 19:45 (4.58 m). El Niño costero: Niño 1+2 en +5.6 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).
+Lluvia prevista hasta el miércoles 11 de noviembre: Norte 41 mm, Centro 40 mm, Sur 37 mm. Riesgo de anegamiento moderado en Norte. Pleamares de hoy: 07:10 (4.46 m) y 19:45 (4.58 m). El Niño costero: Niño 1+2 en +5.6 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).
 
 ## Hoy, lunes 9 de noviembre, hora por hora
-- **Norte:** Quedan 12.7 mm para el resto del día (total del día 21.0 mm). Lo más fuerte: entre 17:00 y 20:00, con 3.8 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento.
-- **Centro:** Quedan 13.6 mm para el resto del día (total del día 19.3 mm). Lo más fuerte: entre 17:00 y 20:00, con 4.4 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento.
-- **Sur:** Quedan 12.4 mm para el resto del día (total del día 18.3 mm). Lo más fuerte: entre 17:00 y 20:00, con 4.1 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento.
+- **Norte:** Quedan 12.0 mm para el resto del día (total del día 21.0 mm). Lo más fuerte: entre 17:00 y 20:00, con 3.8 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento.
+- **Centro:** Quedan 13.1 mm para el resto del día (total del día 19.3 mm). Lo más fuerte: entre 17:00 y 20:00, con 4.4 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento.
+- **Sur:** Quedan 11.9 mm para el resto del día (total del día 18.3 mm). Lo más fuerte: entre 17:00 y 20:00, con 4.1 mm. Ese aguacero coincide con marea alta en el río: el agua de las calles bajas saldrá lento.
 
 | Hora | Marea (m) | Norte mm · aneg. | Centro mm · aneg. | Sur mm · aneg. |
 |---|---|---|---|---|
@@ -35,8 +35,8 @@ Lluvia prevista hasta el miércoles 11 de noviembre: Norte 42 mm, Centro 40 mm, 
 | 05:00 (pasó) | 3.44 sube | 1.1 · Bajo | 0.7 · Bajo | 0.9 · Bajo |
 | 06:00 (pasó) | 4.15 sube | 1.1 · Bajo | 0.7 · Bajo | 0.9 · Bajo |
 | 07:00 (pasó) | 4.45 pleamar | 1.1 · Bajo | 0.7 · Bajo | 0.9 · Bajo |
-| 08:00 (ahora) | 4.28 baja | 0.6 · Bajo | 0.6 · Bajo | 0.5 · Bajo |
-| 09:00 | 3.66 baja | 0.6 · Bajo | 0.6 · Bajo | 0.5 · Bajo |
+| 08:00 (pasó) | 4.28 baja | 0.6 · Bajo | 0.6 · Bajo | 0.5 · Bajo |
+| 09:00 (ahora) | 3.66 baja | 0.6 · Bajo | 0.6 · Bajo | 0.5 · Bajo |
 | 10:00 | 2.85 baja | 0.6 · Bajo | 0.6 · Bajo | 0.5 · Bajo |
 | 11:00 | 2.18 baja | 0.3 · Bajo | 0.3 · Bajo | 0.2 · Bajo |
 | 12:00 | 1.61 baja | 0.3 · Bajo | 0.3 · Bajo | 0.2 · Bajo |
@@ -102,11 +102,11 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 - Pleamar miércoles 11 de noviembre 20:50: 4.40 m (alta (aguaje))
 
 ## Norte
-41.8 mm esperados en total hasta el miércoles 11 de noviembre. El día más lluvioso sería el miércoles 11 de noviembre: 14.7 mm (lluvia moderada, probabilidad de lluvia 96%). Riesgo de anegamiento moderado en Sauces.
+41.1 mm esperados en total hasta el miércoles 11 de noviembre. El día más lluvioso sería el miércoles 11 de noviembre: 14.7 mm (lluvia moderada, probabilidad de lluvia 96%). Riesgo de anegamiento moderado en Sauces.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| lunes 9 de noviembre (aguaje) | 12.7 | 96% | 46% | 2.8 | Bajo |
+| lunes 9 de noviembre (aguaje) | 12.0 | 96% | 40% | 2.4 | Bajo |
 | martes 10 de noviembre (aguaje) | 14.4 | 94% | 50% | 2.8 | Bajo |
 | miércoles 11 de noviembre (aguaje) | 14.7 | 96% | 58% | 5.1 | Moderado |
 | jueves 12 de noviembre (aguaje) | 18.9 | 96% | 52% | 3.0 | Alto |
@@ -116,11 +116,11 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 | lunes 16 de noviembre | 19.9 | 96% | 79% | 2.1 | Moderado |
 
 ## Centro
-40.2 mm esperados en total hasta el miércoles 11 de noviembre. El día más lluvioso sería el martes 10 de noviembre: 13.9 mm (lluvia moderada, probabilidad de lluvia 88%). Riesgo de anegamiento de calles: bajo.
+39.7 mm esperados en total hasta el miércoles 11 de noviembre. El día más lluvioso sería el martes 10 de noviembre: 13.9 mm (lluvia moderada, probabilidad de lluvia 88%). Riesgo de anegamiento de calles: bajo.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| lunes 9 de noviembre (aguaje) | 13.6 | 94% | 44% | 2.7 | Bajo |
+| lunes 9 de noviembre (aguaje) | 13.1 | 94% | 40% | 2.4 | Bajo |
 | martes 10 de noviembre (aguaje) | 13.9 | 88% | 46% | 3.2 | Bajo |
 | miércoles 11 de noviembre (aguaje) | 12.7 | 96% | 50% | 4.5 | Bajo |
 | jueves 12 de noviembre (aguaje) | 15.5 | 94% | 48% | 2.6 | Moderado |
@@ -130,11 +130,11 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 | lunes 16 de noviembre | 18.9 | 92% | 69% | 1.6 | Moderado |
 
 ## Sur
-37.6 mm esperados en total hasta el miércoles 11 de noviembre. El día más lluvioso sería el martes 10 de noviembre: 12.9 mm (lluvia moderada, probabilidad de lluvia 90%). Riesgo de anegamiento de calles: bajo.
+37.1 mm esperados en total hasta el miércoles 11 de noviembre. El día más lluvioso sería el martes 10 de noviembre: 12.9 mm (lluvia moderada, probabilidad de lluvia 90%). Riesgo de anegamiento de calles: bajo.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| lunes 9 de noviembre (aguaje) | 12.4 | 94% | 38% | 2.9 | Bajo |
+| lunes 9 de noviembre (aguaje) | 11.9 | 94% | 37% | 2.9 | Bajo |
 | martes 10 de noviembre (aguaje) | 12.9 | 90% | 46% | 3.0 | Bajo |
 | miércoles 11 de noviembre (aguaje) | 12.3 | 96% | 46% | 4.1 | Bajo |
 | jueves 12 de noviembre (aguaje) | 15.4 | 94% | 52% | 2.5 | Alto |
