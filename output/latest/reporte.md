@@ -1,70 +1,70 @@
-# Lluvias Guayaquil — 15/11/2026 21:22
+# Lluvias Guayaquil — 16/11/2026 08:04
 
-Lluvia prevista hasta el martes 17 de noviembre: Norte 18 mm, Centro 17 mm, Sur 14 mm. Riesgo de anegamiento de calles bajo en toda la ciudad. Pleamares de hoy: 10:35 (3.74 m) y 23:10 (3.91 m). El Niño costero: Niño 1+2 en +5.6 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).
+Lluvia prevista hasta el miércoles 18 de noviembre: Norte 25 mm, Centro 23 mm, Sur 20 mm. Riesgo de anegamiento de calles bajo en toda la ciudad. Pleamares de hoy: 11:20 (3.62 m) y 23:55 (3.83 m). El Niño costero: Niño 1+2 en +5.4 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).
 
-## Hoy, domingo 15 de noviembre, hora por hora
-- **Norte:** Sin lluvia significativa para el resto del día (total del día 24.8 mm).
-- **Centro:** Sin lluvia significativa para el resto del día (total del día 27.6 mm).
-- **Sur:** Sin lluvia significativa para el resto del día (total del día 30.1 mm).
-
-| Hora | Marea (m) | Norte mm · aneg. | Centro mm · aneg. | Sur mm · aneg. |
-|---|---|---|---|---|
-| 00:00 (pasó) | 3.49 baja | 7.3 · Alto | 7.4 · Muy alto | 7.9 · Muy alto |
-| 01:00 (pasó) | 2.83 baja | 7.3 · Alto | 7.4 · Alto | 7.9 · Muy alto |
-| 02:00 (pasó) | 2.23 baja | 1.7 · Alto | 2.2 · Alto | 2.5 · Alto |
-| 03:00 (pasó) | 1.69 baja | 1.7 · Moderado | 2.2 · Moderado | 2.5 · Alto |
-| 04:00 (pasó) | 1.26 baja | 1.7 · Bajo | 2.2 · Moderado | 2.5 · Moderado |
-| 05:00 (pasó) | 1.07 bajamar | 1.2 · Bajo | 1.6 · Moderado | 1.7 · Moderado |
-| 06:00 (pasó) | 1.27 sube | 1.2 · Bajo | 1.6 · Moderado | 1.7 · Moderado |
-| 07:00 (pasó) | 1.93 sube | 1.2 · Bajo | 1.6 · Moderado | 1.7 · Moderado |
-| 08:00 (pasó) | 2.79 sube | 0.1 · Bajo | 0.1 · Bajo | 0.2 · Bajo |
-| 09:00 (pasó) | 3.40 sube | 0.1 · Bajo | 0.1 · Bajo | 0.2 · Bajo |
-| 10:00 (pasó) | 3.69 sube | 0.1 · Bajo | 0.1 · Bajo | 0.2 · Bajo |
-| 11:00 (pasó) | 3.71 pleamar | 0.1 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 12:00 (pasó) | 3.30 baja | 0.1 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 13:00 (pasó) | 2.63 baja | 0.1 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 14:00 (pasó) | 2.03 baja | 0.2 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 15:00 (pasó) | 1.54 baja | 0.2 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 16:00 (pasó) | 1.13 baja | 0.2 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 17:00 (pasó) | 0.91 bajamar | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 18:00 (pasó) | 1.02 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 19:00 (pasó) | 1.59 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 20:00 (pasó) | 2.52 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 21:00 (ahora) | 3.31 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 22:00 | 3.72 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
-| 23:00 | 3.90 pleamar | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-
-## Mañana, lunes 16 de noviembre, hora por hora
-- **Norte:** Total del día: 5.5 mm. Lo más fuerte: entre 17:00 y 20:00, con 2.4 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
-- **Centro:** Total del día: 5.1 mm. Lo más fuerte: entre 17:00 y 20:00, con 2.2 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
-- **Sur:** Total del día: 4.3 mm. Lo más fuerte: entre 17:00 y 20:00, con 1.8 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
+## Hoy, lunes 16 de noviembre, hora por hora
+- **Norte:** Quedan 5.6 mm para el resto del día (total del día 6.1 mm). Lo más fuerte: entre 17:00 y 20:00, con 2.8 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
+- **Centro:** Quedan 5.5 mm para el resto del día (total del día 5.8 mm). Lo más fuerte: entre 17:00 y 20:00, con 2.8 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
+- **Sur:** Quedan 4.9 mm para el resto del día (total del día 5.2 mm). Lo más fuerte: entre 17:00 y 20:00, con 2.2 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
 
 | Hora | Marea (m) | Norte mm · aneg. | Centro mm · aneg. | Sur mm · aneg. |
 |---|---|---|---|---|
-| 00:00 | 3.75 baja | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 01:00 | 3.19 baja | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 02:00 | 2.56 baja | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 03:00 | 2.02 baja | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 04:00 | 1.54 baja | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 05:00 | 1.19 baja | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 06:00 | 1.15 bajamar | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 07:00 | 1.49 sube | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 08:00 | 2.19 sube | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
+| 00:00 (pasó) | 3.75 baja | 0.1 · Bajo | 0.1 · Bajo | 0.0 · Bajo |
+| 01:00 (pasó) | 3.19 baja | 0.1 · Bajo | 0.1 · Bajo | 0.0 · Bajo |
+| 02:00 (pasó) | 2.56 baja | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 03:00 (pasó) | 2.02 baja | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 04:00 (pasó) | 1.54 baja | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 05:00 (pasó) | 1.19 baja | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
+| 06:00 (pasó) | 1.15 bajamar | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
+| 07:00 (pasó) | 1.49 sube | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
+| 08:00 (ahora) | 2.19 sube | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
 | 09:00 | 2.94 sube | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
 | 10:00 | 3.40 sube | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
 | 11:00 | 3.60 pleamar | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
 | 12:00 | 3.53 baja | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
 | 13:00 | 3.06 baja | 0.0 · Bajo | 0.0 · Bajo | 0.0 · Bajo |
-| 14:00 | 2.41 baja | 0.2 · Bajo | 0.2 · Bajo | 0.1 · Bajo |
-| 15:00 | 1.88 baja | 0.2 · Bajo | 0.2 · Bajo | 0.1 · Bajo |
-| 16:00 | 1.44 baja | 0.2 · Bajo | 0.2 · Bajo | 0.1 · Bajo |
-| 17:00 | 1.08 baja | 0.8 · Bajo | 0.7 · Bajo | 0.6 · Bajo |
-| 18:00 | 0.97 bajamar | 0.8 · Bajo | 0.7 · Bajo | 0.6 · Bajo |
-| 19:00 | 1.22 sube | 0.8 · Bajo | 0.7 · Bajo | 0.6 · Bajo |
+| 14:00 | 2.41 baja | 0.3 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
+| 15:00 | 1.88 baja | 0.3 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
+| 16:00 | 1.44 baja | 0.3 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
+| 17:00 | 1.08 baja | 0.9 · Bajo | 0.9 · Bajo | 0.7 · Bajo |
+| 18:00 | 0.97 bajamar | 0.9 · Bajo | 0.9 · Bajo | 0.7 · Bajo |
+| 19:00 | 1.22 sube | 0.9 · Bajo | 0.9 · Bajo | 0.7 · Bajo |
 | 20:00 | 1.89 sube | 0.6 · Bajo | 0.5 · Bajo | 0.5 · Bajo |
 | 21:00 | 2.77 sube | 0.6 · Bajo | 0.5 · Bajo | 0.5 · Bajo |
 | 22:00 | 3.41 sube | 0.6 · Bajo | 0.5 · Bajo | 0.5 · Bajo |
-| 23:00 | 3.72 sube | 0.7 · Bajo | 0.7 · Bajo | 0.5 · Bajo |
+| 23:00 | 3.72 sube | 0.3 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
+
+## Mañana, martes 17 de noviembre, hora por hora
+- **Norte:** Total del día: 11.8 mm. Lo más fuerte: entre 17:00 y 20:00, con 4.0 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
+- **Centro:** Total del día: 10.6 mm. Lo más fuerte: entre 17:00 y 20:00, con 3.5 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
+- **Sur:** Total del día: 9.2 mm. Lo más fuerte: entre 17:00 y 20:00, con 2.6 mm. Ese momento cae con marea baja o media, lo que ayuda al desagüe.
+
+| Hora | Marea (m) | Norte mm · aneg. | Centro mm · aneg. | Sur mm · aneg. |
+|---|---|---|---|---|
+| 00:00 | 3.82 pleamar | 0.3 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
+| 01:00 | 3.57 baja | 0.3 · Bajo | 0.3 · Bajo | 0.3 · Bajo |
+| 02:00 | 2.98 baja | 0.2 · Bajo | 0.2 · Bajo | 0.3 · Bajo |
+| 03:00 | 2.39 baja | 0.2 · Bajo | 0.2 · Bajo | 0.3 · Bajo |
+| 04:00 | 1.90 baja | 0.2 · Bajo | 0.2 · Bajo | 0.3 · Bajo |
+| 05:00 | 1.45 baja | 0.1 · Bajo | 0.1 · Bajo | 0.2 · Bajo |
+| 06:00 | 1.20 bajamar | 0.1 · Bajo | 0.1 · Bajo | 0.2 · Bajo |
+| 07:00 | 1.25 sube | 0.1 · Bajo | 0.1 · Bajo | 0.2 · Bajo |
+| 08:00 | 1.65 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 09:00 | 2.32 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 10:00 | 2.97 sube | 0.1 · Bajo | 0.1 · Bajo | 0.1 · Bajo |
+| 11:00 | 3.36 sube | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
+| 12:00 | 3.52 pleamar | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
+| 13:00 | 3.41 baja | 0.2 · Bajo | 0.2 · Bajo | 0.2 · Bajo |
+| 14:00 | 2.93 baja | 0.8 · Bajo | 0.6 · Bajo | 0.6 · Bajo |
+| 15:00 | 2.33 baja | 0.8 · Bajo | 0.6 · Bajo | 0.6 · Bajo |
+| 16:00 | 1.85 baja | 0.8 · Bajo | 0.6 · Bajo | 0.6 · Bajo |
+| 17:00 | 1.42 baja | 1.3 · Bajo | 1.2 · Bajo | 0.9 · Bajo |
+| 18:00 | 1.11 baja | 1.3 · Bajo | 1.2 · Bajo | 0.9 · Bajo |
+| 19:00 | 1.08 bajamar | 1.3 · Bajo | 1.2 · Bajo | 0.9 · Bajo |
+| 20:00 | 1.40 sube | 0.8 · Bajo | 0.7 · Bajo | 0.5 · Bajo |
+| 21:00 | 2.09 sube | 0.8 · Bajo | 0.7 · Bajo | 0.5 · Bajo |
+| 22:00 | 2.90 sube | 0.8 · Bajo | 0.7 · Bajo | 0.5 · Bajo |
+| 23:00 | 3.44 sube | 0.5 · Bajo | 0.4 · Bajo | 0.4 · Bajo |
 
 ## Corrección con pluviómetros
 Pronóstico corregido con 1 boletín(es) del INAMHI: en esos días la lluvia medida fue 20 % de lo que estimaron los modelos. El pronóstico final es un promedio entre los modelos y lo medido (lo medido pesa 33 %), así que las cantidades de los modelos se multiplican por 0.73 (-27 %).
@@ -76,55 +76,55 @@ Del 28/10 07:00 al 29/10 07:00: el mayor acumulado fue 7.1 mm en Estación Bombe
 - Sur: medido 0.0 mm promedio (máx. 0.0 en La Pradera); modelos – mm
 
 ## Mareas (INOCAR)
-- Pleamar domingo 15 de noviembre 10:35: 3.74 m (normal)
-- Pleamar domingo 15 de noviembre 23:10: 3.91 m (normal)
 - Pleamar lunes 16 de noviembre 11:20: 3.62 m (normal)
 - Pleamar lunes 16 de noviembre 23:55: 3.83 m (normal)
 - Pleamar martes 17 de noviembre 12:10: 3.53 m (normal)
+- Pleamar miércoles 18 de noviembre 00:45: 3.80 m (normal)
+- Pleamar miércoles 18 de noviembre 13:15: 3.52 m (normal)
 
 ## Norte
-18.5 mm esperados en total hasta el martes 17 de noviembre. El día más lluvioso sería el martes 17 de noviembre: 12.8 mm (lluvia moderada, probabilidad de lluvia 96%). Riesgo de anegamiento de calles: bajo.
+25.3 mm esperados en total hasta el miércoles 18 de noviembre. El día más lluvioso sería el martes 17 de noviembre: 11.8 mm (lluvia moderada, probabilidad de lluvia 94%). Riesgo de anegamiento de calles: bajo.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| domingo 15 de noviembre | 0.2 | 2% | 0% | 0.0 | Bajo |
-| lunes 16 de noviembre | 5.5 | 69% | 19% | 1.6 | Bajo |
-| martes 17 de noviembre | 12.8 | 96% | 62% | 2.3 | Bajo |
-| miércoles 18 de noviembre | 7.8 | 88% | 27% | 2.6 | Bajo |
-| jueves 19 de noviembre | 11.9 | 92% | 58% | 2.9 | Bajo |
-| viernes 20 de noviembre | 13.9 | 94% | 56% | 1.8 | Bajo |
-| sábado 21 de noviembre | 16.3 | 98% | 63% | 1.0 | Alto |
-| domingo 22 de noviembre | 22.1 | 98% | 67% | 3.9 | Alto |
+| lunes 16 de noviembre | 5.6 | 75% | 21% | 2.0 | Bajo |
+| martes 17 de noviembre | 11.8 | 94% | 56% | 4.0 | Bajo |
+| miércoles 18 de noviembre | 7.9 | 87% | 35% | 0.4 | Bajo |
+| jueves 19 de noviembre | 14.9 | 94% | 60% | 6.2 | Moderado |
+| viernes 20 de noviembre | 19.2 | 96% | 60% | 8.0 | Moderado |
+| sábado 21 de noviembre | 14.5 | 98% | 58% | 2.6 | Bajo |
+| domingo 22 de noviembre | 30.7 | 94% | 65% | 2.8 | Muy alto |
+| lunes 23 de noviembre (aguaje) | 26.0 | 100% | 71% | 2.3 | Alto |
 
 ## Centro
-16.6 mm esperados en total hasta el martes 17 de noviembre. El día más lluvioso sería el martes 17 de noviembre: 11.3 mm (lluvia moderada, probabilidad de lluvia 94%). Riesgo de anegamiento de calles: bajo.
+23.3 mm esperados en total hasta el miércoles 18 de noviembre. El día más lluvioso sería el martes 17 de noviembre: 10.6 mm (lluvia moderada, probabilidad de lluvia 92%). Riesgo de anegamiento de calles: bajo.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| domingo 15 de noviembre | 0.2 | 2% | 0% | 0.0 | Bajo |
-| lunes 16 de noviembre | 5.1 | 62% | 17% | 1.6 | Bajo |
-| martes 17 de noviembre | 11.3 | 94% | 46% | 1.2 | Bajo |
-| miércoles 18 de noviembre | 7.2 | 85% | 23% | 2.2 | Bajo |
-| jueves 19 de noviembre | 10.5 | 85% | 48% | 3.8 | Bajo |
-| viernes 20 de noviembre | 11.8 | 94% | 40% | 3.5 | Bajo |
-| sábado 21 de noviembre | 15.2 | 98% | 60% | 3.0 | Moderado |
-| domingo 22 de noviembre | 19.4 | 98% | 67% | 4.3 | Alto |
+| lunes 16 de noviembre | 5.5 | 73% | 23% | 1.1 | Bajo |
+| martes 17 de noviembre | 10.6 | 92% | 50% | 1.6 | Bajo |
+| miércoles 18 de noviembre | 7.2 | 81% | 27% | 0.2 | Bajo |
+| jueves 19 de noviembre | 13.8 | 92% | 58% | 4.4 | Bajo |
+| viernes 20 de noviembre | 16.8 | 94% | 60% | 5.2 | Moderado |
+| sábado 21 de noviembre | 13.9 | 94% | 54% | 2.0 | Bajo |
+| domingo 22 de noviembre | 23.9 | 94% | 63% | 2.6 | Alto |
+| lunes 23 de noviembre (aguaje) | 20.7 | 96% | 65% | 1.8 | Alto |
 
 ## Sur
-13.9 mm esperados en total hasta el martes 17 de noviembre. El día más lluvioso sería el martes 17 de noviembre: 9.5 mm (lluvia ligera, probabilidad de lluvia 94%). Riesgo de anegamiento de calles: bajo.
+19.8 mm esperados en total hasta el miércoles 18 de noviembre. El día más lluvioso sería el martes 17 de noviembre: 9.2 mm (lluvia ligera, probabilidad de lluvia 92%). Riesgo de anegamiento de calles: bajo.
 
 | Día | Lluvia (mm) | Prob. ≥1 mm | ≥10 mm | Intens. máx (mm/h) | Anegamiento |
 |---|---|---|---|---|---|
-| domingo 15 de noviembre | 0.1 | 4% | 0% | 0.0 | Bajo |
-| lunes 16 de noviembre | 4.3 | 62% | 15% | 1.7 | Bajo |
-| martes 17 de noviembre | 9.5 | 94% | 40% | 1.1 | Bajo |
-| miércoles 18 de noviembre | 5.9 | 81% | 27% | 1.6 | Bajo |
-| jueves 19 de noviembre | 8.5 | 85% | 38% | 3.6 | Bajo |
-| viernes 20 de noviembre | 10.6 | 98% | 35% | 3.9 | Bajo |
-| sábado 21 de noviembre | 15.4 | 100% | 56% | 2.8 | Alto |
-| domingo 22 de noviembre | 18.2 | 98% | 65% | 4.8 | Alto |
+| lunes 16 de noviembre | 4.9 | 75% | 17% | 1.0 | Bajo |
+| martes 17 de noviembre | 9.2 | 92% | 40% | 1.4 | Bajo |
+| miércoles 18 de noviembre | 5.7 | 81% | 23% | 0.2 | Bajo |
+| jueves 19 de noviembre | 11.6 | 92% | 54% | 4.6 | Bajo |
+| viernes 20 de noviembre | 14.2 | 94% | 54% | 5.0 | Moderado |
+| sábado 21 de noviembre | 12.8 | 94% | 56% | 2.3 | Bajo |
+| domingo 22 de noviembre | 23.4 | 94% | 62% | 2.4 | Alto |
+| lunes 23 de noviembre (aguaje) | 19.5 | 96% | 65% | 2.4 | Alto |
 
 ## El Niño
 - Estado NOAA: El Niño Advisory
-- Niño 1+2 semanal: +5.6 °C (04NOV2026); índice costero aprox.: +5.35 °C → Cálida extraordinaria
-- Niño 3.4 semanal: +3.3 °C
+- Niño 1+2 semanal: +5.4 °C (11NOV2026); índice costero aprox.: +5.42 °C → Cálida extraordinaria
+- Niño 3.4 semanal: +3.2 °C
