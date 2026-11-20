@@ -1,7 +1,7 @@
 {
  "meta": {
-  "emitido_iso": "2026-11-19T20:34-05:00",
-  "emitido_texto": "19/11/2026 20:34",
+  "emitido_iso": "2026-11-19T20:37-05:00",
+  "emitido_texto": "19/11/2026 20:37",
   "ventana_texto": "De hoy, jueves 19 de noviembre, al sábado 21 de noviembre",
   "miembros_total": 52,
   "modelos_ok": [
@@ -1920,7 +1920,7 @@
    "hora": "20:35",
    "altura": 1.23,
    "clase": "",
-   "pasada": false
+   "pasada": true
   },
   {
    "tipo": "pleamar",

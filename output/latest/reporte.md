@@ -1,4 +1,4 @@
-# Lluvias Guayaquil — 19/11/2026 20:34
+# Lluvias Guayaquil — 19/11/2026 20:37
 
 Lluvia prevista hasta el sábado 21 de noviembre: Norte 50 mm, Centro 45 mm, Sur 46 mm. Riesgo de anegamiento muy alto en Norte. Pleamares de hoy: 01:45 (3.84 m) y 14:20 (3.61 m). El Niño costero: Niño 1+2 en +5.4 °C (cálida extraordinaria). Cifras corregidas con pluviómetros del INAMHI (×0.73).
 
